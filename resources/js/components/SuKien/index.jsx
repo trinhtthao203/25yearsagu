@@ -1,6 +1,8 @@
 import React from "react";
 import Gate from "../../../../public/images/gate.jpg";
+import { useTranslation } from "react-i18next";
 function SuKien() {
+    const { t } = useTranslation();
     return (
         <div
             className="flex flex-col justify-center items-center py-[3rem]"
@@ -12,10 +14,10 @@ function SuKien() {
             }}
         >
             <p className="text-3xl uppercase text-[#2c2c54] text-center py-5">
-                Sự Kiện
+                {t("home.join-the-celebration")}
             </p>
             <p className="text-[1.2rem] p-[1rem] uppercase text-[#2c2c54] text-center py-5">
-                Những sự kiện nổi bật chào mừng 20 năm thành lập trường
+                {t("home.join-the-celebration-desciption")}
             </p>
             <div className="px-5">
                 <div className="flex justify-center items-center">

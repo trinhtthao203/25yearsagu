@@ -1,35 +1,67 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import HieuTruong from "../../../../public/images/hieu-truong.jpg";
+import ChanDungHieuTruong from "../../../../public/images/hieu-truong.png";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { Reveal } from "../Reveal";
+
 function ThongDiepHieuTruong() {
+    const ref = useRef(null);
+    const { t } = useTranslation();
+    const isInView = useInView(ref, { once: true });
+    const mainControls = useAnimation();
+
+    useEffect(() => {
+        if (isInView) {
+            mainControls.start("visible");
+        }
+    }, [isInView]);
+
     return (
-        <div className="flex flex-col justify-center items-center bg[#f1f2f6] py-[6rem]">
-            <p className=" text-[1.4rem] sm:text-[0.5rem] lg:text-[1.9rem] uppercase text-[#2c2c54] text-center ">
-                Thông điệp hiệu trưởng
-            </p>
-            <p className=" max-w-[49rem] text-[0.9rem] sm:text-[0.5rem] lg:text-[1.2rem] text-justify  my-5 mx-[5rem] text-[#2C3A47]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-                sit corporis, eligendi, temporibus nisi sapiente dolorum eius
-                vero, sequi dolore minus quae ipsam! Praesentium aspernatur
-                minima eligendi ut accusantium laudantium. Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Tempore iste aperiam officia
-                vero provident laudantium nobis dicta molestiae obcaecati
-                officiis minima ullam sit doloribus esse? Exercitationem
-                repudiandae placeat alias? Maxime, explicabo? Ullam veritatis
-                dicta aspernatur deserunt libero placeat fugiat laborum?
-                Aliquid, deserunt quos repellat sunt nemo velit repellendus.
-                Iste temporibus provident dolore nobis repudiandae blanditiis
-                alias beatae pariatur, ipsa odit ad, praesentium tempore!{" "}
-                <Link to="/thong-diep-hieu-truong" className="text-[#227093]">
-                    Đọc thêm...
-                </Link>
-            </p>
-            <img
-                src={`${HieuTruong}`}
-                className=" rounded-[10rem] border-solid border-[0.5rem] border-[#f7f1e3] w-[10rem]"
-            />
-            <p className="text-[1.2rem] text-[#2C3A47">PGS, TS Võ Văn Thắng</p>
-            <p className="text-[#2C3A47">Hiệu trưởng</p>
+        <div
+            ref={ref}
+            className=" flex justify-center items-center bg-[#f1f2f6] my-[10rem] "
+        >
+            <div className="lg:w-5/6 xl:w-4/6 flex lg:flex-row justify-center items-center">
+                <div className="w-full mr-0 lg:mr-8 lg:w-7/12">
+                    <p className="pl-[9px] max-w-[11rem] sm:max-w-[25rem] md:max-w-[29.5rem] lg:max-w-[35rem] text-[0.6rem] sm:text-[0.4rem] md:text-[0.9rem] lg:text-[1.1rem] text-[#2C3A47]">
+                        <Reveal>
+                            <p className="text-[0.8rem] sm:text-[1.4rem] md:text-[1.5rem] lg:text-[1.8rem] font-medium uppercase text-[#8CA9AD]">
+                                {t("home.chancellor-message")}
+                            </p>
+                        </Reveal>
+                        <Reveal>
+                            {t("home.short_content")}
+                            {t("common.read-more")}
+                        </Reveal>
+                        <Link
+                            to="/thong-diep-hieu-truong"
+                            className="text-[#227093]"
+                        >
+                            <Reveal>
+                                <p className="text-[0.8rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] text-[#2C3A47] pt-[0.5rem] lg:pt-[2rem]">
+                                    {t("hieutruong.vvthang")}
+                                </p>
+                            </Reveal>
+                            <Reveal>
+                                <p className="text-[#2C3A47]">
+                                    {t("hieutruong.title")}
+                                </p>
+                            </Reveal>
+                        </Link>
+                    </p>
+                </div>
+                <div className="w-5/6 lg:w-5/12 md:pl-[5rem]">
+                    <Reveal>
+                        <img
+                            src={`${ChanDungHieuTruong}`}
+                            className=" relative w-full sm:w-2/3 md:w-3/4 lg:w-full drop-shadow-2xl"
+                        />
+                    </Reveal>
+                </div>
+            </div>
         </div>
     );
 }

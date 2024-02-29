@@ -42,6 +42,7 @@ function ThongDiepHieuTruongPage() {
                     reprehenderit impedit error at, quas numquam expedita atque
                     magnam! Assumenda dolores iusto nihil, eius repellendus
                     tempore iste veritatis esse impedit cum est. Blanditiis
+                    <img src={`${HieuTruong}`} className="  w-[10rem]" />
                     vitae ullam porro quae amet libero laborum numquam provident
                     deleniti. Laborum voluptate laboriosam optio similique
                     nobis, inventore nemo quidem doloremque temporibus, ratione

@@ -8,14 +8,16 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+import { useTranslation } from "react-i18next";
 
 function DongThoiGianPage() {
+    const { t } = useTranslation();
     return (
         <div className="w-full h-full">
             <CustomHeader />
             <div className="flex flex-col justify-center items-center bg[#f1f2f6] py-[6rem]">
                 <p className=" text-[1.4rem] sm:text-[0.5rem] lg:text-[1.9rem] uppercase text-[#2c2c54] text-center py-10 ">
-                    Trường đại học an giang qua dòng thời gian
+                    {t("home.time-line")}
                 </p>
                 <Timeline position="alternate">
                     <TimelineItem>

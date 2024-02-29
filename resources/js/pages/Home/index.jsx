@@ -16,6 +16,9 @@ import CuuSinhVien from "../../components/CuuSinhVien";
 
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "../../components/LanguageSelector";
+import { motion } from "framer-motion";
+import NhaTaiTro from "../../components/NhaTaiTro";
+import { Reveal } from "../../components/Reveal";
 
 function Home() {
     const { t, i18n } = useTranslation();
@@ -33,8 +36,6 @@ function Home() {
         return () => clearTimeout(timeout); // Xóa timeout khi component unmount
     }, []);
 
-    const lng = navigator.language;
-
     return (
         <>
             {loading &&
@@ -42,9 +43,8 @@ function Home() {
                 <LoadingScreen />
             ) : (
                 <div className="w-full h-full">
-                    <h2>{t("greeting.hello")}</h2>
                     <div
-                        className=" h-screen w-screen  relative animate-fade animate-duration-[1200ms]"
+                        className=" h-screen w-screen relative animate-fade animate-duration-[1200ms]"
                         style={{
                             backgroundImage: `url(${backgroundImage})`,
                             backgroundSize: "cover",
@@ -52,37 +52,48 @@ function Home() {
                             backgroundAttachment: "fixed",
                         }}
                     >
-                        <div className="w-screen flex justify-end items-end">
-                            <LanguageSelector />
+                        <div className="w-screen flex justify-end items-end ">
+                            <Reveal>
+                                <LanguageSelector />
+                            </Reveal>
                         </div>
                         <div className=" h-screen w-screen flex justify-center items-center">
                             <div className="flex flex-col items-center justify-center mt-[-15rem]">
                                 <div className="w-[10rem] sm:w-[11rem] md:w-[19rem] lg:w-[22rem] xl:w-[19rem] animate-flip-down">
-                                    <img src={`${Logo25}`} alt="Logo" />
+                                    <Reveal>
+                                        <img src={`${Logo25}`} alt="Logo" />
+                                    </Reveal>
                                 </div>
                                 <div className="transform text-center">
-                                    <p className=" px-[1.2rem] text-[1.7rem] sm:text-[1.7rem] md:text-[2.6rem] lg:text-[3.1rem] xl:text-[3.7rem] font-bold text-gray-900 tracking-wider shadow-retr">
-                                        KỶ NIỆM 25 NĂM THÀNH LẬP
-                                    </p>
-                                    <p className="text-[1.1rem] sm:text-[1.7rem] md:text-[2rem] lg:text-[2.4rem] xl:text-[2.5rem] p-3">
-                                        TRƯỜNG ĐẠI HỌC AN GIANG
-                                    </p>
-                                    <p className="text-[1rem] sm:text-[1.1rem] md:text-[1.5rem] lg:text-[1.7rem] xl:text-[2rem]">
-                                        (1999-2024)
-                                    </p>
+                                    <Reveal>
+                                        <p className=" uppercase px-[1.2rem] text-[1.7rem] sm:text-[1.7rem] md:text-[2.6rem] lg:text-[3.1rem] xl:text-[3.7rem] font-bold text-gray-900 tracking-wider shadow-retr">
+                                            {t("home.25year-established")}
+                                        </p>
+                                    </Reveal>
+                                    <Reveal>
+                                        <p className=" uppercase text-[1.1rem] sm:text-[1.7rem] md:text-[2rem] lg:text-[2.4rem] xl:text-[2.5rem] p-3">
+                                            {t("home.agu")}
+                                        </p>
+                                    </Reveal>
+                                    <Reveal>
+                                        <p className="text-[1rem] sm:text-[1.1rem] md:text-[1.5rem] lg:text-[1.7rem] xl:text-[2rem]">
+                                            {t("home.year-anniversary")}
+                                        </p>
+                                    </Reveal>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <NhaTaiTro />
                     <ThongDiepHieuTruong />
-                    <DongThoiGian />
+                    {/* <DongThoiGian /> */}
                     <BanGiamHieu />
-                    <ThuNgo />
-                    <TinTuc />
+                    {/* <ThuNgo /> */}
                     <SuKien />
-                    <HinhAnh />
+                    {/* <TinTuc /> */}
                     <DoiTac />
                     <CuuSinhVien />
+                    <HinhAnh />
                     <Footer />
                 </div>
             )}

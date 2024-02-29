@@ -20,7 +20,7 @@ function MyApp() {
                 />
                 <Route path="/loading" element={<LoadingScreen />} />
                 <Route
-                    path="/lich-su-hinh-thanh"
+                    path="/theo-dong-thoi-gian"
                     element={<DongThoiGianPage />}
                 />
             </Routes>

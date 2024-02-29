@@ -1,5 +1,18 @@
 {
     "greeting": {
         "hello": "Hello Word!"
+    },
+    "home": {
+        "25year-established": "25th Anniversary Celebration",
+        "agu": "An Giang University",
+        "year-anniversary": "(1999-2024)"
+    },
+    "ht-message": {
+        "title": "Principal's Message",
+        "short_content": "Lorem ipsum dolor ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am"
+    },
+    "hieutruong": {
+        "title": "Chancellor",
+        "vvthang": "PGS, TS Võ Văn Thắng"
     }
 }

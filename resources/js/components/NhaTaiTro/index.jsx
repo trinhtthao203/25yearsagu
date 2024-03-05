@@ -65,7 +65,7 @@ function NhaTaiTro() {
                             <img
                                 src={ntt.image}
                                 alt={ntt.name}
-                                className="h-[1.5rem] sm:h-[4rem] md:h-[5rem] lg:h-[6rem] xl:h-[7rem]"
+                                className=" drop-shadow-2xl h-[1.5rem] sm:h-[4rem] md:h-[5rem] lg:h-[6rem] xl:h-[7rem]"
                             />
                         </a>
                     </div>

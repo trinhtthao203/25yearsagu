@@ -1,80 +1,73 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import IMG from "../../../../public/images/logo.png";
+import { t } from "i18next";
 
 function PauseOnHover() {
     const comments = [
         {
-            message:
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quibusdam.",
-            fullname: "Trần Văn Nam",
-            title: "Phó phòng Marketing - Ngân hàng Exim",
-            position: "Công ty TNHH Dịch vụ Tin học ABC",
+            message: t("alumni.sv1_message"),
+            fullname: t("alumni.sv1_fullname"),
+            title: t("alumni.sv1_title"),
+            position: t("alumni.sv1_position"),
             image: IMG,
-            course: "DH12NH",
+            course: t("alumni.sv1_course"),
         },
         {
-            message:
-                "Lorem ipsumritatis dignissimos amet tenetur tempora quasi repellendus sint nam?",
-            fullname: "Nguyễn Văn Thành",
-            title: "Chủ Doanh nghiệp ",
-            position: "Công ty TNHH Dịch vụ Tin học ABC",
+            message: t("alumni.sv2_message"),
+            fullname: t("alumni.sv2_fullname"),
+            title: t("alumni.sv2_tile"),
+            position: t("alumni.sv2_position"),
             image: IMG,
-            course: "DH12NH",
+            course: t("alumni.sv2_course"),
         },
         {
-            message:
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quibusdam.",
-            fullname: "Hà Thanh Vân",
-            title: "Phó phòng Marketing - Ngân hàng Exim",
-            position: "Công ty TNHH Dịch vụ Tin học ABC",
+            message: t("alumni.sv3_message"),
+            fullname: t("alumni.sv3_fullname"),
+            title: t("alumni.sv3_title"),
+            position: t("alumni.sv3_position"),
             image: IMG,
-            course: "DH12NH",
+            course: t("alumni.sv3_course"),
         },
         {
-            message:
-                "Lorem ipsum, dolor sit amet consectetur adipisng elit. Nemo dolor in veritatis dignissimos amet tenetur tempora quasi repellendus sint nam?",
-            fullname: "Đỗ Minh Khuê",
-            title: "Chủ Doanh nghiệp ",
-            position: "Công ty TNHH Dịch vụ Tin học ABC",
+            message: t("alumni.sv4_message"),
+            fullname: t("alumni.sv4_fullname"),
+            title: t("alumni.sv4_title"),
+            position: t("alumni.sv4_position"),
             image: IMG,
-            course: "DH12NH",
+            course: t("alumni.sv4_course"),
         },
         {
-            message:
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quibusdam.",
-            fullname: "Nguyễn Trọng Việt",
-            title: "Phó phòng Marketing - Ngân hàng Exim",
-            position: "Công ty TNHH Dịch vụ Tin học ABC",
+            message: t("alumni.sv5_message"),
+            fullname: t("alumni.sv5_fullname"),
+            title: t("alumni.sv5_title"),
+            position: t("alumni.sv5_position"),
             image: IMG,
-            course: "DH12NH",
+            course: t("alumni.sv5_course"),
         },
         {
-            message:
-                "Lorem ipsum, dolor sit amet consectecing elit. Nemo dolor in veritatis dignissimos amet tenetur tempora quasi repellendus sint nam?",
-            fullname: "Lê Hòa Bình",
-            title: "Chủ Doanh nghiệp ",
-            position: "Công ty TNHH Dịch vụ Tin học ABC",
+            message: t("alumni.sv6_message"),
+            fullname: t("alumni.sv6_fullname"),
+            title: t("alumni.sv6_title"),
+            position: t("alumni.sv6_position"),
             image: IMG,
-            course: "DH12NH",
+            course: t("alumni.sv6_course"),
         },
         {
-            message:
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quibusdam.",
-            fullname: "Trần Đăng Khoa",
-            title: "Phó phòng Marketing - Ngân hàng Exim",
-            position: "Công ty TNHH Dịch vụ Tin học ABC",
+            message: t("alumni.sv7_message"),
+            fullname: t("alumni.sv7_fullname"),
+            title: t("alumni.sv7_title"),
+            position: t("alumni.sv7_position"),
             image: IMG,
-            course: "DH12NH",
+            course: t("alumni.sv7_course"),
         },
         {
-            message:
-                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nes dignissimos amet tenetur tempora quasi repellendus sint nam?",
-            fullname: "Ngô Thùy Hoa",
-            title: "Chủ Doanh nghiệp ",
-            position: "Công ty TNHH Dịch vụ Tin học ABC",
+            message: t("alumni.sv8_message"),
+            fullname: t("alumni.sv8_fullname"),
+            title: t("alumni.sv8_title"),
+            position: t("alumni.sv8_position"),
             image: IMG,
-            course: "DH12NH",
+            course: t("alumni.sv8_course"),
         },
     ];
     const settings = {
@@ -99,7 +92,7 @@ function PauseOnHover() {
     return (
         <div className=" pt-[5rem] bg-moonMist">
             <p className="text-3xl uppercase text-[#2c2c54] text-center py-5">
-                Cựu sinh viên
+                {t("home.alumni")}
             </p>
             <div className="slider-container p-10 ">
                 <Slider {...settings} className="">

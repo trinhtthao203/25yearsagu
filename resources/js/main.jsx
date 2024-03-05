@@ -8,10 +8,11 @@ import Home from "../js/pages/Home";
 import LoadingScreen from "../js/pages/Loading";
 import ThongDiepHieuTruongPage from "./pages/ThongDiepHieuTruongPage";
 import DongThoiGianPage from "./pages/DongThoiGianPage";
-
+import ScrollToTop from "./scrollToTop";
 function MyApp() {
     return (
         <BrowserRouter basename="/agu25years">
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route

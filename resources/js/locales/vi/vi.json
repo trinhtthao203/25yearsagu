@@ -15,10 +15,91 @@
         "short_content": "Lorem  ipsum dolor oribus nisi piente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am",
         "chancellor-message": "Thông điệp hiệu trưởng",
         "join-the-celebration": "Sự kiện sắp diễn ra",
-        "join-the-celebration-desciption": "Những sự kiện nổi bật chào mừng 25 năm thành lập trường"
+        "join-the-celebration-desciption": "Những sự kiện nổi bật chào mừng 25 năm thành lập trường",
+        "alumni": "Cựu sinh viên"
     },
+
+    "time": {
+        "gd1": "Giai đoạn 1",
+        "gd2": "Giai đoạn 2",
+        "gd3": "Giai đoạn 3",
+        "time-gd1": "(1976-1998)",
+        "time-gd2": "(1999-2018)",
+        "time-gd3": "(2019-Nay)",
+        "gd1-events1": "ipsum dolor oribus nisi piente d ",
+        "time-gd1-events1": "1976"
+    },
+
+    "event": {
+        "evt1-name": "Sự kiện 1",
+        "evt2-name": "Sự kiện 2",
+        "evt3-name": "Sự kiện 3",
+        "evt4-name": "Sự kiện 4",
+        "evt1-content": "ipsum dolor oribus nisi piente d ipsum dolor oribus nisi piente d ipsum dolor oribus nipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente disi piente d ipsum dolor oribus nisi piente d",
+        "evt2-content": "ipsum dolbu psum dolor oribus nisi piente d ipsum dolor oribus nisi pien",
+        "evt3-content": "ipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente d",
+        "evt4-content": "ipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente d4"
+    },
+
+    "alumni": {
+        "sv1_message": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quibusdam.",
+        "sv1_fullname": "Trần Văn Nam",
+        "sv1_title": "Phó phòng Marketing - Ngân hàng Exim",
+        "sv1_position": "Công ty TNHH Dịch vụ Tin học ABC",
+        "sv1_course": "DH12NH",
+
+        "sv2_message": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quibusdam.",
+        "sv2_fullname": "Trần Văn Nam",
+        "sv2_title": "Phó phòng Marketing - Ngân hàng Exim",
+        "sv2_position": "Công ty TNHH Dịch vụ Tin học ABC",
+        "sv2_course": "DH12NH",
+
+        "sv3_message": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quibusdam.",
+        "sv3_fullname": "Trần Văn Nam",
+        "sv3_title": "Phó phòng Marketing - Ngân hàng Exim",
+        "sv3_position": "Công ty TNHH Dịch vụ Tin học ABC",
+        "sv3_course": "DH12NH",
+
+        "sv4_message": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quibusdam.",
+        "sv4_fullname": "Trần Văn Nam",
+        "sv4_title": "Phó phòng Marketing - Ngân hàng Exim",
+        "sv4_position": "Công ty TNHH Dịch vụ Tin học ABC",
+        "sv4_course": "DH12NH",
+
+        "sv5_message": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quibusdam.",
+        "sv5_fullname": "Trần Văn Nam",
+        "sv5_title": "Phó phòng Marketing - Ngân hàng Exim",
+        "sv5_position": "Công ty TNHH Dịch vụ Tin học ABC",
+        "sv5_course": "DH12NH",
+
+        "sv6_message": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quibusdam.",
+        "sv6_fullname": "Trần Văn Nam",
+        "sv6_title": "Phó phòng Marketing - Ngân hàng Exim",
+        "sv6_position": "Công ty TNHH Dịch vụ Tin học ABC",
+        "sv6_course": "DH12NH",
+
+        "sv7_message": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quibusdam.",
+        "sv7_fullname": "Trần Văn Nam",
+        "sv7_title": "Phó phòng Marketing - Ngân hàng Exim",
+        "sv7_position": "Công ty TNHH Dịch vụ Tin học ABC",
+        "sv7_course": "DH12NH",
+
+        "sv8_message": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quibusdam.",
+        "sv8_fullname": "Trần Văn Nam",
+        "sv8_title": "Phó phòng Marketing - Ngân hàng Exim",
+        "sv8_position": "Công ty TNHH Dịch vụ Tin học ABC",
+        "sv8_course": "DH12NH"
+    },
+
     "hieutruong": {
         "title": "Hiệu trưởng",
         "vvthang": "PGS, TS Võ Văn Thắng"
+    },
+
+    "contact": {
+        "address": "Địa chỉ :",
+        "address-content": "Số 18 Ung Văn Khiêm, P. Đông Xuyên, Tp. Long Xuyên - An Giang",
+        "contact": "Liên hệ",
+        "view-in-map": "Xem trên bản đồ..."
     }
 }

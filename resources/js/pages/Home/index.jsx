@@ -16,7 +16,6 @@ import CuuSinhVien from "../../components/CuuSinhVien";
 
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "../../components/LanguageSelector";
-import { motion } from "framer-motion";
 import NhaTaiTro from "../../components/NhaTaiTro";
 import { Reveal } from "../../components/Reveal";
 
@@ -86,12 +85,12 @@ function Home() {
                     </div>
                     <NhaTaiTro />
                     <ThongDiepHieuTruong />
-                    {/* <DongThoiGian /> */}
+                    <DongThoiGian />
                     <BanGiamHieu />
                     {/* <ThuNgo /> */}
                     <SuKien />
                     {/* <TinTuc /> */}
-                    <DoiTac />
+                    {/* <DoiTac /> */}
                     <CuuSinhVien />
                     <HinhAnh />
                     <Footer />

@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import HieuTruong from "../../../../public/images/hieu-truong.jpg";
 import CustomHeader from "../../components/CustomHeader";
 import Footer from "../../components/Footer";
-import { Link } from "react-router-dom";
-import { Reveal } from "../../components/Reveal";
+import { Reveal } from "../../motion/Reveal";
+import { ScrollText } from "../../motion/ScrollText";
 import BackButton from "../../components/BackButton";
 
 function ThongDiepHieuTruongPage() {
     return (
         <div className="w-full h-full">
-            {/* <CustomHeader /> */}
+            <CustomHeader />
+            <ScrollText />
             <BackButton link={"/"} />
             <div className="flex flex-col justify-center items-center bg[#f1f2f6] py-[6rem] ">
                 <Reveal>

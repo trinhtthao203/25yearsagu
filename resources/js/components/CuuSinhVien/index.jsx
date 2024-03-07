@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import IMG from "../../../../public/images/logo.png";
+import IMG from "../../../../public/images/logo-vnu.png";
 import { t } from "i18next";
 
 function PauseOnHover() {

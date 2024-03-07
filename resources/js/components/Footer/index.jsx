@@ -1,72 +1,107 @@
 import React from "react";
-import Logo from "../../../../public/images/logo.png";
-import { t } from "i18next";
+import LogoAGU from "../../../../public/images/logo-agu.png";
+import LogoVNU from "../../../../public/images/logo-vnu.png";
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+import { Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
+import { forwardRef } from "react";
 
-function Footer() {
+const Footer = forwardRef((props, ref) => {
+    const { t } = useTranslation();
+    var currentYear = new Date().getFullYear();
     return (
-        <div className="px-4 divide-y dark:bg-gray-800 dark:text-gray-100">
-            <div className="container flex flex-col justify-between py-10 mx-auto lg:flex-row lg:space-y-0">
-                <div className="lg:w-1/3">
-                    <a
-                        rel="noopener noreferrer"
-                        href="#"
-                        className="flex justify-center lg:justify-start"
-                    >
-                        <div>
-                            <img src={`${Logo}`} className=" w-[15rem]" />
-                        </div>
-                        <span className="self-center text-[1.2rem] w-[14rem] font-semibold uppercase">
-                            {t("home.agu")}
-                        </span>
-                    </a>
-                </div>
+        <div
+            id="footer"
+            ref={ref}
+            className="px-4 divide-y dark:bg-gray-800 dark:text-gray-100"
+        >
+            <div className="container flex flex-col justify-between pt-10 mx-auto lg:flex-row lg:space-y-0">
                 <Box sx={{ flexGrow: 1 }}>
                     <Grid
                         container
                         spacing={{ xs: 2, md: 3 }}
                         columns={{ xs: 4, sm: 8, md: 12 }}
+                        sx={{ maxWidth: "100%", overflow: "hidden" }}
                     >
-                        <Grid item xs={2} sm={4} md={4}>
-                            <h3 className="tracki uppercase dark:text-gray-50">
+                        <Grid item xs={12} sm={3} md={3}>
+                            <div className="flex justify-center items-center">
+                                <img
+                                    src={`${LogoVNU}`}
+                                    className=" w-[4.5rem] h-auto mr-5"
+                                />
+                                <img
+                                    src={`${LogoAGU}`}
+                                    className=" w-[4.5rem]"
+                                />
+                            </div>
+                            <div className="p-2 w-full self-center text-center text-[0.8rem] sm:text-[0.8rem] md:text-[1rem] lg:text-[1.1rem] font-semibold uppercase ">
+                                {t("home.agu")}
+                            </div>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={12}
+                            sm={3}
+                            md={3}
+                            sx={{
+                                textAlign: "center",
+                            }}
+                        >
+                            <p className="uppercase dark:text-gray-50">
                                 {t("contact.address")}
-                            </h3>
-                            <ul className="space-y-3 ">
-                                <li>
-                                    <p rel="noopener noreferrer">
-                                        {t("contact.address-content")}
-                                    </p>
-                                    <a
-                                        className="text-[#27ae60]"
-                                        href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+An+Giang+-+%C4%90HQG+TPHCM/@10.3716558,105.429764,17z/data=!3m1!4b1!4m6!3m5!1s0x310a731e7546fd7b:0x953539cd7673d9e5!8m2!3d10.3716558!4d105.4323389!16s%2Fm%2F03nt3_y?hl=vi-VN&entry=ttu"
-                                    >
-                                        {t("contact.view-in-map")}
-                                    </a>
-                                </li>
-                            </ul>
+                            </p>
+                            <div>
+                                <p rel="noopener noreferrer">
+                                    {t("contact.address-content")}
+                                </p>
+                                <a
+                                    className="text-[#27ae60]"
+                                    href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+An+Giang+-+%C4%90HQG+TPHCM/@10.3716558,105.429764,17z/data=!3m1!4b1!4m6!3m5!1s0x310a731e7546fd7b:0x953539cd7673d9e5!8m2!3d10.3716558!4d105.4323389!16s%2Fm%2F03nt3_y?hl=vi-VN&entry=ttu"
+                                >
+                                    {t("contact.view-in-map")}
+                                </a>
+                            </div>
                         </Grid>
-                        <Grid item xs={2} sm={4} md={4}>
-                            <h3 className="tracki uppercase dark:text-gray-50">
-                                Liên hệ :
-                            </h3>
-                            <ul className="space-y-1">
-                                <li>
-                                    <p rel="noopener noreferrer" href="#">
-                                        Tel: +84 296 625 65 65
-                                    </p>
-                                </li>
-                                <li>
-                                    <p rel="noopener noreferrer" href="#">
-                                        Mail: webmaster@agu.edu.vn
-                                    </p>
-                                </li>
-                            </ul>
-                        </Grid>
-                        <Grid item xs={2} sm={4} md={4}>
+                        <Grid
+                            item
+                            xs={12}
+                            sm={3}
+                            md={3}
+                            sx={{
+                                textAlign: "center",
+                            }}
+                        >
                             <div className="uppercase dark:text-gray-50">
-                                Social media
+                                {t("contact.contact")}
+                            </div>
+                            <ul style={{ paddingLeft: 0 }}>
+                                <li>
+                                    <Typography variant="body1">
+                                        Tel: +84 296 625 65 65
+                                    </Typography>
+                                </li>
+                                <li>
+                                    <Typography variant="body1">
+                                        Mail: webmaster@agu.edu.vn
+                                    </Typography>
+                                </li>
+                            </ul>
+                        </Grid>
+                        <Grid
+                            item
+                            xs={12}
+                            sm={3}
+                            md={3}
+                            sx={{
+                                textAlign: "center",
+                                display: "flex",
+                                flexDirection: "column",
+                                alignItems: "center",
+                            }}
+                        >
+                            <div className="uppercase dark:text-gray-50">
+                                {t("contact.social-media")}
                             </div>
                             <div className="flex justify-start space-x-3">
                                 <a
@@ -124,10 +159,9 @@ function Footer() {
                 </Box>
             </div>
             <div className="py-6 text-sm text-center dark:text-gray-400">
-                © 2024 An Giang University
+                © {currentYear} An Giang University
             </div>
         </div>
     );
-}
-
+});
 export default Footer;

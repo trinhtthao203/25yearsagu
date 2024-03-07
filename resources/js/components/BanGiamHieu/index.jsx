@@ -1,7 +1,7 @@
 import React from "react";
 import banGiamHieu from "../../../data/banGiamHieu";
-import { PopZoom } from "../PopZoom";
-import { Reveal } from "../Reveal";
+import { PopZoom } from "../../motion/PopZoom";
+import { Reveal } from "../../motion/Reveal";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";

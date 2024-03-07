@@ -2,8 +2,8 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { t } from "i18next";
-import { Reveal } from "../Reveal";
-import { PopZoom } from "../PopZoom";
+import { Reveal } from "../../motion/Reveal";
+import { PopZoom } from "../../motion/PopZoom";
 
 function DongThoiGian() {
     return (

@@ -1,6 +1,7 @@
 import "tailwindcss/tailwind.css"; // Import Tailwind CSS
 import "../css/app.css";
 import React from "react";
+import { CssBaseline } from "@mui/material";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./i18n";
@@ -13,6 +14,7 @@ function MyApp() {
     return (
         <BrowserRouter basename="/agu25years">
             <ScrollToTop />
+            <CssBaseline />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route

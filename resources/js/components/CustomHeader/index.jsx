@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import backgroundImage from "../../../../public/images/gate.jpg"; // Adjust the path to your image
 import Logo25 from "../../../../public/images/logo25.png";
+import LanguageSelector from "../LanguageSelector";
+import { Reveal } from "../../motion/Reveal";
+import { useTranslation } from "react-i18next";
 
 function CustomHeader() {
+    const { t } = useTranslation();
+
     return (
-        <div className="w-screen">
+        <div className=" w-screen h-[25rem]">
             <div
-                className=" w-full flex justify-center relative animate-fade animate-duration-[1200ms] py-16"
+                className=" h-[25rem] animate-fade animate-duration-[1200ms]"
                 style={{
                     backgroundImage: `url(${backgroundImage})`,
                     backgroundSize: "cover",
@@ -14,20 +19,35 @@ function CustomHeader() {
                     backgroundAttachment: "fixed",
                 }}
             >
-                <div className="flex flex-col items-center justify-center mt-[-1rem]">
-                    <div className="w-[5rem] sm:w-[6rem] md:w-[14rem] lg:w-[17rem] xl:w-[14rem] animate-flip-down">
-                        <img src={`${Logo25}`} alt="Logo" />
-                    </div>
-                    <div className="transform text-center">
-                        <p className=" px-[1rem] text-[1.5rem] sm:text-[1.5rem] md:text-[2.4rem] lg:text-[2.9rem] xl:text-[3.5rem] font-bold text-gray-900 tracking-wider shadow-retr">
-                            KỶ NIỆM 25 NĂM THÀNH LẬP
-                        </p>
-                        <p className="text-[1.1rem] sm:text-[1.7rem] md:text-[2rem] lg:text-[2.4rem] xl:text-[2.5rem] p-3">
-                            TRƯỜNG ĐẠI HỌC AN GIANG
-                        </p>
-                        <p className="text-[1rem] sm:text-[1.1rem] md:text-[1.5rem] lg:text-[1.7rem] xl:text-[2rem]">
-                            (1999-2024)
-                        </p>
+                <div className="w-screen flex justify-end items-end ">
+                    <Reveal>
+                        <LanguageSelector />
+                    </Reveal>
+                </div>
+                <div className="flex justify-center items-center">
+                    <div className="flex flex-col items-center justify-center ">
+                        <div className="w-[10rem] sm:w-[7rem] md:w-[15rem] lg:w-[19rem] xl:w-[15rem] animate-flip-down">
+                            <Reveal>
+                                <img src={`${Logo25}`} alt="Logo" />
+                            </Reveal>
+                        </div>
+                        <div className="transform text-center">
+                            <Reveal>
+                                <p className=" uppercase px-[1.2rem] text-[1rem] sm:text-[1rem] md:text-[1.9rem] lg:text-[2.6rem] xl:text-[2.5rem] font-bold text-gray-900 tracking-wider shadow-retr">
+                                    {t("home.25year-established")}
+                                </p>
+                            </Reveal>
+                            <Reveal>
+                                <p className=" uppercase text-[0.9rem] sm:text-[0.9rem] md:text-[1.2rem] lg:text-[1.6rem] xl:text-[1.7rem] p-3">
+                                    {t("home.agu")}
+                                </p>
+                            </Reveal>
+                            <Reveal>
+                                <p className="text-[0.7rem] sm:text-[0.7rem] md:text-[0.8rem] lg:text-[0.9rem] xl:text-[1.2rem]">
+                                    {t("home.year-anniversary")}
+                                </p>
+                            </Reveal>
+                        </div>
                     </div>
                 </div>
             </div>

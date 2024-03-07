@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { Reveal } from "../Reveal";
+import { Reveal } from "../../motion/Reveal";
 
 function ThongDiepHieuTruong() {
     const ref = useRef(null);

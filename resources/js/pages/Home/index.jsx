@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import backgroundImage from "../../../../public/images/gate.jpg"; // Điều chỉnh đường dẫn đến hình ảnh của bạn
 import Logo25 from "../../../../public/images/logo25.png";
 import LoadingScreen from "../Loading";
@@ -17,15 +17,25 @@ import CuuSinhVien from "../../components/CuuSinhVien";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "../../components/LanguageSelector";
 import NhaTaiTro from "../../components/NhaTaiTro";
-import { Reveal } from "../../components/Reveal";
+import { Reveal } from "../../motion/Reveal";
+import NavBar from "../../components/Navbar";
 
 function Home() {
     const { t, i18n } = useTranslation();
+
+    const resultRef = useRef(null);
     const [loading, setLoading] = useState(true);
+    const [isEnglish, setIsEnglish] = useState(() => {
+        const savedLanguage = sessionStorage.getItem("language");
+        return savedLanguage ? savedLanguage === "en" : false;
+    });
 
     useEffect(() => {
-        const lng = navigator.language;
-        i18n.changeLanguage(lng);
+        if (isEnglish) {
+            i18n.changeLanguage("en");
+        } else {
+            i18n.changeLanguage("vi");
+        }
 
         const timeout = setTimeout(() => {
             setLoading(false);
@@ -51,11 +61,7 @@ function Home() {
                             backgroundAttachment: "fixed",
                         }}
                     >
-                        <div className="w-screen flex justify-end items-end ">
-                            <Reveal>
-                                <LanguageSelector />
-                            </Reveal>
-                        </div>
+                        <NavBar resultRef={resultRef} />
                         <div className=" h-screen w-screen flex justify-center items-center">
                             <div className="flex flex-col items-center justify-center mt-[-15rem]">
                                 <div className="w-[10rem] sm:w-[11rem] md:w-[19rem] lg:w-[22rem] xl:w-[19rem] animate-flip-down">
@@ -93,7 +99,7 @@ function Home() {
                     {/* <DoiTac /> */}
                     <CuuSinhVien />
                     <HinhAnh />
-                    <Footer />
+                    <Footer ref={resultRef} />
                 </div>
             )}
         </>

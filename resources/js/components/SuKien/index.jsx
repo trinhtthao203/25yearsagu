@@ -1,7 +1,7 @@
 import React from "react";
 import Gate from "../../../../public/images/gate.jpg";
 import { useTranslation } from "react-i18next";
-import { Reveal } from "../Reveal";
+import { Reveal } from "../../motion/Reveal";
 function SuKien() {
     const { t } = useTranslation();
 

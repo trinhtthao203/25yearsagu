@@ -11,11 +11,16 @@
         "agu": "Trường đại học An Giang",
         "year-anniversary": "(1999-2024)",
         "board-of-directors-time": "Ban giám hiệu qua các thời kỳ",
+        "board-of-directors-time-short": "Ban giám hiệu",
         "time-line": "theo dòng thời gian",
+        "time-line-short": "Dòng thời gian",
         "short_content": "Lorem  ipsum dolor oribus nisi piente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am",
         "chancellor-message": "Thông điệp hiệu trưởng",
         "join-the-celebration": "Sự kiện sắp diễn ra",
+        "join-the-celebration-short": "Sự kiện",
         "join-the-celebration-desciption": "Những sự kiện nổi bật chào mừng 25 năm thành lập trường",
+        "gallery": "Hình ảnh về trường",
+        "gallery-short": "Thư viện ảnh",
         "alumni": "Cựu sinh viên"
     },
 
@@ -99,7 +104,7 @@
     "contact": {
         "address": "Địa chỉ :",
         "address-content": "Số 18 Ung Văn Khiêm, P. Đông Xuyên, Tp. Long Xuyên - An Giang",
-        "contact": "Liên hệ :",
+        "contact": "Liên hệ ",
         "social-media": "Social Media",
         "view-in-map": "Xem trên bản đồ..."
     }

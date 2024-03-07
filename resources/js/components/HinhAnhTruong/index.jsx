@@ -58,7 +58,10 @@ function HinhAnh() {
         },
     ];
     return (
-        <div className="flex flex-col justify-center items-center py-[5rem] bg-[#dff9fb]">
+        <div
+            id="gallery"
+            className="flex flex-col justify-center items-center py-[5rem] bg-[#dff9fb]"
+        >
             <p className="text-3xl uppercase text-[#2c2c54] text-center py-5">
                 Hình ảnh về trường
             </p>

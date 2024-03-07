@@ -10,7 +10,6 @@ function ThongDiepHieuTruongPage() {
     return (
         <div className="w-full h-full">
             <CustomHeader />
-            <ScrollText />
             <BackButton link={"/"} />
             <div className="flex flex-col justify-center items-center bg[#f1f2f6] py-[6rem] ">
                 <Reveal>
@@ -78,6 +77,8 @@ function ThongDiepHieuTruongPage() {
                     />
                 </Reveal>
             </div>
+            <ScrollText />
+
             <Footer />
         </div>
     );

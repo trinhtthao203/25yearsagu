@@ -90,7 +90,7 @@ function PauseOnHover() {
     };
 
     return (
-        <div className=" pt-[5rem] bg-moonMist">
+        <div id="alumni" className=" pt-[5rem] bg-moonMist">
             <p className="text-3xl uppercase text-[#2c2c54] text-center py-5">
                 {t("home.alumni")}
             </p>

@@ -16,7 +16,7 @@ import {
 
 import { HistoryEdu, DragHandle } from "@mui/icons-material";
 import LanguageSelector from "../LanguageSelector";
-const pages = ["Products", "Pricing", "Blosssg"];
+import { t } from "i18next";
 
 function HideOnScroll(props) {
     const { children, window } = props;
@@ -43,9 +43,10 @@ HideOnScroll.propTypes = {
 
 export default function HideAppBar(props) {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const scrollToFooter = () => {
-        const footerElement = document.getElementById("footer");
+    const scrollTo = (element) => {
+        const footerElement = document.getElementById(element);
         footerElement.scrollIntoView({ behavior: "smooth" });
+        handleCloseNavMenu();
     };
 
     const handleOpenNavMenu = (event) => {
@@ -55,6 +56,36 @@ export default function HideAppBar(props) {
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
+    const pages = [
+        {
+            title: t("home.time-line-short"),
+            link: "time-line",
+        },
+        {
+            title: t("home.board-of-directors-time-short"),
+            link: "board-of-directors-time",
+        },
+        {
+            title: t("home.board-of-directors-time-short"),
+            link: "board-of-directors-time",
+        },
+        {
+            title: t("home.join-the-celebration-short"),
+            link: "join-the-celebration",
+        },
+        {
+            title: t("home.alumni"),
+            link: "alumni",
+        },
+        {
+            title: t("home.gallery-short"),
+            link: "gallery",
+        },
+        {
+            title: t("contact.contact"),
+            link: "footer",
+        },
+    ];
 
     return (
         <React.Fragment>
@@ -62,7 +93,9 @@ export default function HideAppBar(props) {
             <HideOnScroll {...props}>
                 <AppBar
                     position="fixed"
-                    sx={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
+                    sx={{
+                        backgroundColor: "rgba(255, 255, 255, 0.5)",
+                    }}
                 >
                     <Toolbar disableGutters>
                         <HistoryEdu
@@ -76,7 +109,8 @@ export default function HideAppBar(props) {
                             variant="h6"
                             noWrap
                             component="a"
-                            href="#app-bar-with-responsive-menu"
+                            // href="/agu25years"
+                            onClick={() => scrollTo("header")}
                             sx={{
                                 mr: 2,
                                 display: { xs: "none", md: "flex" },
@@ -127,16 +161,16 @@ export default function HideAppBar(props) {
                                     display: { xs: "block", md: "none" },
                                 }}
                             >
-                                {pages.map((page) => (
+                                {pages.map((page, index) => (
                                     <MenuItem
-                                        key={page}
-                                        onClick={scrollToFooter}
+                                        key={index}
+                                        onClick={() => scrollTo(page.link)}
                                     >
                                         <Typography
                                             textAlign="center"
                                             sx={{ color: "black" }}
                                         >
-                                            {page}
+                                            {page.title}
                                         </Typography>
                                     </MenuItem>
                                 ))}
@@ -153,7 +187,8 @@ export default function HideAppBar(props) {
                             variant="h5"
                             noWrap
                             component="a"
-                            href="#app-bar-with-responsive-menu"
+                            // href="/agu25years"
+                            onClick={() => scrollTo("header")}
                             sx={{
                                 mr: 2,
                                 display: { xs: "flex", md: "none" },
@@ -173,17 +208,19 @@ export default function HideAppBar(props) {
                                 display: { xs: "none", md: "flex" },
                             }}
                         >
-                            {pages.map((page) => (
+                            {pages.map((page, index) => (
                                 <Button
                                     key={page}
-                                    onClick={scrollToFooter}
+                                    onClick={() => {
+                                        scrollTo(page.link);
+                                    }}
                                     sx={{
                                         my: 2,
                                         color: "black",
                                         display: "block",
                                     }}
                                 >
-                                    {page}
+                                    {page.title}
                                 </Button>
                             ))}
                         </Box>

@@ -26,6 +26,7 @@ function SuKien() {
 
     return (
         <div
+            id="join-the-celebration"
             className="flex flex-col justify-center items-center py-[3rem]"
             style={{
                 backgroundImage: ` url(${Gate})`,

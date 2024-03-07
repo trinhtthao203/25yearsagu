@@ -3,11 +3,10 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { t } from "i18next";
 import { Reveal } from "../../motion/Reveal";
-import { PopZoom } from "../../motion/PopZoom";
 
 function DongThoiGian() {
     return (
-        <div className=" bg-[#2d3436] py-10">
+        <div id="time-line" className=" bg-[#2d3436] py-10">
             <p className="text-[1rem] sm:text-[1.4rem] md:text-[1.5rem] lg:text-[1.9rem] uppercase text-white text-center ">
                 <Reveal>{t("home.time-line")}</Reveal>
             </p>

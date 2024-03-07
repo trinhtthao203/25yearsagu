@@ -1,11 +1,10 @@
 import React from "react";
 import LogoAGU from "../../../../public/images/logo-agu.png";
 import LogoVNU from "../../../../public/images/logo-vnu.png";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import { Typography } from "@mui/material";
+import { Box, Fab, Grid, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { forwardRef } from "react";
+import { Navigation } from "@mui/icons-material";
 
 const Footer = forwardRef((props, ref) => {
     const { t } = useTranslation();
@@ -17,14 +16,14 @@ const Footer = forwardRef((props, ref) => {
             className="px-4 divide-y dark:bg-gray-800 dark:text-gray-100"
         >
             <div className="container flex flex-col justify-between pt-10 mx-auto lg:flex-row lg:space-y-0">
-                <Box sx={{ flexGrow: 1 }}>
+                <Box sx={{ flexGrow: 1, position: "relative" }}>
                     <Grid
                         container
                         spacing={{ xs: 2, md: 3 }}
                         columns={{ xs: 4, sm: 8, md: 12 }}
                         sx={{ maxWidth: "100%", overflow: "hidden" }}
                     >
-                        <Grid item xs={12} sm={3} md={3}>
+                        <Grid item xs={12} sm={12} md={3}>
                             <div className="flex justify-center items-center">
                                 <img
                                     src={`${LogoVNU}`}
@@ -42,7 +41,7 @@ const Footer = forwardRef((props, ref) => {
                         <Grid
                             item
                             xs={12}
-                            sm={3}
+                            sm={4}
                             md={3}
                             sx={{
                                 textAlign: "center",
@@ -66,7 +65,7 @@ const Footer = forwardRef((props, ref) => {
                         <Grid
                             item
                             xs={12}
-                            sm={3}
+                            sm={4}
                             md={3}
                             sx={{
                                 textAlign: "center",
@@ -91,7 +90,7 @@ const Footer = forwardRef((props, ref) => {
                         <Grid
                             item
                             xs={12}
-                            sm={3}
+                            sm={12}
                             md={3}
                             sx={{
                                 textAlign: "center",
@@ -156,6 +155,23 @@ const Footer = forwardRef((props, ref) => {
                             </div>
                         </Grid>
                     </Grid>
+                    <Fab
+                        variant="extended"
+                        color="primary"
+                        onClick={() => {
+                            window.scrollTo({
+                                top: 0,
+                                behavior: "smooth", // Smooth scrolling animation
+                            });
+                        }}
+                        sx={{
+                            position: "absolute",
+                            top: "1.5rem",
+                            right: "0px",
+                        }}
+                    >
+                        <Navigation />
+                    </Fab>
                 </Box>
             </div>
             <div className="py-6 text-sm text-center dark:text-gray-400">

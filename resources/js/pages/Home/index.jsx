@@ -51,7 +51,8 @@ function Home() {
             JSON.parse(sessionStorage.getItem("visited")) !== false ? (
                 <LoadingScreen />
             ) : (
-                <div className="w-full h-full">
+                <div id="header" className="w-full h-full">
+                    <NavBar resultRef={resultRef} />
                     <div
                         className=" h-screen w-screen relative animate-fade animate-duration-[1200ms]"
                         style={{
@@ -61,7 +62,6 @@ function Home() {
                             backgroundAttachment: "fixed",
                         }}
                     >
-                        <NavBar resultRef={resultRef} />
                         <div className=" h-screen w-screen flex justify-center items-center">
                             <div className="flex flex-col items-center justify-center mt-[-15rem]">
                                 <div className="w-[10rem] sm:w-[11rem] md:w-[19rem] lg:w-[22rem] xl:w-[19rem] animate-flip-down">
@@ -99,7 +99,7 @@ function Home() {
                     {/* <DoiTac /> */}
                     <CuuSinhVien />
                     <HinhAnh />
-                    <Footer ref={resultRef} />
+                    <Footer />
                 </div>
             )}
         </>

@@ -66,10 +66,6 @@ export default function HideAppBar(props) {
             link: "board-of-directors-time",
         },
         {
-            title: t("home.board-of-directors-time-short"),
-            link: "board-of-directors-time",
-        },
-        {
             title: t("home.join-the-celebration-short"),
             link: "join-the-celebration",
         },

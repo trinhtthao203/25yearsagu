@@ -24,6 +24,18 @@
         "alumni": "Cựu sinh viên"
     },
 
+    "board-of-directors": {
+        "vtxuan": "GS, TS. Võ Tòng Xuân",
+        "vtxuan-title": "Hiệu trưởng",
+        "vtxuan-time": "2000-2007",
+        "lmtung": "THS. Lê Minh Tùng",
+        "lmtung-title": "Hiệu trưởng",
+        "lmtung-time": "2007-2012",
+        "vvthang": "PGS, TS Võ Văn Thắng",
+        "vvthang-title": "Hiệu trưởng",
+        "vvthang-time": "2012-nay"
+    },
+
     "time": {
         "gd1": "Giai đoạn 1",
         "gd2": "Giai đoạn 2",
@@ -99,6 +111,17 @@
     "hieutruong": {
         "title": "Hiệu trưởng",
         "vvthang": "PGS, TS Võ Văn Thắng"
+    },
+
+    "gallery": {
+        "facilities": "Cơ sở vật chất",
+        "education": "Đào tạo dạy học",
+        "mitting": "Mitting kỷ niệm",
+        "foreign": "Đối ngoại",
+        "research": "Nghiên cứu khoa học",
+        "union": "Đoàn-Hội",
+        "organizations": "Các tổ chức đoàn thể",
+        "school": "Trường PTTH Sư Phạm"
     },
 
     "contact": {

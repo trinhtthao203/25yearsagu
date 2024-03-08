@@ -44,7 +44,7 @@ function NhaTaiTro() {
     const settings = {
         dots: false,
         infinite: true,
-        slidesToShow: 5,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         speed: 3000,
@@ -53,13 +53,13 @@ function NhaTaiTro() {
     };
 
     return (
-        <div className="w-full h-[2.7rem] sm:h-[5rem] md:h-[6.4rem] lg:h-[7.5rem] xl:h-[8.5rem] px-10 pt-[0.7rem] bg-moonMist">
+        <div className="w-full px-10 bg-white">
             <Slider {...settings}>
                 {nhataitro.map((ntt) => (
                     <div>
                         <a
                             href={ntt.url}
-                            className="flex justify-center items-center "
+                            className="relative flex-col card-style-boxshadows group overflow-hidden shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] flex justify-center items-center bg-white mx-20 my-10 rounded-[3px] sm:rounded-sm md: rounded-md lg:rounded-lg"
                             target="_blank"
                         >
                             <img

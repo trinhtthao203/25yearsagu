@@ -1,30 +1,126 @@
 import React from "react";
+import Slider from "react-slick";
+import IMG from "../../../../public/images/logo-vnu.png";
+import { t } from "i18next";
 
-function ThuNgos() {
+function PauseOnHover() {
+    const comments = [
+        {
+            message: t("alumni.sv1_message"),
+            fullname: t("alumni.sv1_fullname"),
+            title: t("alumni.sv1_title"),
+            position: t("alumni.sv1_position"),
+            image: IMG,
+            course: t("alumni.sv1_course"),
+        },
+        {
+            message: t("alumni.sv2_message"),
+            fullname: t("alumni.sv2_fullname"),
+            title: t("alumni.sv2_tile"),
+            position: t("alumni.sv2_position"),
+            image: IMG,
+            course: t("alumni.sv2_course"),
+        },
+        {
+            message: t("alumni.sv3_message"),
+            fullname: t("alumni.sv3_fullname"),
+            title: t("alumni.sv3_title"),
+            position: t("alumni.sv3_position"),
+            image: IMG,
+            course: t("alumni.sv3_course"),
+        },
+        {
+            message: t("alumni.sv4_message"),
+            fullname: t("alumni.sv4_fullname"),
+            title: t("alumni.sv4_title"),
+            position: t("alumni.sv4_position"),
+            image: IMG,
+            course: t("alumni.sv4_course"),
+        },
+        {
+            message: t("alumni.sv5_message"),
+            fullname: t("alumni.sv5_fullname"),
+            title: t("alumni.sv5_title"),
+            position: t("alumni.sv5_position"),
+            image: IMG,
+            course: t("alumni.sv5_course"),
+        },
+        {
+            message: t("alumni.sv6_message"),
+            fullname: t("alumni.sv6_fullname"),
+            title: t("alumni.sv6_title"),
+            position: t("alumni.sv6_position"),
+            image: IMG,
+            course: t("alumni.sv6_course"),
+        },
+        {
+            message: t("alumni.sv7_message"),
+            fullname: t("alumni.sv7_fullname"),
+            title: t("alumni.sv7_title"),
+            position: t("alumni.sv7_position"),
+            image: IMG,
+            course: t("alumni.sv7_course"),
+        },
+        {
+            message: t("alumni.sv8_message"),
+            fullname: t("alumni.sv8_fullname"),
+            title: t("alumni.sv8_title"),
+            position: t("alumni.sv8_position"),
+            image: IMG,
+            course: t("alumni.sv8_course"),
+        },
+    ];
+    const settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 768, // breakpoint for screen size sm
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
+
     return (
-        <div className="flex flex-col justify-center items-center py-[5rem] bg-[#dff9fb]">
-            <div className=" w-full flex-col md:flex-row">
-                <p className="text-3xl uppercase text-chathamsblue text-center py-5">
-                    Đối tác
-                </p>
-                <p className="text-justify px-5 ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nulla maxime beatae quasi culpa, quia dolorum repudiandae et
-                    illo mollitia quam soluta quaerat error quo totam facilis
-                    architecto deleniti at in alias fugit? Nemo, quod fugiat.
-                    Beatae doloremque, quaerat alias ex omnis dolorem amet
-                    repellat accusantium incidunt odio, laborum ut ducimus
-                    voluptates sint similique vero natus praesentium
-                    perferendis? Debitis, neque. Et at nesciunt asperiores,
-                    commodi facere ad perferendis architecto, deserunt, iste
-                    ipsum quidem ducimus voluptate. Molestias similique fuga
-                    velit, quibusdam aliquid nobis sequi natus ullam odio optio
-                    inventore adipisci veritatis laudantium sunt fugit veniam
-                    harum perferendis facilis cumque cupiditate. Officiis, ab!
-                </p>
+        <div id="partner" className=" pt-[5rem] ">
+            <p className="text-3xl uppercase text-[#2c2c54] text-center py-5">
+                {t("home.partner")}
+            </p>
+            <div className="slider-container p-10 ">
+                <Slider {...settings}>
+                    {comments.map((comment, index) => (
+                        <div
+                            key={index}
+                            className="px-10 flex flex-col items-center"
+                        >
+                            <p className="text-[1rem] sm:text-[1rem] md:text-[0.8rem] lg:text-[1rem] text-justify">
+                                {comment.message}
+                            </p>
+                            <img
+                                src={IMG}
+                                alt={`Image ${index}`}
+                                className="w-3/4 mx-auto"
+                            />
+                            <p className="text-[1.2rem] sm:text-[1rem] text-center">
+                                {comment.fullname}
+                            </p>
+                            <p className="text-[0.9rem] sm:text-[0.9rem] text-center">
+                                {comment.title}-{comment.position}
+                            </p>
+                        </div>
+                    ))}
+                </Slider>
             </div>
         </div>
     );
 }
 
-export default ThuNgos;
+export default PauseOnHover;

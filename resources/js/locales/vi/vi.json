@@ -4,7 +4,9 @@
     },
     "common": {
         "explore": "Khám phá",
-        "read-more": " Đọc thêm..."
+        "read-more": " Đọc thêm...",
+        "view-detail": "Xem chi tiết",
+        "back-home": "Trở về trang chủ"
     },
     "home": {
         "25year-established": "Kỷ niệm 25 năm thành lập",
@@ -12,16 +14,25 @@
         "year-anniversary": "(1999-2024)",
         "board-of-directors-time": "Ban giám hiệu qua các thời kỳ",
         "board-of-directors-time-short": "Ban giám hiệu",
+        "art": "Góc nghệ thuật",
+        "video-introduction": "Video về trường",
+        "song-introduction": "Bài hát về trường",
         "time-line": "theo dòng thời gian",
         "time-line-short": "Dòng thời gian",
         "short_content": "Lorem  ipsum dolor oribus nisi piente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am",
         "chancellor-message": "Thông điệp hiệu trưởng",
         "join-the-celebration": "Sự kiện sắp diễn ra",
+        "25years-development": "Trường ĐHAG 25 năm Xây dựng-Hội nhập-Phát triển",
         "join-the-celebration-short": "Sự kiện",
         "join-the-celebration-desciption": "Những sự kiện nổi bật chào mừng 25 năm thành lập trường",
         "gallery": "Hình ảnh về trường",
         "gallery-short": "Thư viện ảnh",
+        "partner": "Đối tác",
         "alumni": "Cựu sinh viên"
+    },
+
+    "chancellor-message": {
+        "paragraph-1": "Alos Lorem ipsum dolor sit amet consectetur adipisicing elit.        Eveniet sit corporis, eligendi, temporibus nisi sapiente        dolorum eius vero, sequi dolore minus quae ipsam!        Praesentium aspernatur minima eligendi ut accusantium        laudantium. Lorem ipsum dolor sit amet consectetur        adipisicing elit. Tempore iste aperiam officia vero        provident laudantium nobis dicta molestiae obcaecati         officiis minima ullam sit doloribus esse? Exercitationem        repudiandae placeat alias? Maxime, explicabo? Ullam        veritatis dicta aspernatur deserunt libero placeat        fugiat laborum? Aliquid, deserunt quos repellat sunt        nemo velit repellendus. Iste temporibus provident dolore        nobis repudiandae blanditiis alias beatae pariatur, ipsa        odit ad, praesentium tempore! Lorem ipsum dolor, sit        amet consectetur adipisicing elit. Enim maiores iste        numquam veritatis minima amet, odit, saepe molestiae        sunt perferendis, magnam magni nihil. Ipsam, ea sapiente        eveniet iste distinctio aperiam eligendi nisi blanditiis        totam repellat quae dolore natus! Facilis vitae at natus        voluptatibus id, doloribus molestias nobis molestiae ea        et accusamus eveniet explicabo enim rerum. Quam facilis        magni inventore praesentium, recusandae corrupti in et        incidunt eius ipsa iure? Facilis eos ut distinctio        dolorum eaque labore neque voluptatibus reprehenderit        impedit error at, quas numquam expedita atque magnam!        Assumenda dolores iusto nihil, eius repellendus tempore        iste veritatis esse impedit cum est. Blanditiis"
     },
 
     "board-of-directors": {
@@ -43,8 +54,18 @@
         "time-gd1": "(1976-1998)",
         "time-gd2": "(1999-2018)",
         "time-gd3": "(2019-Nay)",
-        "gd1-events1": "ipsum dolor oribus nisi piente d ",
-        "time-gd1-events1": "1976"
+        "gd1-event-1": "ipsum dolor oribus nisi piente d ipsum dolor oribus nisi piente d ipsum dolor oribus nisi piente d ",
+        "time-gd1-event-1": "1976",
+        "gd1-event-2": "ipsum dolor oribus nisi piente d ipsum dolor oribus nisi piente d ipsum dolor oribus nisi piente d ",
+        "time-gd1-event-2": "1976",
+        "gd2-event-1": "ipsum dolor oribus nisi piente d ipsum dolor oribus nisi piente d ipsum dolor oribus nisi piente d ",
+        "time-gd2-event-1": "1976",
+        "gd2-event-2": "ipsum dolor oribus nisi piente d ipsum dolor oribus nisi piente d ipsum dolor oribus nisi piente d ",
+        "time-gd2-event-2": "1976",
+        "gd3-event-1": "ipsum dolor oribus nisi piente d ipsum dolor oribus nisi piente d ipsum dolor oribus nisi piente d ",
+        "time-gd3-event-1": "1976",
+        "gd3-event-2": "ipsum dolor oribus nisi piente d ipsum dolor oribus nisi piente d ipsum dolor oribus nisi piente d ",
+        "time-gd3-event-2": "1976"
     },
 
     "event": {
@@ -56,6 +77,13 @@
         "evt2-content": "ipsum dolbu psum dolor oribus nisi piente d ipsum dolor oribus nisi pien",
         "evt3-content": "ipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente d",
         "evt4-content": "ipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente d4"
+    },
+
+    "art": {
+        "video-title": "AGU yêu thương",
+        "video-description": "Alos Lorem ipsum dolor sit amet consectetur adipisicing elit.        Eveniet sit corporis, eligendi, temporibus nisi sapiente        dolorum eius vero, sequi dolore minus quae ipsam!        Praesentium aspernatur minima elig",
+        "song-title": "Bài hát AGU yêu thương",
+        "song-description": "Alos Lorem ipsum dolor sit amet consectetur adipisicing elit.        Eveniet sit corporis, eligendi, temporibus nisi sapiente        dolorum eius vero, sequi dolore minus quae ipsam!        Praesentium aspernatur minima elig"
     },
 
     "alumni": {

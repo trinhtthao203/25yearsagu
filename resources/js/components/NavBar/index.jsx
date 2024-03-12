@@ -70,6 +70,10 @@ export default function HideAppBar(props) {
             link: "join-the-celebration",
         },
         {
+            title: t("home.partner"),
+            link: "partner",
+        },
+        {
             title: t("home.alumni"),
             link: "alumni",
         },

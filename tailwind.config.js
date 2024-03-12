@@ -19,6 +19,7 @@ export default {
                 pelorous: "#32B4B9",
                 hippieblue: "#6293B0",
                 chathamsblue: "#143C7C",
+                darkblue: "#1C242C",
             },
         },
     },

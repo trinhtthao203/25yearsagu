@@ -8,7 +8,7 @@ import Footer from "../../components/Footer";
 import DongThoiGian from "../../components/DongThoiGian";
 import BanGiamHieu from "../../components/BanGiamHieu";
 import ThuNgo from "../../components/ThuNgo";
-import TinTuc from "../../components/TinTuc";
+import GocNgheThuat from "../../components/GocNgheThuat";
 import SuKien from "../../components/SuKien";
 import HinhAnh from "../../components/HinhAnhTruong";
 import DoiTac from "../../components/DoiTac";
@@ -19,6 +19,7 @@ import LanguageSelector from "../../components/LanguageSelector";
 import NhaTaiTro from "../../components/NhaTaiTro";
 import { Reveal } from "../../motion/Reveal";
 import NavBar from "../../components/Navbar";
+import HoiNhapPhatTrien from "../../components/HoiNhapPhatTrien";
 
 function Home() {
     const { t, i18n } = useTranslation();
@@ -94,9 +95,10 @@ function Home() {
                     <DongThoiGian />
                     <BanGiamHieu />
                     {/* <ThuNgo /> */}
+                    {/* <HoiNhapPhatTrien /> */}
                     <SuKien />
-                    {/* <TinTuc /> */}
-                    {/* <DoiTac /> */}
+                    <GocNgheThuat />
+                    <DoiTac />
                     <CuuSinhVien />
                     <HinhAnh />
                     <Footer />

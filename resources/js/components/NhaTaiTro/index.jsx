@@ -53,19 +53,19 @@ function NhaTaiTro() {
     };
 
     return (
-        <div className="w-full px-10 bg-white">
-            <Slider {...settings}>
+        <div className=" bg-white">
+            <Slider {...settings} className=" w-screen overflow-hidden">
                 {nhataitro.map((ntt) => (
                     <div>
                         <a
                             href={ntt.url}
-                            className="relative flex-col card-style-boxshadows group overflow-hidden shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] flex justify-center items-center bg-white mx-20 my-10 rounded-[3px] sm:rounded-sm md: rounded-md lg:rounded-lg"
+                            className="relative flex-col card-style-boxshadows group overflow-hidden shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] flex justify-center items-center bg-white mx-1 md:mx-5 lg:mx-10 my-5 rounded-[3px] sm:rounded-sm md:rounded-md lg:rounded-lg"
                             target="_blank"
                         >
                             <img
                                 src={ntt.image}
                                 alt={ntt.name}
-                                className=" drop-shadow-2xl h-[1.5rem] sm:h-[4rem] md:h-[5rem] lg:h-[6rem] xl:h-[7rem]"
+                                className=" drop-shadow-2xl w-auto h-[3rem] sm:h-[4rem] md:h-[5rem] lg:h-[6rem] xl:h-[7rem]"
                             />
                         </a>
                     </div>

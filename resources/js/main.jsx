@@ -9,7 +9,9 @@ import Home from "../js/pages/Home";
 import LoadingScreen from "../js/pages/Loading";
 import ThongDiepHieuTruongPage from "./pages/ThongDiepHieuTruongPage";
 import DongThoiGianPage from "./pages/DongThoiGianPage";
+import NotFoundPage from "./pages/NotFound"; // Import your NotFoundPage component
 import ScrollToTop from "./scrollToTop";
+
 function MyApp() {
     return (
         <BrowserRouter basename="/agu25years">
@@ -26,6 +28,8 @@ function MyApp() {
                     path="/theo-dong-thoi-gian"
                     element={<DongThoiGianPage />}
                 />
+                {/* Catch-all route for "not found" page */}
+                <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </BrowserRouter>
     );

@@ -95,13 +95,20 @@ function PauseOnHover() {
                 {t("home.alumni")}
             </p>
             <div className="slider-container p-10 ">
-                <Slider {...settings} className="">
+                <Slider {...settings}>
                     {comments.map((comment, index) => (
-                        <div key={index} className="px-10">
-                            <p className="text-[0.8rem] sm:text-[0.7rem] md:text-[0.8] lg:text-[1rem] text-justify">
+                        <div
+                            key={index}
+                            className="px-10 flex flex-col items-center"
+                        >
+                            <p className="text-[1rem] sm:text-[1rem] md:text-[0.8rem] lg:text-[1rem] text-justify">
                                 {comment.message}
                             </p>
-                            <img src={IMG} alt={`Image ${index}`} />
+                            <img
+                                src={IMG}
+                                alt={`Image ${index}`}
+                                className="w-3/4 mx-auto"
+                            />
                             <p className="text-[1.2rem] sm:text-[1rem] text-center">
                                 {comment.fullname}
                             </p>

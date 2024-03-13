@@ -39,12 +39,12 @@ const GocNgheThuat = () => {
                                     </p>
                                 </Reveal>
                                 <Reveal>
-                                    <p className=" text-center text-[1rem]  md:text-[1.5rem]">
+                                    <p className=" text-[1rem] md:text-[1.5rem]">
                                         {t("art.video-title")}
                                     </p>
                                 </Reveal>
                                 <Reveal>
-                                    <p className=" text-justify text-[0.7rem]  md:text-[1.2rem]">
+                                    <p className=" text-justify text-[0.9rem] md:text-[1.2rem]">
                                         {t("art.video-description")}
                                     </p>
                                 </Reveal>
@@ -72,12 +72,12 @@ const GocNgheThuat = () => {
                                     </p>
                                 </Reveal>
                                 <Reveal>
-                                    <p className=" text-center text-[1rem]  md:text-[1.5rem]">
+                                    <p className="text-[1rem]  md:text-[1.5rem]">
                                         {t("art.song-title")}
                                     </p>
                                 </Reveal>
                                 <Reveal>
-                                    <p className=" text-justify text-[0.7rem] md:text-[1.2rem]">
+                                    <p className=" text-justify text-[0.9rem] md:text-[1.2rem]">
                                         {t("art.song-description")}
                                     </p>
                                 </Reveal>
@@ -100,12 +100,12 @@ const GocNgheThuat = () => {
                             </Grid>
                             <Grid item xs={12} md={6}>
                                 <Reveal>
-                                    <p className=" text-center text-[1rem]  md:text-[1.5rem]">
+                                    <p className=" shadow-[0_10px_20px_-8px_rgba(0,0,0,0.7)] text-center text-[1rem]  md:text-[1.5rem]">
                                         {t("home.25years-development")}
                                     </p>
                                 </Reveal>
                                 <Reveal>
-                                    <p className=" text-justify text-[0.7rem] md:text-[1.2rem]">
+                                    <p className=" text-justify text-[0.9rem] md:text-[1.2rem]">
                                         {t("art.song-description")}
                                     </p>
                                 </Reveal>

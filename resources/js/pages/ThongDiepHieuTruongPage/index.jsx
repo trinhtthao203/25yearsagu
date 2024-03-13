@@ -39,7 +39,7 @@ function ThongDiepHieuTruongPage() {
                     />
                 </Reveal>
                 <div className=" justify-end items-end">
-                    <BackButton title={t("common.back-home")} />
+                    <BackButton title={t("common.back-home")} left={"0px"} />
                 </div>
             </div>
             <ScrollText />

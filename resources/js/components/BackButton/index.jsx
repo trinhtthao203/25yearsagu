@@ -10,11 +10,11 @@ const BackButton = ({ title, left, textColor }) => {
 
     const buttonHoverStyle = {
         transition: "1s ease-in-out",
-        background: "#4F95DA",
+        border: "1px solid #EE5A24",
         strokeDashoffset: "-480",
     };
     const spanHoverStyle = {
-        color: "white",
+        color: "#EE5A24",
     };
 
     const svgHoverStyle = {
@@ -24,10 +24,8 @@ const BackButton = ({ title, left, textColor }) => {
     return (
         <div
             style={{
-                width: "100px",
-                height: "30px",
                 marginTop: "30px",
-                marginLeft: left ? left : "100px",
+                marginLeft: left ? left : "160px",
                 transform: "translate(-50%, -50%)",
                 display: "flex",
                 justifyContent: "center",
@@ -36,21 +34,19 @@ const BackButton = ({ title, left, textColor }) => {
         >
             <div
                 style={{
-                    width: " 180px",
-                    height: "60px",
+                    width: "180px",
+                    height: "40px",
                     position: " absolute",
                 }}
             >
                 <button
                     style={{
                         width: "180px",
-                        height: "60px",
+                        height: "40px",
                         cursor: "pointer",
                         background: "transparent",
-                        border: "1px solid #91C9FF",
                         outline: "none",
-                        borderRadius: "10px",
-                        transition: "1s ease-in-out",
+                        transition: "0.6s ease-in-out",
                         ...(isHovered && buttonHoverStyle),
                     }}
                     onClick={goBack}
@@ -58,18 +54,16 @@ const BackButton = ({ title, left, textColor }) => {
                     onMouseLeave={() => setIsHovered(false)}
                 >
                     <svg
-                        width="180px"
-                        height="60px"
-                        viewBox="0 0 180 60"
+                        viewBox="0 0 180 40"
                         style={{
                             position: "absolute",
                             left: 0,
                             top: 0,
                             fill: "none",
-                            stroke: "#fff",
+                            stroke: "#EE5A24",
                             strokeDasharray: "150 480",
                             strokeDashoffset: 150,
-                            transition: "1s ease-in-out",
+                            transition: "0.6s ease-in-out",
                             ...(isHovered && svgHoverStyle),
                         }}
                     >
@@ -84,9 +78,9 @@ const BackButton = ({ title, left, textColor }) => {
                     </svg>
                     <span
                         style={{
-                            color: textColor ? textColor : "black",
+                            color: textColor ? textColor : "#130f40",
                             fontSize: "18px",
-                            fontWeight: "100",
+                            fontWeight: "400",
                             ...(isHovered && spanHoverStyle),
                         }}
                     >

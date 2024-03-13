@@ -28,7 +28,6 @@ function MyApp() {
                     path="/theo-dong-thoi-gian"
                     element={<DongThoiGianPage />}
                 />
-                {/* Catch-all route for "not found" page */}
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </BrowserRouter>

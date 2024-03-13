@@ -20,6 +20,7 @@ export default {
                 hippieblue: "#6293B0",
                 chathamsblue: "#143C7C",
                 darkblue: "#1C242C",
+                darkblack: "#131316",
             },
         },
     },

@@ -5,8 +5,9 @@
     "common": {
         "explore": "Khám phá",
         "read-more": " Đọc thêm...",
-        "view-detail": "Xem chi tiết",
-        "back-home": "Trở về trang chủ"
+        "view-detail": "Xem chi tiết ",
+        "back-home": "Trở về trang chủ",
+        "back": "Trở về"
     },
     "home": {
         "25year-established": "Kỷ niệm 25 năm thành lập",

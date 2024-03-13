@@ -1,47 +1,105 @@
-import React, { useState, useEffect } from "react";
-import HieuTruong from "../../../../public/images/hieu-truong.jpg";
-import CustomHeader from "../../components/CustomHeader";
-import Footer from "../../components/Footer";
+import * as React from "react";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import { useTranslation } from "react-i18next";
-
+import FastfoodIcon from "@mui/icons-material/Fastfood";
+import LaptopMacIcon from "@mui/icons-material/LaptopMac";
+import HotelIcon from "@mui/icons-material/Hotel";
+import RepeatIcon from "@mui/icons-material/Repeat";
+import Typography from "@mui/material/Typography";
+import CustomHeader from "../../components/CustomHeader";
+import BackButton from "../../components/BackButton";
+import Footer from "../../components/Footer";
+import { t } from "i18next";
 function DongThoiGianPage() {
-    const { t } = useTranslation();
     return (
-        <div className="w-full h-full">
+        <div className="w-full h-full bg-moonMist text-[#FFFFFF] p-0 m-0">
             <CustomHeader />
-            <div className="flex flex-col justify-center items-center bg[#f1f2f6] py-[6rem]">
-                <p className=" text-[1.4rem] sm:text-[0.5rem] lg:text-[1.9rem] uppercase text-[#2c2c54] text-center py-10 ">
-                    {t("home.time-line")}
-                </p>
-                <Timeline position="alternate">
-                    <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineDot color="secondary" />
-                            <TimelineConnector />
-                        </TimelineSeparator>
-                        <TimelineContent>Secondary</TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineSeparator>
-                            <TimelineDot color="success" />
-                        </TimelineSeparator>
-                        <TimelineContent>Success</TimelineContent>
-                    </TimelineItem>
-                    <TimelineItem>
-                        <TimelineContent>Secondary</TimelineContent>
-                        <TimelineSeparator>
-                            <TimelineConnector />
-                            <TimelineDot color="secondary" />
-                        </TimelineSeparator>
-                    </TimelineItem>
-                </Timeline>
-            </div>
+            <BackButton title={t("common.back")} />
+            <Timeline position="alternate">
+                <TimelineItem>
+                    <TimelineOppositeContent
+                        sx={{ m: "auto 0" }}
+                        align="right"
+                        variant="body2"
+                        color="text.secondary"
+                    >
+                        9:30 am
+                    </TimelineOppositeContent>
+                    <TimelineSeparator>
+                        <TimelineConnector />
+                        <TimelineDot>
+                            <FastfoodIcon />
+                        </TimelineDot>
+                        <TimelineConnector />
+                    </TimelineSeparator>
+                    <TimelineContent sx={{ py: "12px", px: 2 }}>
+                        <Typography variant="h6" component="span">
+                            Eat
+                        </Typography>
+                        <Typography>Because you need strength</Typography>
+                    </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                    <TimelineOppositeContent
+                        sx={{ m: "auto 0" }}
+                        variant="body2"
+                        color="text.secondary"
+                    >
+                        10:00 am
+                    </TimelineOppositeContent>
+                    <TimelineSeparator>
+                        <TimelineConnector />
+                        <TimelineDot color="primary">
+                            <LaptopMacIcon />
+                        </TimelineDot>
+                        <TimelineConnector />
+                    </TimelineSeparator>
+                    <TimelineContent sx={{ py: "12px", px: 2 }}>
+                        <Typography variant="h6" component="span">
+                            Code
+                        </Typography>
+                        <Typography>Because it&apos;s awesome!</Typography>
+                    </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                    <TimelineSeparator>
+                        <TimelineConnector />
+                        <TimelineDot color="primary" variant="outlined">
+                            <HotelIcon />
+                        </TimelineDot>
+                        <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+                    </TimelineSeparator>
+                    <TimelineContent sx={{ py: "12px", px: 2 }}>
+                        <Typography variant="h6" component="span">
+                            Sleep
+                        </Typography>
+                        <Typography>Because you need rest</Typography>
+                    </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                    <TimelineSeparator>
+                        <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+                        <TimelineDot color="secondary">
+                            <RepeatIcon />
+                        </TimelineDot>
+                        <TimelineConnector />
+                    </TimelineSeparator>
+                    <TimelineContent sx={{ py: "12px", px: 2 }}>
+                        <Typography variant="h6" component="span">
+                            Repeat
+                        </Typography>
+                        <Typography>
+                            Because this is the life you love!
+                        </Typography>
+                    </TimelineContent>
+                </TimelineItem>
+            </Timeline>
+
             <Footer />
         </div>
     );

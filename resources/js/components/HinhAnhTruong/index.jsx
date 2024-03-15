@@ -119,7 +119,7 @@ function HinhAnh() {
                 </p>
                 <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                     {itemData.map((item) => (
-                        <Grid item xs={12} sm={6} md={4}>
+                        <Grid item xs={12} sm={6} md={4} key={item}>
                             <Card
                                 image={item.img}
                                 title={item.title}

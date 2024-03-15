@@ -12,7 +12,6 @@ function ThongDiepHieuTruongPage() {
     return (
         <div className="w-full h-full">
             <CustomHeader />
-
             <div className="flex flex-col justify-center items-center bg[#f1f2f6] py-[6rem] ">
                 <Reveal>
                     <p className="text-3xl uppercase text-darkblue text-center px-2 py-10">

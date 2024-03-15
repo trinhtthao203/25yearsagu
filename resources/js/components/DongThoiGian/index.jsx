@@ -1,5 +1,4 @@
 import React from "react";
-import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { t } from "i18next";
 import { Reveal } from "../../motion/Reveal";
@@ -73,7 +72,7 @@ function DongThoiGian() {
                     {t("home.time-line")}
                 </p>
             </Reveal>
-            <Box sx={{ flexGrow: 1, margin: "30px" }}>
+            <div className=" flex-grow m-[30px]">
                 <Grid
                     container
                     spacing={{ xs: 0, md: 0 }}
@@ -93,10 +92,18 @@ function DongThoiGian() {
                                 </button>
                             </Reveal>
                             <div className=" p-[0.5rem] text-moonMist text-justify">
-                                {time.events.map((event) => (
-                                    <Reveal>
+                                {time.events.map((event, eventIndex) => (
+                                    <Reveal key={eventIndex}>
                                         <p>
-                                            - {event.time} : {event.description}
+                                            - {event.time} :{" "}
+                                            <span
+                                                dangerouslySetInnerHTML={{
+                                                    __html: event.description.replace(
+                                                        /\n/g,
+                                                        "<br> + "
+                                                    ),
+                                                }}
+                                            ></span>
                                         </p>
                                     </Reveal>
                                 ))}
@@ -104,7 +111,7 @@ function DongThoiGian() {
                         </Grid>
                     ))}
                 </Grid>
-            </Box>
+            </div>
         </div>
     );
 }

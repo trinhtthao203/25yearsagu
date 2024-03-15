@@ -1,108 +1,271 @@
 import * as React from "react";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import FastfoodIcon from "@mui/icons-material/Fastfood";
-import LaptopMacIcon from "@mui/icons-material/LaptopMac";
-import HotelIcon from "@mui/icons-material/Hotel";
-import RepeatIcon from "@mui/icons-material/Repeat";
-import Typography from "@mui/material/Typography";
-import CustomHeader from "../../components/CustomHeader";
+import { useTranslation } from "react-i18next";
+import { Tabs } from "../../components/Tabs";
+import { Reveal } from "../../motion/Reveal";
 import BackButton from "../../components/BackButton";
-import Footer from "../../components/Footer";
-import { t } from "i18next";
-function DongThoiGianPage() {
-    return (
-        <div className="w-full h-full bg-moonMist text-[#FFFFFF] p-0 m-0">
-            <CustomHeader />
-            <BackButton title={t("common.back")} />
-            <Timeline position="alternate">
-                <TimelineItem>
-                    <TimelineOppositeContent
-                        sx={{ m: "auto 0" }}
-                        align="right"
-                        variant="body2"
-                        color="text.secondary"
-                    >
-                        9:30 am
-                    </TimelineOppositeContent>
-                    <TimelineSeparator>
-                        <TimelineConnector />
-                        <TimelineDot>
-                            <FastfoodIcon />
-                        </TimelineDot>
-                        <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent sx={{ py: "12px", px: 2 }}>
-                        <Typography variant="h6" component="span">
-                            Eat
-                        </Typography>
-                        <Typography>Because you need strength</Typography>
-                    </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineOppositeContent
-                        sx={{ m: "auto 0" }}
-                        variant="body2"
-                        color="text.secondary"
-                    >
-                        10:00 am
-                    </TimelineOppositeContent>
-                    <TimelineSeparator>
-                        <TimelineConnector />
-                        <TimelineDot color="primary">
-                            <LaptopMacIcon />
-                        </TimelineDot>
-                        <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent sx={{ py: "12px", px: 2 }}>
-                        <Typography variant="h6" component="span">
-                            Code
-                        </Typography>
-                        <Typography>Because it&apos;s awesome!</Typography>
-                    </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineConnector />
-                        <TimelineDot color="primary" variant="outlined">
-                            <HotelIcon />
-                        </TimelineDot>
-                        <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-                    </TimelineSeparator>
-                    <TimelineContent sx={{ py: "12px", px: 2 }}>
-                        <Typography variant="h6" component="span">
-                            Sleep
-                        </Typography>
-                        <Typography>Because you need rest</Typography>
-                    </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-                        <TimelineDot color="secondary">
-                            <RepeatIcon />
-                        </TimelineDot>
-                        <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent sx={{ py: "12px", px: 2 }}>
-                        <Typography variant="h6" component="span">
-                            Repeat
-                        </Typography>
-                        <Typography>
-                            Because this is the life you love!
-                        </Typography>
-                    </TimelineContent>
-                </TimelineItem>
-            </Timeline>
+import CustomHeader from "../../components/CustomHeader";
+import { Stepper, Step, StepButton, Button, Box } from "@mui/material";
 
-            <Footer />
-        </div>
+export default function HorizontalNonLinearStepper() {
+    const { t } = useTranslation();
+
+    const timeData = [
+        {
+            id: 1,
+            description: t("time.gd1"),
+            time: t("time.time-gd1"),
+            events: [
+                {
+                    description: t("time.gd1-event-1"),
+                    time: t("time.time-gd1-event-1"),
+                },
+                {
+                    description: t("time.gd1-event-2"),
+                    time: t("time.time-gd1-event-2"),
+                },
+                {
+                    description: t("time.gd1-event-3"),
+                    time: t("time.time-gd1-event-3"),
+                },
+                {
+                    description: t("time.gd1-event-4"),
+                    time: t("time.time-gd1-event-4"),
+                },
+                {
+                    description: t("time.gd1-event-5"),
+                    time: t("time.time-gd1-event-5"),
+                },
+                {
+                    description: t("time.gd1-event-6"),
+                    time: t("time.time-gd1-event-6"),
+                },
+            ],
+            color: "#18B6B4",
+            textColor: "text-[#18B6B4]",
+        },
+        {
+            id: 2,
+            description: t("time.gd2"),
+            time: t("time.time-gd2"),
+            events: [
+                {
+                    description: t("time.gd2-event-1"),
+                    time: t("time.time-gd2-event-1"),
+                },
+                {
+                    description: t("time.gd2-event-2"),
+                    time: t("time.time-gd2-event-2"),
+                },
+                {
+                    description: t("time.gd2-event-3"),
+                    time: t("time.time-gd2-event-3"),
+                },
+                {
+                    description: t("time.gd2-event-4"),
+                    time: t("time.time-gd2-event-4"),
+                },
+                {
+                    description: t("time.gd2-event-5"),
+                    time: t("time.time-gd2-event-5"),
+                },
+                {
+                    description: t("time.gd2-event-6"),
+                    time: t("time.time-gd2-event-6"),
+                },
+                {
+                    description: t("time.gd2-event-7"),
+                    time: t("time.time-gd2-event-7"),
+                },
+                {
+                    description: t("time.gd2-event-8"),
+                    time: t("time.time-gd2-event-8"),
+                },
+                {
+                    description: t("time.gd2-event-9"),
+                    time: t("time.time-gd2-event-9"),
+                },
+                {
+                    description: t("time.gd2-event-10"),
+                    time: t("time.time-gd2-event-10"),
+                },
+                {
+                    description: t("time.gd2-event-11"),
+                    time: t("time.time-gd2-event-11"),
+                },
+                {
+                    description: t("time.gd2-event-12"),
+                    time: t("time.time-gd2-event-12"),
+                },
+                {
+                    description: t("time.gd2-event-13"),
+                    time: t("time.time-gd2-event-13"),
+                },
+                {
+                    description: t("time.gd2-event-14"),
+                    time: t("time.time-gd2-event-14"),
+                },
+                {
+                    description: t("time.gd2-event-15"),
+                    time: t("time.time-gd2-event-15"),
+                },
+                {
+                    description: t("time.gd2-event-16"),
+                    time: t("time.time-gd2-event-16"),
+                },
+                {
+                    description: t("time.gd2-event-17"),
+                    time: t("time.time-gd2-event-17"),
+                },
+                {
+                    description: t("time.gd2-event-18"),
+                    time: t("time.time-gd2-event-18"),
+                },
+                {
+                    description: t("time.gd2-event-19"),
+                    time: t("time.time-gd2-event-19"),
+                },
+                {
+                    description: t("time.gd2-event-20"),
+                    time: t("time.time-gd2-event-20"),
+                },
+            ],
+            color: "#2C92D5",
+            textColor: "text-[#2C92D5]",
+        },
+        {
+            id: 3,
+            description: t("time.gd3"),
+            time: t("time.time-gd3"),
+            events: [
+                {
+                    description: t("time.gd3-event-1"),
+                    time: t("time.time-gd3-event-1"),
+                },
+                {
+                    description: t("time.gd3-event-2"),
+                    time: t("time.time-gd3-event-2"),
+                },
+            ],
+            color: "#13538A",
+            textColor: "text-[#13538A]",
+        },
+    ];
+
+    const [activeStep, setActiveStep] = React.useState(0);
+    const [completed, setCompleted] = React.useState({});
+    console.log(timeData.length);
+    const totalSteps = () => {
+        return timeData.length;
+    };
+
+    const completedSteps = () => {
+        return Object.keys(completed).length;
+    };
+
+    const isLastStep = () => {
+        return activeStep === totalSteps() - 1;
+    };
+
+    const allStepsCompleted = () => {
+        return completedSteps() === totalSteps();
+    };
+
+    const handleNext = () => {
+        const newActiveStep =
+            isLastStep() && !allStepsCompleted()
+                ? timeData.findIndex((step, i) => !(i in completed))
+                : activeStep + 1;
+        setActiveStep(newActiveStep);
+    };
+
+    const handleBack = () => {
+        setActiveStep((prevActiveStep) => prevActiveStep - 1);
+    };
+
+    const handleStep = (step) => () => {
+        setActiveStep(step);
+    };
+
+    return (
+        <Box sx={{ width: "100%" }}>
+            <CustomHeader />
+            <BackButton title={t("common.back-home")} />
+            <Reveal>
+                <p className="text-3xl uppercase text-darkblue text-center px-2 py-10">
+                    {t("home.time-line")}
+                </p>
+            </Reveal>
+            <Box sx={{ margin: { xs: "20px", sm: "0px 100px 100px 100px" } }}>
+                <Stepper
+                    nonLinear
+                    activeStep={activeStep}
+                    sx={{
+                        flexDirection: { xs: "column", sm: "row" },
+                        height: "100px",
+                        justifyContent: { xs: "flex-start", sm: "center" },
+                        alignItems: { xs: "flex-start", sm: "center" },
+                    }}
+                >
+                    {timeData.map((time, index) => (
+                        <Step
+                            key={time}
+                            completed={completed[index]}
+                            sx={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                backgroundColor:
+                                    activeStep === time.id - 1
+                                        ? "#ecf0f1"
+                                        : "white",
+                                height: "2rem",
+                                borderRadius: "7px",
+                            }}
+                        >
+                            <Reveal>
+                                <StepButton
+                                    color="inherit"
+                                    onClick={handleStep(index)}
+                                >
+                                    <span
+                                        className={`text-[1.2rem] ${time.textColor}`}
+                                    >
+                                        {time.description}
+                                        {time.time}
+                                    </span>
+                                </StepButton>
+                            </Reveal>
+                        </Step>
+                    ))}
+                </Stepper>
+                <div>
+                    <React.Fragment>
+                        <Box sx={{ width: "100%" }}>
+                            <Tabs eventData={timeData[activeStep].events} />
+                        </Box>
+                        <Box
+                            sx={{
+                                display: "flex",
+                                flexDirection: "row",
+                                pt: 2,
+                            }}
+                        >
+                            <Button
+                                color="inherit"
+                                disabled={activeStep === 0}
+                                onClick={handleBack}
+                                sx={{ mr: 1 }}
+                            >
+                                {t("common.previous")}
+                            </Button>
+                            <Box sx={{ flex: "1 1 auto" }} />
+                            <Button onClick={handleNext} sx={{ mr: 1 }}>
+                                {t("common.next")}
+                            </Button>
+                        </Box>
+                    </React.Fragment>
+                </div>
+            </Box>
+        </Box>
     );
 }
-
-export default DongThoiGianPage;

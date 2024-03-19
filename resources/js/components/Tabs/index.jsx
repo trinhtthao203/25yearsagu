@@ -8,6 +8,8 @@ const Container = styled.div`
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
     border-radius: 1rem;
     overflow: hidden;
+    background-color: #f9f9f9;
+    border: 1px solid black;
 `;
 const TabContainer = styled.div`
     overflow-y: hidden;
@@ -48,7 +50,7 @@ const TabItem = styled(motion.button)`
     line-height: 1.5;
     font-size: 0.875rem;
     font-weight: 600;
-    color: ${(p) => (p.isActive ? "rgb(25, 113, 194)" : "rgb(95, 104, 113)")};
+    color: ${(p) => (p.isActive ? "#2980b9" : "#b2bec3")};
     margin: 0px;
     overflow: hidden;
 `;
@@ -101,7 +103,7 @@ export function Tabs({ eventData }) {
                         <TabItem
                             key={event}
                             isActive={i === value}
-                            whileHover={{ backgroundColor: "#f1f3f5" }}
+                            whileHover={{ backgroundColor: "#95a5a6" }}
                             transition={{ duration: 0.1 }}
                             whileTap={{ backgroundColor: "#e9ecef" }}
                             ref={(el) => childRefs.current.set(i, el)}

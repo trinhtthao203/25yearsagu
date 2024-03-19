@@ -62,7 +62,7 @@ function DongThoiGian() {
     ];
 
     function goTimeLineDetails(id) {
-        navigate("/theo-dong-thoi-gian");
+        navigate(`/theo-dong-thoi-gian?id=${id}`);
     }
 
     return (
@@ -91,7 +91,7 @@ function DongThoiGian() {
                                     <p>{time.time}</p>
                                 </button>
                             </Reveal>
-                            <div className=" p-[0.5rem] text-moonMist text-justify">
+                            <div className=" overflow-hidden max-h-[11rem] p-[0.5rem] text-moonMist text-justify">
                                 {time.events.map((event, eventIndex) => (
                                     <Reveal key={eventIndex}>
                                         <p>

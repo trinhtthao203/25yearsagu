@@ -39,14 +39,57 @@
     },
 
     "board-of-directors": {
+        "term-I": "Nhiệm kỳ I",
+        "term-II": "Nhiệm kỳ II",
+        "term-III": "Nhiệm kỳ III",
+        "term-IV": "Nhiệm kỳ IV",
+        "term-V": "Nhiệm kỳ V",
+
+        "term-I-time": "2000-2007",
+        "term-II-time": "2007-2012",
+        "term-III-time": "2012-2017",
+        "term-IV-time": "2017-2021",
+        "term-V-time": "2021-đến nay",
+
+        "principal": "Hiệu trưởng",
+        "vice-principal": "Phó Hiệu trưởng",
+
         "vtxuan": "GS, TS. Võ Tòng Xuân",
-        "vtxuan-title": "Hiệu trưởng",
-        "vtxuan-time": "2000-2007",
         "lmtung": "THS. Lê Minh Tùng",
-        "lmtung-title": "Hiệu trưởng",
-        "lmtung-time": "2007-2012",
+        "hxquang": "THS. Hoàng Xuân Quảng",
+        "dhluc": "THS. Đoàn Hữu Lực",
         "vvthang": "PGS, TS Võ Văn Thắng",
-        "vvthang-title": "Hiệu trưởng",
+        "nthai": "THS Nguyễn Thanh Hải",
+        "tvdat": "PGS, TS. Trần Văn Đạt",
+        "lqcuong": "THS. Lê Quốc Cường",
+        "htbinh": "PGS, TS Hồ Thanh Bình",
+
+        "time-vtxuan-term-I": "2000-2007",
+        "time-lmtung-term-I": "2000-2004",
+        "time-hxquang-term-I": "2000-2006",
+        "time-dhluc-term-I": "2005-2010",
+
+        "time-lmtung-term-II": "2007-2012",
+        "time-hxquang-term-II": "2006-2011",
+        "time-dhluc-term-II": "2010-2012",
+        "time-vvthang-term-II": "2008-2012",
+
+        "time-vvthang-term-III": "2012-2017",
+        "time-hxquang-term-III": "2011-2016",
+        "time-nthai-term-III": "2013-2017",
+        "time-tvdat-term-III": "2016-2017",
+        "time-lqcuong-term-III": "2016-2017",
+
+        "time-vvthang-term-IV": "2017-2021",
+        "time-nthai-term-IV": "2017-2021",
+        "time-tvdat-term-IV": "2017-2021",
+        "time-lqcuong-term-IV": "2017-08/2019",
+
+        "time-vvthang-term-V": "2021-đến nay",
+        "time-htbinh-term-V": "2021-đến nay",
+
+        "vtxuan-time": "2000-2007",
+        "lmtung-time": "2007-2012",
         "vvthang-time": "2012-nay"
     },
 

@@ -11,6 +11,7 @@ import ThongDiepHieuTruongPage from "./pages/ThongDiepHieuTruongPage";
 import DongThoiGianPage from "./pages/DongThoiGianPage";
 import NotFoundPage from "./pages/NotFound"; // Import your NotFoundPage component
 import ScrollToTop from "./scrollToTop";
+import BanGiamHieuPage from "./pages/BanGiamHieuPage";
 
 function MyApp() {
     return (
@@ -28,6 +29,7 @@ function MyApp() {
                     path="/theo-dong-thoi-gian"
                     element={<DongThoiGianPage />}
                 />
+                <Route path="/ban-giam-hieu" element={<BanGiamHieuPage />} />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </BrowserRouter>

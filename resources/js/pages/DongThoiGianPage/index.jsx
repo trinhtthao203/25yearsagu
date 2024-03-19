@@ -4,10 +4,13 @@ import { Tabs } from "../../components/Tabs";
 import { Reveal } from "../../motion/Reveal";
 import BackButton from "../../components/BackButton";
 import CustomHeader from "../../components/CustomHeader";
+import Footer from "../../components/Footer";
 import { Stepper, Step, StepButton, Button, Box } from "@mui/material";
 
-export default function HorizontalNonLinearStepper() {
+export default function DongThoiGianPage() {
     const { t } = useTranslation();
+    const params = new URLSearchParams(location.search);
+    const id = params.get("id");
 
     const timeData = [
         {
@@ -151,9 +154,8 @@ export default function HorizontalNonLinearStepper() {
         },
     ];
 
-    const [activeStep, setActiveStep] = React.useState(0);
+    const [activeStep, setActiveStep] = React.useState(parseInt(id - 1));
     const [completed, setCompleted] = React.useState({});
-    console.log(timeData.length);
     const totalSteps = () => {
         return timeData.length;
     };
@@ -196,53 +198,57 @@ export default function HorizontalNonLinearStepper() {
                 </p>
             </Reveal>
             <Box sx={{ margin: { xs: "20px", sm: "0px 100px 100px 100px" } }}>
-                <Stepper
-                    nonLinear
-                    activeStep={activeStep}
-                    sx={{
-                        flexDirection: { xs: "column", sm: "row" },
-                        height: "100px",
-                        justifyContent: { xs: "flex-start", sm: "center" },
-                        alignItems: { xs: "flex-start", sm: "center" },
-                    }}
-                >
-                    {timeData.map((time, index) => (
-                        <Step
-                            key={time}
-                            completed={completed[index]}
-                            sx={{
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                backgroundColor:
-                                    activeStep === time.id - 1
-                                        ? "#ecf0f1"
-                                        : "white",
-                                height: "2rem",
-                                borderRadius: "7px",
-                            }}
-                        >
-                            <Reveal>
-                                <StepButton
-                                    color="inherit"
-                                    onClick={handleStep(index)}
-                                >
-                                    <span
-                                        className={`text-[1.2rem] ${time.textColor}`}
+                <Reveal>
+                    <Stepper
+                        nonLinear
+                        activeStep={activeStep}
+                        sx={{
+                            flexDirection: { xs: "column", sm: "row" },
+                            height: "100px",
+                            justifyContent: { xs: "flex-start", sm: "center" },
+                            alignItems: { xs: "flex-start", sm: "center" },
+                        }}
+                    >
+                        {timeData.map((time, index) => (
+                            <Step
+                                key={time}
+                                completed={completed[index]}
+                                sx={{
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    alignItems: "center",
+                                    backgroundColor:
+                                        activeStep === time.id - 1
+                                            ? "#ecf0f1"
+                                            : "white",
+                                    height: "2rem",
+                                    borderRadius: "7px",
+                                }}
+                            >
+                                <Reveal>
+                                    <StepButton
+                                        color="inherit"
+                                        onClick={handleStep(index)}
                                     >
-                                        {time.description}
-                                        {time.time}
-                                    </span>
-                                </StepButton>
-                            </Reveal>
-                        </Step>
-                    ))}
-                </Stepper>
+                                        <span
+                                            className={`text-[1.1rem] ${time.textColor}`}
+                                        >
+                                            {time.description}
+                                            {time.time}
+                                        </span>
+                                    </StepButton>
+                                </Reveal>
+                            </Step>
+                        ))}
+                    </Stepper>
+                </Reveal>
                 <div>
                     <React.Fragment>
-                        <Box sx={{ width: "100%" }}>
-                            <Tabs eventData={timeData[activeStep].events} />
-                        </Box>
+                        <Reveal>
+                            <Box sx={{ width: "100%" }}>
+                                <Tabs eventData={timeData[activeStep].events} />
+                            </Box>
+                        </Reveal>
                         <Box
                             sx={{
                                 display: "flex",
@@ -250,22 +256,27 @@ export default function HorizontalNonLinearStepper() {
                                 pt: 2,
                             }}
                         >
-                            <Button
-                                color="inherit"
-                                disabled={activeStep === 0}
-                                onClick={handleBack}
-                                sx={{ mr: 1 }}
-                            >
-                                {t("common.previous")}
-                            </Button>
+                            <Reveal>
+                                <Button
+                                    color="inherit"
+                                    disabled={activeStep === 0}
+                                    onClick={handleBack}
+                                    sx={{ mr: 1 }}
+                                >
+                                    {t("common.previous")}
+                                </Button>
+                            </Reveal>
                             <Box sx={{ flex: "1 1 auto" }} />
-                            <Button onClick={handleNext} sx={{ mr: 1 }}>
-                                {t("common.next")}
-                            </Button>
+                            <Reveal>
+                                <Button onClick={handleNext} sx={{ mr: 1 }}>
+                                    {t("common.next")}
+                                </Button>
+                            </Reveal>
                         </Box>
                     </React.Fragment>
                 </div>
             </Box>
+            <Footer />
         </Box>
     );
 }

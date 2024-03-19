@@ -7,25 +7,33 @@ import { t } from "i18next";
 import VTXuan from "../../../../public/images/BanGiamHieu/vtxuan-150x150.png";
 import VVThang from "../../../../public/images/BanGiamHieu/vvthang-150x150.png";
 import LMTung from "../../../../public/images/BanGiamHieu/lmtung-150x150.png";
+import ReadMoreButton from "../ReadMoreButton";
+import { useNavigate } from "react-router-dom";
 
 function BanGiamHieu() {
+    const navigate = useNavigate();
+
+    function goToPage() {
+        navigate(`/ban-giam-hieu`);
+    }
+
     const imageList = [
         {
             image: VTXuan,
             name: t("board-of-directors.vtxuan"),
-            title: t("board-of-directors.vtxuan-title"),
+            title: t("board-of-directors.principal"),
             year: t("board-of-directors.vtxuan-time"),
         },
         {
             image: LMTung,
             name: t("board-of-directors.lmtung"),
-            title: t("board-of-directors.lmtung-title"),
+            title: t("board-of-directors.principal"),
             year: t("board-of-directors.lmtung-time"),
         },
         {
             image: VVThang,
             name: t("board-of-directors.vvthang"),
-            title: t("board-of-directors.vvthang-title"),
+            title: t("board-of-directors.principal"),
             year: t("board-of-directors.vvthang-time"),
         },
     ];
@@ -75,6 +83,14 @@ function BanGiamHieu() {
                         </Grid>
                     ))}
                 </Grid>
+                <div className=" flex justify-center items-center w-full my-10">
+                    <Reveal>
+                        <ReadMoreButton
+                            onClick={() => goToPage()}
+                            title={t("common.view-detail")}
+                        />
+                    </Reveal>
+                </div>
             </Box>
         </div>
     );

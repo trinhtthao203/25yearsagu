@@ -4,9 +4,9 @@ import { Reveal } from "../../motion/Reveal";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import { t } from "i18next";
-import VTXuan from "../../../../public/images/BanGiamHieu/vtxuan-150x150.png";
-import VVThang from "../../../../public/images/BanGiamHieu/vvthang-150x150.png";
-import LMTung from "../../../../public/images/BanGiamHieu/lmtung-150x150.png";
+import VTXuan from "../../../../public/images/BanGiamHieu/vtxuan.png";
+import VVThang from "../../../../public/images/BanGiamHieu/vvthang.png";
+import LMTung from "../../../../public/images/BanGiamHieu/lmtung.png";
 import ReadMoreButton from "../ReadMoreButton";
 import { useNavigate } from "react-router-dom";
 
@@ -47,18 +47,19 @@ function BanGiamHieu() {
                 </Reveal>
                 <Grid
                     container
-                    spacing={{ xs: 2, md: 3 }}
+                    spacing={{ xs: 2, md: 4 }}
                     columns={{ xs: 4, sm: 8, md: 12 }}
+                    sx={{ paddingX: { md: "7rem", lg: "15rem" } }}
                 >
                     {imageList.map((bangiamhieu, index) => (
                         <Grid item xs={12} sm={12} md={4} key={index}>
                             <PopZoom>
-                                <div className="flex justify-center items-center flex-col">
+                                <div className="flex justify-center items-center flex-col rounded-lg">
                                     <Reveal>
                                         <img
                                             src={bangiamhieu.image}
                                             alt={bangiamhieu.name}
-                                            className=" max-w-full h-auto rounded-lg shadow-lg overflow-hidden"
+                                            className=" max-w-full h-auto rounded-lg"
                                         />
                                     </Reveal>
                                     <div className="text-center mt-2">

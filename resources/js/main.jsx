@@ -2,38 +2,86 @@ import "tailwindcss/tailwind.css"; // Import Tailwind CSS
 import "../css/app.css";
 import React from "react";
 import { CssBaseline } from "@mui/material";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+// import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./i18n";
+import { useTranslation } from "react-i18next";
+import { render } from "react-dom";
 import Home from "../js/pages/Home";
 import LoadingScreen from "../js/pages/Loading";
-import ThongDiepHieuTruongPage from "./pages/ThongDiepHieuTruongPage";
-import DongThoiGianPage from "./pages/DongThoiGianPage";
+import ChancellorMessagePage from "./pages/ChancellorMessagePage";
+import TimeLinePage from "./pages/TimeLinePage";
 import NotFoundPage from "./pages/NotFound"; // Import your NotFoundPage component
 import ScrollToTop from "./scrollToTop";
-import BanGiamHieuPage from "./pages/BanGiamHieuPage";
+import BoardOfDirectorsPage from "./pages/BoardOfDirectorsPage";
+
+import GalleryFacilitiesPage from "./pages/GalleryFacilitiesPage";
+import GalleryEducationPage from "./pages/GalleryEducationPage";
+import GalleryForeignPage from "./pages/GalleryForeignPage";
+import GalleryResearchPage from "./pages/GalleryResearchPage";
+import GalleryOrganizationsPage from "./pages/GalleryOrganizationsPage";
+import GalleryUnionPage from "./pages/GalleryUnionPage";
+import GalleryMittingPage from "./pages/GalleryMittingPage";
+import GallerySchoolPage from "./pages/GallerySchoolPage";
 
 function MyApp() {
+    const { t } = useTranslation();
     return (
         <BrowserRouter basename="/agu25years">
             <ScrollToTop />
             <CssBaseline />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path={t("path.home")} element={<Home />} />
                 <Route
-                    path="/thong-diep-hieu-truong"
-                    element={<ThongDiepHieuTruongPage />}
+                    path={t("path.chancellor-message")}
+                    element={<ChancellorMessagePage />}
                 />
-                <Route path="/loading" element={<LoadingScreen />} />
+                <Route path={t("path.loading")} element={<LoadingScreen />} />
+                <Route path={t("path.time-line")} element={<TimeLinePage />} />
                 <Route
-                    path="/theo-dong-thoi-gian"
-                    element={<DongThoiGianPage />}
+                    path={t("path.board-of-directors")}
+                    element={<BoardOfDirectorsPage />}
                 />
-                <Route path="/ban-giam-hieu" element={<BanGiamHieuPage />} />
+                <Route
+                    path={t("path.gallery-facilities")}
+                    element={<GalleryFacilitiesPage />}
+                />
+                <Route
+                    path={t("path.gallery-education")}
+                    element={<GalleryEducationPage />}
+                />
+                <Route
+                    path={t("path.gallery-foreign")}
+                    element={<GalleryForeignPage />}
+                />
+                <Route
+                    path={t("path.gallery-research")}
+                    element={<GalleryResearchPage />}
+                />
+                <Route
+                    path={t("path.gallery-organizations")}
+                    element={<GalleryOrganizationsPage />}
+                />
+                <Route
+                    path={t("path.gallery-union")}
+                    element={<GalleryUnionPage />}
+                />
+                <Route
+                    path={t("path.gallery-school")}
+                    element={<GallerySchoolPage />}
+                />
+                <Route
+                    path={t("path.gallery-mitting")}
+                    element={<GalleryMittingPage />}
+                />
                 <Route path="*" element={<NotFoundPage />} />
             </Routes>
         </BrowserRouter>
     );
 }
 
-ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
+// ReactDOM.createRoot(document.getElementById("root")).render(<MyApp />);
+const rootElement = document.getElementById("root");
+if (!rootElement) throw new Error("rootElement not found");
+
+render(<MyApp />, rootElement);

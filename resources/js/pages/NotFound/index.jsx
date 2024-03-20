@@ -9,7 +9,7 @@ function NotFound() {
             </p>
             <BackButton
                 title={t("common.back-home")}
-                left={"90px"}
+                left={"0px"}
                 textColor={"white"}
             />
         </div>

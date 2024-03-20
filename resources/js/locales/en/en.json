@@ -2,6 +2,22 @@
     "greeting": {
         "hello": "Hello Word!"
     },
+    "path": {
+        "home": "/",
+        "loading": "/loading",
+        "chancellor-message": "/thong-diep-hieu-truong",
+        "time-line": "/theo-dong-thoi-gian",
+        "board-of-directors": "/ban-giam-hieu",
+        "gallery-facilities": "/gallery-co-so-vat-chat",
+        "gallery-education": "/gallery-dao-tao",
+        "gallery-foreign": "/gallery-doi-ngoai",
+        "gallery-research": "/gallery-nghien-cuu-khoa-hoc",
+        "gallery-organizations": "/gallery-to-chuc-doan-the",
+        "gallery-union": "/gallery-doan-hoi",
+        "gallery-school": "/gallery-truong-thuc-hanh-su-pham",
+        "gallery-mitting": "/gallery-mitting"
+    },
+
     "home": {
         "25year-established": "25th Anniversary Celebration",
         "agu": "An Giang University",

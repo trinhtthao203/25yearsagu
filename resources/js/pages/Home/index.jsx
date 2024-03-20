@@ -10,7 +10,7 @@ import BanGiamHieu from "../../components/BanGiamHieu";
 import ThuNgo from "../../components/ThuNgo";
 import GocNgheThuat from "../../components/GocNgheThuat";
 import SuKien from "../../components/SuKien";
-import HinhAnh from "../../components/HinhAnhTruong";
+import ThuVienAnh from "../../components/ThuVienAnh";
 import DoiTac from "../../components/DoiTac";
 import CuuSinhVien from "../../components/CuuSinhVien";
 
@@ -100,7 +100,7 @@ function Home() {
                     <GocNgheThuat />
                     <DoiTac />
                     <CuuSinhVien />
-                    <HinhAnh />
+                    <ThuVienAnh />
                     <Footer />
                 </div>
             )}

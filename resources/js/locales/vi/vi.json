@@ -11,6 +11,23 @@
         "next": "Tiếp theo",
         "previous": "Quay lại"
     },
+
+    "path": {
+        "home": "/",
+        "loading": "/loading",
+        "chancellor-message": "/thong-diep-hieu-truong",
+        "time-line": "/theo-dong-thoi-gian",
+        "board-of-directors": "/ban-giam-hieu",
+        "gallery-facilities": "/gallery-co-so-vat-chat",
+        "gallery-education": "/gallery-dao-tao",
+        "gallery-foreign": "/gallery-doi-ngoai",
+        "gallery-research": "/gallery-nghien-cuu-khoa-hoc",
+        "gallery-organizations": "/gallery-to-chuc-doan-the",
+        "gallery-union": "/gallery-doan-hoi",
+        "gallery-school": "/gallery-truong-thuc-hanh-su-pham",
+        "gallery-mitting": "/gallery-mitting"
+    },
+
     "home": {
         "25year-established": "Kỷ niệm 25 năm thành lập",
         "agu": "Trường đại học An Giang",
@@ -241,13 +258,20 @@
 
     "gallery": {
         "facilities": "Cơ sở vật chất",
+        "facilities-landscape": "Cảnh quang chung",
+        "facilities-lab": "Thực hành thí nghiệm",
+        "facilities-class": "Không gian các lớp học, hội trường và Thư viện",
+        "facilities-description": "Trường có 2 cơ sở được đầu tư khang trang, hiện đại với tổng diện tích 419.679,5m2",
         "education": "Đào tạo dạy học",
+        "education-description": "Trường đang vận hành 4 CTĐT trình độ thạc sĩ, 42 CTĐT trình độ đại học và 19 CTĐT trình độ cao đẳng.",
         "mitting": "Mitting kỷ niệm",
         "foreign": "Đối ngoại",
+        "foreign-description": "ĐHAG đã ký kết 71 bản ghi nhớ và triển khai nhiều hoạt động hợp tác trong đào tạo và NCKH với các viện, trường đại học ở nhiều quốc gia.",
         "research": "Nghiên cứu khoa học",
+        "research-description": "ĐHAG xác định nghiên cứu khoa học và chuyển giao công nghệ là nhiệm vụ then chốt. Tính đến nay, Trường đã triển khai 149 dự án NCKH thực hiện trên 1.190 đề tài NCKH các cấp; công bố trên 1.534 bài báo khoa học.",
         "union": "Đoàn-Hội",
         "organizations": "Các tổ chức đoàn thể",
-        "school": "Trường PTTH Sư Phạm"
+        "school": "Trường Phổ thông Thực hành Sư Phạm"
     },
 
     "contact": {

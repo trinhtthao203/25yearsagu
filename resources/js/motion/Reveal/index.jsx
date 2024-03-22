@@ -2,7 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 
-export const Reveal = ({ children }) => {
+export const Reveal = ({ children, isAnimation }) => {
     const { ref: inViewRef, inView } = useInView({
         threshold: 0,
         triggerOnce: true,
@@ -13,11 +13,13 @@ export const Reveal = ({ children }) => {
             ref={inViewRef}
             style={{ position: "relative", overflow: "hidden" }}
         >
-            {React.Children.map(children, (child, index) => (
-                <AnimatedChild key={index} inView={inView}>
-                    {child}
-                </AnimatedChild>
-            ))}
+            {isAnimation &&
+                React.Children.map(children, (child, index) => (
+                    <AnimatedChild key={index} inView={inView}>
+                        {child}
+                    </AnimatedChild>
+                ))}
+            {!isAnimation && children}
         </div>
     );
 };

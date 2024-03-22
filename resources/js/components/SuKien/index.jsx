@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Reveal } from "../../motion/Reveal";
 function SuKien() {
     const { t } = useTranslation();
+    const isAnimation = JSON.parse(sessionStorage.getItem("visited")) !== false;
 
     const events = [
         {
@@ -35,28 +36,30 @@ function SuKien() {
                 backgroundAttachment: "fixed",
             }}
         >
-            <Reveal>
-                <p className="text-3xl uppercase text-[#2c2c54] text-center py-5">
+            <p className="text-3xl uppercase text-[#2c2c54] text-center py-5">
+                <Reveal isAnimation={isAnimation}>
                     {t("home.join-the-celebration")}
-                </p>
-            </Reveal>
-            <Reveal>
-                <p className="text-[1.2rem] p-[1rem] uppercase text-[#2c2c54] text-center py-5">
+                </Reveal>
+            </p>
+            <p className="text-[1.2rem] p-[1rem] uppercase text-[#2c2c54] text-center py-5">
+                <Reveal isAnimation={isAnimation}>
                     {t("home.join-the-celebration-desciption")}
-                </p>
-            </Reveal>
+                </Reveal>
+            </p>
             <div className="px-5 justify-start flex flex-col items-start ">
                 {events.map((event) => (
-                    <Reveal>
-                        <div className="flex justify-center items-center">
-                            <button className=" border-solid border-2 p-2 text-[1.3rem] rounded-md bg-[#227093]">
+                    <div className="flex justify-center items-center">
+                        <button className=" border-solid border-2 p-2 text-[1.3rem] rounded-md bg-[#227093]">
+                            <Reveal isAnimation={isAnimation}>
                                 {event.name}
-                            </button>
-                            <p className="p-5 text-justify max-w-screen-md">
+                            </Reveal>
+                        </button>
+                        <p className="p-5 text-justify max-w-screen-md">
+                            <Reveal isAnimation={isAnimation}>
                                 {event.content}
-                            </p>
-                        </div>
-                    </Reveal>
+                            </Reveal>
+                        </p>
+                    </div>
                 ))}
             </div>
         </div>

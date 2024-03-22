@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 function DongThoiGian() {
     const navigate = useNavigate();
+    const isAnimation = JSON.parse(sessionStorage.getItem("visited")) !== false;
 
     const timeData = [
         {
@@ -67,11 +68,9 @@ function DongThoiGian() {
 
     return (
         <div id="time-line" className=" bg-[#2d3436] py-10">
-            <Reveal>
-                <p className="text-3xl uppercase text-moonMist text-center px-2 py-10">
-                    {t("home.time-line")}
-                </p>
-            </Reveal>
+            <p className="text-3xl uppercase text-moonMist text-center px-2 py-10">
+                <Reveal isAnimation={isAnimation}>{t("home.time-line")}</Reveal>
+            </p>
             <div className=" flex-grow m-[30px]">
                 <Grid
                     container
@@ -80,20 +79,27 @@ function DongThoiGian() {
                 >
                     {timeData.map((time, index) => (
                         <Grid item xs={4} sm={1.33} md={1.33} key={index}>
-                            <Reveal>
-                                <button
-                                    onClick={() => goTimeLineDetails(time.id)}
-                                    className={`w-full flex flex-col justify-center items-center h-[7rem] text-[1.3rem] sm:text-[1.4rem] md:text-[1.5rem] lg:text-[1.6rem] ${time.marginTop} ${time.bgColor} rounded-[4px] border-none text-white text-center px-[15px] scursor-pointer m-[10px] mb-[36px] shadow-[0_10px_20px_-8px_rgba(0,0,0,0.7)] relative duration-300 after:content-['»'] after:text-[5rem] after:absolute after:opacity-0 after:top-[-10px] after:right-[-20px] after:duration-300 hover:pr-[24px] hover:pl-[8px] hover:after:opacity-100 hover:after:right-[10px]`}
-                                >
-                                    <p className="items-center">
+                            <button
+                                onClick={() => goTimeLineDetails(time.id)}
+                                className={`w-full flex flex-col justify-center items-center h-[7rem] text-[1.3rem] sm:text-[1.4rem] md:text-[1.5rem] lg:text-[1.6rem] ${time.marginTop} ${time.bgColor} rounded-[4px] border-none text-white text-center px-[15px] scursor-pointer m-[10px] mb-[36px] shadow-[0_10px_20px_-8px_rgba(0,0,0,0.7)] relative duration-300 after:content-['»'] after:text-[5rem] after:absolute after:opacity-0 after:top-[-10px] after:right-[-20px] after:duration-300 hover:pr-[24px] hover:pl-[8px] hover:after:opacity-100 hover:after:right-[10px]`}
+                            >
+                                <p className="items-center">
+                                    <Reveal isAnimation={isAnimation}>
                                         {time.description}
-                                    </p>
-                                    <p>{time.time}</p>
-                                </button>
-                            </Reveal>
+                                    </Reveal>
+                                </p>
+                                <p>
+                                    <Reveal isAnimation={isAnimation}>
+                                        {time.time}
+                                    </Reveal>
+                                </p>
+                            </button>
                             <div className=" overflow-hidden max-h-[11rem] p-[0.5rem] text-moonMist text-justify">
                                 {time.events.map((event, eventIndex) => (
-                                    <Reveal key={eventIndex}>
+                                    <Reveal
+                                        isAnimation={isAnimation}
+                                        key={eventIndex}
+                                    >
                                         <p>
                                             - {event.time} :{" "}
                                             <span

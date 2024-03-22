@@ -1,18 +1,13 @@
 import React from "react";
-import { ImageListItemBar, Box, IconButton } from "@mui/material";
-import Landscape from "../../../../public/images/Gallery/Facilities/Landscape/1.-Toàn-cảnh-Trường-Đại-học-An-Giang.jpg";
-import Education from "../../../../public/images/Gallery/Education/21.-Các-hoạt-động-giới-thiệu-học-bổng-du-học-cho-sinh-viên.jpg";
-import Research from "../../../../public/images/Gallery/Research/7.-Sinh-viên-ĐHAG-nghiên-cứu-khoa-học.jpg";
-import Foreign from "../../../../public/images/Gallery/Foreign/2.-Hiệu-trưởng-Võ-Văn-Thắng-ký-kết-hợp-tác-với-các-trường-tại-Diễn-đàn-Hiệu-trưởng-các-đại-học-WTA-lần-10.jpg";
-import Union from "../../../../public/images/Gallery/Union/18.Đại-hội-văn-thể-chào-mừng-ngày-Nhà-giáo-Việt-Nam-20.11.jpg";
-import Organizations from "../../../../public/images/Gallery/Organizations/66.-Công-đoàn-trường-tổ-chức-tham-quan-học-tập-kinh-nghiệm.jpg";
-import School from "../../../../public/images/Gallery/School/1.-Toàn-cảnh-Trường-Thực-Hành-Sư-Phạm.jpg";
-import Mitting from "../../../../public/images/Gallery/Union/46.Tư-vấn-hỗ-trợ-sinh-viên-khởi-nghiệp.jpg";
 
-import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
 import { Grid } from "@mui/material";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { ImageListItemBar, Box, IconButton } from "@mui/material";
+
+import { dataImages } from "./images";
+
 const cardVariants = {
     offscreen: {
         y: 500,
@@ -94,62 +89,6 @@ function Card({ image, title, description, link }) {
 
 function HinhAnh() {
     const { t } = useTranslation();
-
-    const itemData = [
-        {
-            img: Landscape,
-            title: t("gallery.facilities"),
-            description: t("gallery.facilities-description"),
-            link: t("path.gallery-facilities"),
-        },
-        {
-            img: Education,
-            title: t("gallery.education"),
-            description: t("gallery.education-description"),
-            link: t("path.gallery-education"),
-        },
-        {
-            img: Research,
-            title: t("gallery.research"),
-            description: t("gallery.research-description"),
-            link: t("path.gallery-research"),
-        },
-        {
-            img: Foreign,
-            title: t("gallery.foreign"),
-            description: t("gallery.foreign-description"),
-            link: t("path.gallery-foreign"),
-        },
-        {
-            img: Organizations,
-            title: t("gallery.organizations"),
-            description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, cumque.",
-            link: t("path.gallery-organizations"),
-        },
-        {
-            img: Union,
-            title: t("gallery.union"),
-            description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, cumque.",
-            link: t("path.gallery-union"),
-        },
-        {
-            img: School,
-            title: t("gallery.school"),
-            description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, cumque.",
-            link: t("path.gallery-school"),
-        },
-        {
-            img: Mitting,
-            title: t("gallery.mitting"),
-            description:
-                "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, cumque.",
-            link: t("path.gallery-mitting"),
-        },
-    ];
-
     return (
         <div
             id="gallery"
@@ -160,13 +99,13 @@ function HinhAnh() {
                     {t("home.gallery")}
                 </p>
                 <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-                    {itemData.map((item) => (
+                    {dataImages.map((item) => (
                         <Grid item xs={12} sm={6} md={4} key={item}>
                             <Card
                                 image={item.img}
-                                title={item.title}
-                                description={item.description}
-                                link={item.link}
+                                title={t(`${item.title}`)}
+                                description={t(`${item.description}`)}
+                                link={t(`${item.link}`)}
                                 xs={{ overflowWrap: "break-word" }}
                             />
                         </Grid>

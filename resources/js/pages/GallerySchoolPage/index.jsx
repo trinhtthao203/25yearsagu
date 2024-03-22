@@ -14,11 +14,9 @@ function GallerySchoolPage() {
         <div>
             <CustomHeader />
             <BackButton title={t("common.back-home")} left={"30%"} />
-            <Reveal>
-                <p className="text-3xl uppercase text-darkblue text-center px-2 py-10">
-                    {t("gallery.school")}
-                </p>
-            </Reveal>
+            <p className="text-3xl uppercase text-darkblue text-center px-2 py-10">
+                {t("gallery.school")}
+            </p>
             <Footer />
         </div>
     );

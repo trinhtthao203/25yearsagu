@@ -1,25 +1,22 @@
 import React, { useState, useEffect, useRef } from "react";
-import backgroundImage from "../../../../public/images/gate.jpg"; // Điều chỉnh đường dẫn đến hình ảnh của bạn
-import Logo25 from "../../../../public/images/logo25.png";
 import LoadingScreen from "../Loading";
+import Logo25 from "../../../../public/images/logo25.png";
+import backgroundImage from "../../../../public/images/gate.jpg"; // Điều chỉnh đường dẫn đến hình ảnh của bạn
 
-import ThongDiepHieuTruong from "../../components/ThongDiepHieuTruong";
-import Footer from "../../components/Footer";
-import DongThoiGian from "../../components/DongThoiGian";
-import BanGiamHieu from "../../components/BanGiamHieu";
-import ThuNgo from "../../components/ThuNgo";
-import GocNgheThuat from "../../components/GocNgheThuat";
-import SuKien from "../../components/SuKien";
-import ThuVienAnh from "../../components/ThuVienAnh";
-import DoiTac from "../../components/DoiTac";
-import CuuSinhVien from "../../components/CuuSinhVien";
-
-import { useTranslation } from "react-i18next";
-import LanguageSelector from "../../components/LanguageSelector";
-import NhaTaiTro from "../../components/NhaTaiTro";
-import { Reveal } from "../../motion/Reveal";
 import NavBar from "../../components/Navbar";
-import HoiNhapPhatTrien from "../../components/HoiNhapPhatTrien";
+import SuKien from "../../components/SuKien";
+import Footer from "../../components/Footer";
+import DoiTac from "../../components/DoiTac";
+import NhaTaiTro from "../../components/NhaTaiTro";
+import ThuVienAnh from "../../components/ThuVienAnh";
+import BanGiamHieu from "../../components/BanGiamHieu";
+import CuuSinhVien from "../../components/CuuSinhVien";
+import GocNgheThuat from "../../components/GocNgheThuat";
+import DongThoiGian from "../../components/DongThoiGian";
+import ThongDiepHieuTruong from "../../components/ThongDiepHieuTruong";
+
+import { Reveal } from "../../motion/Reveal";
+import { useTranslation } from "react-i18next";
 
 function Home() {
     const { t, i18n } = useTranslation();
@@ -31,6 +28,8 @@ function Home() {
         return savedLanguage ? savedLanguage === "en" : false;
     });
 
+    const isAnimation = JSON.parse(sessionStorage.getItem("visited")) !== false;
+
     useEffect(() => {
         if (isEnglish) {
             i18n.changeLanguage("en");
@@ -41,9 +40,9 @@ function Home() {
         const timeout = setTimeout(() => {
             setLoading(false);
             sessionStorage.setItem("visited", JSON.stringify(false));
-        }, 3000); // Thời gian hiển thị loading (3 giây)
+        }, 3000);
 
-        return () => clearTimeout(timeout); // Xóa timeout khi component unmount
+        return () => clearTimeout(timeout);
     }, []);
 
     return (
@@ -66,22 +65,22 @@ function Home() {
                         <div className=" h-screen w-screen flex justify-center items-center">
                             <div className="flex flex-col items-center justify-center mt-[-15rem]">
                                 <div className="w-[10rem] sm:w-[11rem] md:w-[19rem] lg:w-[22rem] xl:w-[19rem] animate-flip-down">
-                                    <Reveal>
+                                    <Reveal isAnimation={isAnimation}>
                                         <img src={`${Logo25}`} alt="Logo" />
                                     </Reveal>
                                 </div>
                                 <div className="transform text-center">
-                                    <Reveal>
+                                    <Reveal isAnimation={isAnimation}>
                                         <p className=" uppercase px-[1.2rem] text-[1.7rem] sm:text-[1.7rem] md:text-[2.6rem] lg:text-[3.1rem] xl:text-[3.7rem] font-bold text-gray-900 tracking-wider shadow-retr">
                                             {t("home.25year-established")}
                                         </p>
                                     </Reveal>
-                                    <Reveal>
+                                    <Reveal isAnimation={isAnimation}>
                                         <p className=" uppercase text-[1.1rem] sm:text-[1.7rem] md:text-[2rem] lg:text-[2.4rem] xl:text-[2.5rem] p-3">
                                             {t("home.agu")}
                                         </p>
                                     </Reveal>
-                                    <Reveal>
+                                    <Reveal isAnimation={isAnimation}>
                                         <p className="text-[1rem] sm:text-[1.1rem] md:text-[1.5rem] lg:text-[1.7rem] xl:text-[2rem]">
                                             {t("home.year-anniversary")}
                                         </p>

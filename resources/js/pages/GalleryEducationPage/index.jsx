@@ -1,11 +1,14 @@
 import React from "react";
 
-import CustomHeader from "../../components/CustomHeader";
+import "yet-another-react-lightbox/styles.css";
+import { data } from "./images";
+
 import Footer from "../../components/Footer";
-import { Reveal } from "../../motion/Reveal";
 import BackButton from "../../components/BackButton";
+import CustomHeader from "../../components/CustomHeader";
 
 import { useTranslation } from "react-i18next";
+import ImageList from "../../components/ImageList";
 
 function GalleryEducationPage() {
     const { t } = useTranslation();
@@ -14,11 +17,12 @@ function GalleryEducationPage() {
         <div>
             <CustomHeader />
             <BackButton title={t("common.back-home")} left={"30%"} />
-            <Reveal>
-                <p className="text-3xl uppercase text-darkblue text-center px-2 py-10">
+            <div className=" py-10 px-10 ">
+                <p className="text-3xl uppercase text-darkblue text-center">
                     {t("gallery.education")}
                 </p>
-            </Reveal>
+                <ImageList title={t("gallery.education")} data={data} />
+            </div>
             <Footer />
         </div>
     );

@@ -12,6 +12,7 @@ import { useNavigate } from "react-router-dom";
 
 function BanGiamHieu() {
     const navigate = useNavigate();
+    const isAnimation = JSON.parse(sessionStorage.getItem("visited")) !== false;
 
     function goToPage() {
         navigate(`/ban-giam-hieu`);
@@ -40,11 +41,11 @@ function BanGiamHieu() {
     return (
         <div id="board-of-directors-time">
             <Box sx={{ flexGrow: 1, paddingY: "5rem" }}>
-                <Reveal>
-                    <p className="text-3xl uppercase text-chathamsblue text-center pb-[5rem]">
+                <p className="text-3xl uppercase text-chathamsblue text-center pb-[5rem]">
+                    <Reveal isAnimation={isAnimation}>
                         {t("home.board-of-directors-time")}
-                    </p>
-                </Reveal>
+                    </Reveal>
+                </p>
                 <Grid
                     container
                     spacing={{ xs: 2, md: 4 }}
@@ -55,7 +56,7 @@ function BanGiamHieu() {
                         <Grid item xs={12} sm={12} md={4} key={index}>
                             <PopZoom>
                                 <div className="flex justify-center items-center flex-col rounded-lg">
-                                    <Reveal>
+                                    <Reveal isAnimation={isAnimation}>
                                         <img
                                             src={bangiamhieu.image}
                                             alt={bangiamhieu.name}
@@ -63,21 +64,21 @@ function BanGiamHieu() {
                                         />
                                     </Reveal>
                                     <div className="text-center mt-2">
-                                        <Reveal>
-                                            <p className="text-[1rem] font-semibold uppercase">
+                                        <p className="text-[1rem] font-semibold uppercase">
+                                            <Reveal isAnimation={isAnimation}>
                                                 {bangiamhieu.name}
-                                            </p>
-                                        </Reveal>
-                                        <Reveal>
-                                            <p className="text-lg text-gray-500 ">
+                                            </Reveal>
+                                        </p>
+                                        <p className="text-lg text-gray-500 ">
+                                            <Reveal isAnimation={isAnimation}>
                                                 {bangiamhieu.title}
-                                            </p>
-                                        </Reveal>
-                                        <Reveal>
-                                            <p className="text-lg text-gray-500 ">
+                                            </Reveal>
+                                        </p>
+                                        <p className="text-lg text-gray-500 ">
+                                            <Reveal isAnimation={isAnimation}>
                                                 {bangiamhieu.year}
-                                            </p>
-                                        </Reveal>
+                                            </Reveal>
+                                        </p>
                                     </div>
                                 </div>
                             </PopZoom>
@@ -85,7 +86,7 @@ function BanGiamHieu() {
                     ))}
                 </Grid>
                 <div className=" flex justify-center items-center w-full my-10">
-                    <Reveal>
+                    <Reveal isAnimation={isAnimation}>
                         <ReadMoreButton
                             onClick={() => goToPage()}
                             title={t("common.view-detail")}

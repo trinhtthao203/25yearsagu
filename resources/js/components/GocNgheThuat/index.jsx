@@ -9,6 +9,8 @@ import { Reveal } from "../../motion/Reveal";
 import ReadMoreButton from "../ReadMoreButton";
 
 const GocNgheThuat = () => {
+    const isAnimation = JSON.parse(sessionStorage.getItem("visited")) !== false;
+
     var settings = {
         dots: true,
         infinite: true,
@@ -28,28 +30,28 @@ const GocNgheThuat = () => {
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={2}>
                             <Grid item xs={12} md={6}>
-                                <Reveal>
+                                <Reveal isAnimation={isAnimation}>
                                     <img src={CuocThiVideo} />
                                 </Reveal>
                             </Grid>
                             <Grid item xs={12} md={6}>
-                                <Reveal>
-                                    <p className=" text-center text-[1.2rem]">
-                                        {t("home.video-introduction")}
-                                    </p>
-                                </Reveal>
-                                <Reveal>
-                                    <p className=" text-[1rem] md:text-[1.5rem]">
+                                <p className=" text-center text-[1rem]  md:text-[1.5rem]">
+                                    <Reveal isAnimation={isAnimation}>
+                                        {t("home.25years-development")}
+                                    </Reveal>
+                                </p>
+                                <p className=" text-[1rem] md:text-[1.5rem]">
+                                    <Reveal isAnimation={isAnimation}>
                                         {t("art.video-title")}
-                                    </p>
-                                </Reveal>
-                                <Reveal>
-                                    <p className=" text-justify text-[0.9rem] md:text-[1.2rem]">
+                                    </Reveal>
+                                </p>
+                                <p className=" text-justify text-[0.9rem] md:text-[1.2rem]">
+                                    <Reveal isAnimation={isAnimation}>
                                         {t("art.video-description")}
-                                    </p>
-                                </Reveal>
+                                    </Reveal>
+                                </p>
                                 <div className="w-full flex justify-end items-end">
-                                    <Reveal>
+                                    <Reveal isAnimation={isAnimation}>
                                         <ReadMoreButton
                                             title={t("common.view-detail")}
                                         />
@@ -61,28 +63,28 @@ const GocNgheThuat = () => {
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={2}>
                             <Grid item xs={12} md={6}>
-                                <Reveal>
+                                <Reveal isAnimation={isAnimation}>
                                     <img src={CuocThiViet} />
                                 </Reveal>
                             </Grid>
                             <Grid item xs={12} md={6}>
-                                <Reveal>
-                                    <p className="text-center text-[1.2rem]">
-                                        {t("home.song-introduction")}
-                                    </p>
-                                </Reveal>
-                                <Reveal>
-                                    <p className="text-[1rem]  md:text-[1.5rem]">
+                                <p className=" text-center text-[1rem]  md:text-[1.5rem]">
+                                    <Reveal isAnimation={isAnimation}>
+                                        {t("home.25years-development")}
+                                    </Reveal>
+                                </p>
+                                <p className="text-[1rem]  md:text-[1.5rem]">
+                                    <Reveal isAnimation={isAnimation}>
                                         {t("art.song-title")}
-                                    </p>
-                                </Reveal>
-                                <Reveal>
-                                    <p className=" text-justify text-[0.9rem] md:text-[1.2rem]">
+                                    </Reveal>
+                                </p>
+                                <p className=" text-justify text-[0.9rem] md:text-[1.2rem]">
+                                    <Reveal isAnimation={isAnimation}>
                                         {t("art.song-description")}
-                                    </p>
-                                </Reveal>
+                                    </Reveal>
+                                </p>
                                 <div className="w-full flex justify-end items-end">
-                                    <Reveal>
+                                    <Reveal isAnimation={isAnimation}>
                                         <ReadMoreButton
                                             title={t("common.view-detail")}
                                         />
@@ -94,23 +96,23 @@ const GocNgheThuat = () => {
                     <Box sx={{ flexGrow: 1 }}>
                         <Grid container spacing={2}>
                             <Grid item xs={12} md={6}>
-                                <Reveal>
+                                <Reveal isAnimation={isAnimation}>
                                     <img src={HoiNhapPhatTrien} />
                                 </Reveal>
                             </Grid>
                             <Grid item xs={12} md={6}>
-                                <Reveal>
-                                    <p className=" shadow-[0_10px_20px_-8px_rgba(0,0,0,0.7)] text-center text-[1rem]  md:text-[1.5rem]">
+                                <p className=" text-center text-[1rem]  md:text-[1.5rem]">
+                                    <Reveal isAnimation={isAnimation}>
                                         {t("home.25years-development")}
-                                    </p>
-                                </Reveal>
-                                <Reveal>
-                                    <p className=" text-justify text-[0.9rem] md:text-[1.2rem]">
+                                    </Reveal>
+                                </p>
+                                <p className=" text-justify text-[0.9rem] md:text-[1.2rem]">
+                                    <Reveal isAnimation={isAnimation}>
                                         {t("art.song-description")}
-                                    </p>
-                                </Reveal>
+                                    </Reveal>
+                                </p>
                                 <div className="w-full flex justify-end items-end">
-                                    <Reveal>
+                                    <Reveal isAnimation={isAnimation}>
                                         <ReadMoreButton
                                             title={t("common.view-detail")}
                                         />

@@ -13,24 +13,18 @@ function ThongDiepHieuTruongPage() {
         <div className="w-full h-full">
             <CustomHeader />
             <div className="flex flex-col justify-center items-center bg[#f1f2f6] py-[6rem] ">
-                <Reveal>
-                    <p className="text-3xl uppercase text-darkblue text-center px-2 py-10">
-                        {t("home.chancellor-message")}
-                    </p>
-                </Reveal>
-                <Reveal>
-                    <p className=" max-w-[49rem] text-[0.9rem] sm:text-[0.5rem]  md:text-[1.5rem]  lg:text-[1.2rem] text-justify  my-5 mx-[5rem] text-[#2C3A47]">
-                        {t("chancellor-message.paragraph-1")}
-                    </p>
-                </Reveal>
+                <p className="text-3xl uppercase text-darkblue text-center px-2 py-10">
+                    <Reveal>{t("home.chancellor-message")}</Reveal>
+                </p>
+                <p className=" max-w-[49rem] text-[0.9rem] sm:text-[0.5rem]  md:text-[1.5rem]  lg:text-[1.2rem] text-justify  my-5 mx-[5rem] text-[#2C3A47]">
+                    <Reveal>{t("chancellor-message.paragraph-1")}</Reveal>
+                </p>
                 <Reveal>
                     <img src={`${HieuTruong}`} className="  w-[10rem]" />
                 </Reveal>
-                <Reveal>
-                    <p className=" max-w-[49rem] text-[0.9rem] sm:text-[0.5rem] md:text-[1.5rem] lg:text-[1.2rem] text-justify  my-5 mx-[5rem] text-[#2C3A47]">
-                        {t("chancellor-message.paragraph-1")}
-                    </p>
-                </Reveal>
+                <p className=" max-w-[49rem] text-[0.9rem] sm:text-[0.5rem] md:text-[1.5rem] lg:text-[1.2rem] text-justify  my-5 mx-[5rem] text-[#2C3A47]">
+                    <Reveal>{t("chancellor-message.paragraph-1")}</Reveal>
+                </p>
                 <Reveal>
                     <img
                         src={`${HieuTruong}`}

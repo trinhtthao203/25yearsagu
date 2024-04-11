@@ -57,6 +57,7 @@ const Footer = forwardRef((props, ref) => {
                                 <a
                                     className="text-[#27ae60]"
                                     href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+An+Giang+-+%C4%90HQG+TPHCM/@10.3716558,105.429764,17z/data=!3m1!4b1!4m6!3m5!1s0x310a731e7546fd7b:0x953539cd7673d9e5!8m2!3d10.3716558!4d105.4323389!16s%2Fm%2F03nt3_y?hl=vi-VN&entry=ttu"
+                                    target="_blank"
                                 >
                                     {t("contact.view-in-map")}
                                 </a>
@@ -108,6 +109,7 @@ const Footer = forwardRef((props, ref) => {
                                     href="https://www.facebook.com/pages/%C4%90%E1%BA%A1i-h%E1%BB%8Dc-An-Giang/1574368222658744"
                                     title="Facebook"
                                     className="flex items-center p-1"
+                                    target="_blank"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -123,6 +125,7 @@ const Footer = forwardRef((props, ref) => {
                                     href="https://www.agu.edu.vn/vi"
                                     title="Website"
                                     className="flex items-center p-1"
+                                    target="_blank"
                                 >
                                     <svg
                                         class="w-6 h-6 text-gray-800 dark:text-white"
@@ -143,6 +146,7 @@ const Footer = forwardRef((props, ref) => {
                                     href="https://vn.linkedin.com/school/vietnam-national-university-hcmc-an-giang-university/"
                                     title="Linkedin"
                                     className="flex items-center p-1"
+                                    target="_blank"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"

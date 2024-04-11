@@ -25,7 +25,10 @@
         "gallery-organizations": "/gallery-to-chuc-doan-the",
         "gallery-union": "/gallery-doan-hoi",
         "gallery-school": "/gallery-truong-thuc-hanh-su-pham",
-        "gallery-mitting": "/gallery-mitting"
+        "gallery-mitting": "/gallery-mitting",
+        "event-video": "/event-cuoc-thi-video",
+        "event-write": "/event-cuoc-thi-viet",
+        "event-write-detail": "/bai-viet"
     },
 
     "home": {
@@ -184,21 +187,47 @@
     },
 
     "event": {
-        "evt1-name": "Sự kiện 1",
-        "evt2-name": "Sự kiện 2",
+        "evt1-name": "Cuộc thi thiết kế video kỷ niệm 25 năm thành lập trường",
+        "evt2-name": "Cuộc thi viết kỷ niệm 25 năm thành lập trường",
         "evt3-name": "Sự kiện 3",
         "evt4-name": "Sự kiện 4",
-        "evt1-content": "ipsum dolor oribus nisi piente d ipsum dolor oribus nisi piente d ipsum dolor oribus nipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente disi piente d ipsum dolor oribus nisi piente d",
-        "evt2-content": "ipsum dolbu psum dolor oribus nisi piente d ipsum dolor oribus nisi pien",
+
+        "evt1-content": "Tiến hành tổ chức cuộc thi thiết kế video",
+        "evt2-content": "Tiến hành cuộc thi sáng tác bài viết kỷ niệm 25 năm thành lập trường",
         "evt3-content": "ipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente d",
-        "evt4-content": "ipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente d4"
+        "evt4-content": "ipsum dolor oribus nisi piente dipsum dolor oribus nisi piente dipsum dolor oribus nisi piente d4",
+
+        "evt1-title": "Video dự thi",
+        "evt2-title": "Bài viết dự thi",
+
+        "view-detail": "Xem chi tiết Thông báo cuộc thi"
     },
 
     "art": {
-        "video-title": "AGU yêu thương",
+        "video-contest": "Cuộc thi video",
+        "video-contest-desciption": "Alos Lorem ipsum dolor sit amet consectetur",
+        "write-contest": "Cuộc thi viết",
+        "write-contest-desciption": "Alos Lorem ipsum dolor sit amet consectetur",
+
+        "video-title": "Video giới thiệu về Trường",
         "video-description": "Alos Lorem ipsum dolor sit amet consectetur adipisicing elit.        Eveniet sit corporis, eligendi, temporibus nisi sapiente        dolorum eius vero, sequi dolore minus quae ipsam!        Praesentium aspernatur minima elig",
-        "song-title": "Bài hát AGU yêu thương",
-        "song-description": "Alos Lorem ipsum dolor sit amet consectetur adipisicing elit.        Eveniet sit corporis, eligendi, temporibus nisi sapiente        dolorum eius vero, sequi dolore minus quae ipsam!        Praesentium aspernatur minima elig"
+
+        "song-title": "Bài hát giới thiệu về Trường",
+        "song-01-title": "Đại Học An Giang Trường Chúng Tôi",
+        "song-02-title": "Tiến Lên Trường Đại Học An Giang",
+        "song-description": "Alos Lorem ipsum dolor sit amet consectetur adipisicing elit.        Eveniet sit corporis, eligendi, temporibus nisi sapiente        dolorum eius vero, sequi dolore minus quae ipsam!        Praesentium aspernatur minima elig",
+
+        "plan": "Kế hoạch tổ chức Kỷ niệm 25 năm thành lập trường (1999-2024)",
+        "plan-desciption": "Alos Lorem ipsum dolor sit amet consectetur adipisicing elit",
+
+        "25years-development-desciption": "Trường đại học An Giang 25 năm xây dựng - hội nhập - phát triển"
+    },
+
+    "article": {
+        "latest-articles": "Bài viết mới nhất",
+        "search": "Tìm kiếm",
+        "search-result": "Kết quả tìm kiếm",
+        "search-placeholder": "Nhập tiêu đề cần tìm..."
     },
 
     "alumni": {
@@ -307,6 +336,84 @@
         "education-description-18": "Lễ tốt nghiệp và vinh danh các tân khoa",
         "education-description-19": "Lễ khai giảng các lớp cao học của Trường",
         "education-description-20": "Lễ tốt nghiệp các lớp cao học của Trường",
+
+        "research-description-01": "Giảng viên ĐHAG tích cực nghiên cứu khoa học",
+        "research-description-02": "Nghiệm thu đề tài NCKH của giảng viên",
+        "research-description-03": "Giảng viên ĐHAG sáng tạo thiết bị điều khiển tưới tự động iDrop",
+        "research-description-04": "Giảng viên ĐHAG sáng tạo máy in 3D",
+        "research-description-05": "Giảng viên ĐHAG chủ trì đề tài nghiên cứu cấp Tỉnh về TELEMAC 3D",
+        "research-description-06": "Sinh viên ĐHAG nghiên cứu khoa học",
+        "research-description-07": "Hội thảo quốc tế về quản trị nước biến đổi khí hậu và an ninh lương thực",
+        "research-description-08": "Hội thảo quốc tế Các giải pháp thông minh cho phát triển bền vững",
+        "research-description-09": "Hội thảo quốc tế Các giải pháp thông minh cho phát triển bền vững",
+        "research-description-10": "Diễn đàn ĐBSCL về nông nghiệp hữu cơ Úc – Việt Nam",
+        "research-description-11": "Diễn dàn Giáo dục thế giới tại Vương quốc Anh",
+        "research-description-12": "Hội thảo quốc tế Triết lý nhân sinh của người dân Nam bộ",
+        "research-description-13": "Hội thảo quốc tế Living Lab Upper Mekong Delta",
+        "research-description-14": "Hội thảo “Thủ lĩnh thanh niên Đông Nam Á” YSEALI",
+        "research-description-15": "Hội thảo Quốc tế Công tác xã hội và sức khỏe cộng đồng",
+        "research-description-16": "Hội thảo Dạy học trong thời đại công nghệ 4.0",
+        "research-description-17": "Hội thảo về ứng dụng Blockchain trong lĩnh vực kinh tế và nông nghiệp tại An Giang",
+        "research-description-18": "Hội thảo hướng dẫn viết đề xuất nghiên cứu",
+        "research-description-19": "Hội thảo văn hóa Chăm",
+        "research-description-20": "Hội thảo về tự chủ Đại học",
+        "research-description-21": "Hội thảo Tài chính Kế toán trong thời kỳ hội nhập",
+
+        "foreign-description-01": "Diễn đàn Hiệu trưởng các đại học WTA lần 10",
+        "foreign-description-02": "Hiệu trưởng Võ Văn Thắng ký kết hợp tác với các trường tại Diễn đàn Hiệu trưởng các đại học WTA lần 10",
+        "foreign-description-03": "Trường ĐHAG tổ chức chương trình Vietnam Fieald Shool cho sinh viên Đại học Bách khoa HongKong",
+        "foreign-description-04": "Sinh viên AGU giao lưu văn hóa với Đại học Yuhan Hàn Quốc",
+        "foreign-description-05": "Trường ĐHAG tổ chức chương trình Vietnam Fieald Shool cho sinh viên ĐH Quốc gia Úc",
+        "foreign-description-06": "Tiếp đoàn Đại sứ quán Thụy Điển",
+        "foreign-description-07": "Tiếp đoàn Tổng lãnh sự quán Hoa Kỳ tại TPHCM",
+        "foreign-description-08": "Tiếp ĐH HZ Hà Lan",
+        "foreign-description-09": "Tiếp ĐH Kim Môn Đài Loan",
+        "foreign-description-10": "Giao lưu văn hóa với ĐH Andalas Indonesia",
+        "foreign-description-11": "Tiếp ĐH Andalas Indonesia.jpg",
+        "foreign-description-12": "Lãnh đạo Nhà trường làm việc cùng ĐH Swansea Vương quốc Anh",
+        "foreign-description-13": "Tiếp ĐH Salem State Hoa Kỳ",
+        "foreign-description-14": "Tiếp ĐH Assumption Thái Lan",
+        "foreign-description-15": "Tiếp ĐH Kalasin Thái Lan",
+        "foreign-description-16": "Tiếp ĐH Swansea Vương quốc Anh",
+        "foreign-description-17": "Tiếp ĐH Okayama Nhật Bản",
+        "foreign-description-18": "Tiếp ĐH Battambang Campuchia",
+        "foreign-description-19": "Tiếp ĐH Pekalongan Indonesia",
+        "foreign-description-20": "Tiếp đại diện bang Mecklenburg Vorpommern CHLB Đức",
+        "foreign-description-21": "Tiếp ĐH Yuhan – Hàn-Quốc",
+        "foreign-description-22": "Ký kết hợp tác với ĐH Saga Nhật Bản",
+        "foreign-description-23": "Ký kết hợp tác với ĐH Darmstardt CHLB Đức",
+        "foreign-description-24": "Tiếp ĐH Turiba và Viện AIT VN",
+        "foreign-description-25": "Tiếp ĐH Fulbright Hoa Kỳ",
+        "foreign-description-26": "Tiếp ĐH Suan Sunandha Rajabhat Thái Lan",
+        "foreign-description-27": "Tiếp ĐH IGlobal Hoa Kỳ",
+        "foreign-description-28": "Hội nghị tổng kết công tác đối ngoại",
+
+        "organizations-description-01": "Công đoàn mừng xuân",
+        "organizations-description-02": "Công đoàn viên Trường mừng Quốc tế Phụ nữ 8.3",
+        "organizations-description-03": "Hội thao viên chức lao động Trường ĐHAG",
+        "organizations-description-04": "Công đoàn Trường ĐHAG trồng cây nhớ ơn Bác",
+        "organizations-description-05": "Công đoàn viên Trường ĐHAG tham gia thi đấu tại Hội thao do LĐLĐ tỉnh tổ chức",
+        "organizations-description-06": "Hội thi nét đẹp người cán bộ công đoàn",
+        "organizations-description-07": "Nét đẹp người cán bộ công đoàn Hội thi Tiếng hát CNVC",
+        "organizations-description-08": "Hội thi Tiếng hát CNVC Trường ĐHAG",
+        "organizations-description-09": "Trao tặng Mái ấm công đoàn",
+        "organizations-description-10": "Công đoàn trường thăm hỏi viên chức hưu trí",
+        "organizations-description-11": "Công đoàn Trường ĐHAG tham dự Lễ kỷ niệm ngày thành lập Công đoàn Việt Nam",
+        "organizations-description-12": "Công đoàn Trường tổ chức trung thu cho con em CNVC",
+        "organizations-description-13": "Công đoàn trường tổ chức tham quan học tập kinh nghiệm",
+        "organizations-description-14": "Công đoàn trường tổ chức mừng Quốc tế thiếu nhi cho con em CNVC",
+
+        "union-description-01": "Hoạt động các Câu lạc bộ Đội nhóm tại Trường ĐHAG",
+        "union-description-02": "Sinh viên ĐHAG nhận học bổng",
+        "union-description-03": "Đại hội văn thể chào mừng ngày Nhà giáo Việt Nam 20.11",
+        "union-description-04": "Tập huấn kỹ năng hoạt động Đoàn Hội",
+        "union-description-05": "Ngày hội thanh niên khỏe",
+        "union-description-06": "Hội thi Thủ lĩnh thanh niên AGU",
+        "union-description-07": "Ký kết hợp tác trong hoạt động Đoàn Hội",
+        "union-description-08": "Sinh viên AGU xung kích tình nguyện vì cộng đồng",
+        "union-description-09": "Diễn đàn thanh niên AGU – Sinh viên đối thoại cùng lãnh đạo Nhà trường",
+        "union-description-10": "Tư vấn hỗ trợ sinh viên khởi nghiệp",
+        "union-description-11": "Ngày hội tuyển dụng AGU",
 
         "mitting": "Mitting kỷ niệm",
         "foreign": "Đối ngoại",

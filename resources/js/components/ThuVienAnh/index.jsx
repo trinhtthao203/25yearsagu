@@ -1,42 +1,38 @@
 import React from "react";
-
 import { Grid } from "@mui/material";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ImageListItemBar, Box, IconButton } from "@mui/material";
 
 import { dataImages } from "./images";
 
-const cardVariants = {
-    offscreen: {
-        y: 500,
-    },
-    onscreen: {
-        y: 0,
-        transition: {
-            type: "spring",
-            bounce: 0.4,
-            duration: 1,
-        },
-    },
-};
+// const cardVariants = {
+//     offscreen: {
+//         y: 500,
+//     },
+//     onscreen: {
+//         y: 0,
+//         transition: {
+//             type: "spring",
+//             bounce: 0.4,
+//             duration: 1,
+//         },
+//     },
+// };
 
 function Card({ image, title, description, link }) {
     const { t } = useTranslation();
 
     return (
-        <motion.div
+        <div
             className="overflow-hidden flex items-center justify-center relative pt-[20px] "
-            initial="offscreen"
-            whileInView="onscreen"
-            viewport={{ once: true, amount: 0.8 }}
+            // initial="offscreen"
+            // whileInView="onscreen"
+            // viewport={{ once: true, amount: 0.8 }}
         >
             <div className="absolute bottom-0 left-0 right-0 top-0 h-10" />
-            <motion.div
-                className="text-[164px] w-[450px] h-[300px] rounded-[7px] flex items-center justify-center bg-white"
-                variants={cardVariants}
-            >
+            <div className="text-[164px] w-[450px] h-[300px] rounded-[7px] flex items-center justify-center bg-white">
                 <div className="relative w-full h-full overflow-hidden rounded-[7px]">
                     <img
                         srcSet={`${image}?w=248&fit=crop&auto=format&dpr=2 2x`}
@@ -82,8 +78,8 @@ function Card({ image, title, description, link }) {
                         </Link>
                     </div>
                 </div>
-            </motion.div>
-        </motion.div>
+            </div>
+        </div>
     );
 }
 

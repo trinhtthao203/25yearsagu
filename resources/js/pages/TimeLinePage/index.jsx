@@ -2,9 +2,9 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Tabs } from "../../components/Tabs";
 import { Reveal } from "../../motion/Reveal";
+import Footer from "../../components/Footer";
 import BackButton from "../../components/BackButton";
 import CustomHeader from "../../components/CustomHeader";
-import Footer from "../../components/Footer";
 import { Stepper, Step, StepButton, Button, Box } from "@mui/material";
 
 export default function DongThoiGianPage() {
@@ -189,7 +189,7 @@ export default function DongThoiGianPage() {
     };
 
     return (
-        <Box sx={{ width: "100%" }}>
+        <Box sx={{ width: "100%" }} >
             <CustomHeader />
             <BackButton title={t("common.back-home")} left={"20%"} />
             <Reveal>
@@ -197,14 +197,18 @@ export default function DongThoiGianPage() {
                     {t("home.time-line")}
                 </p>
             </Reveal>
-            <Box sx={{ margin: { xs: "20px", sm: "0px 100px 100px 100px" } }}>
+
+            <Box  sx={{
+                    margin: { xs: "20px", sm: "0px 100px 100px 100px", lg:"0rem 20rem" } }}>
                 <Reveal>
                     <Stepper
                         nonLinear
                         activeStep={activeStep}
                         sx={{
                             flexDirection: { xs: "column", sm: "row" },
-                            height: "100px",
+                            height: {sm: "60px"},
+                            backgroundColor:"#c8d6e5",
+                            borderRadius:"10px",
                             justifyContent: { xs: "flex-start", sm: "center" },
                             alignItems: { xs: "flex-start", sm: "center" },
                         }}
@@ -219,10 +223,10 @@ export default function DongThoiGianPage() {
                                     alignItems: "center",
                                     backgroundColor:
                                         activeStep === time.id - 1
-                                            ? "#ecf0f1"
-                                            : "white",
-                                    height: "2rem",
-                                    borderRadius: "7px",
+                                            ? time.color
+                                            : "none",
+                                            height:"100%",
+                                            borderRadius:"10px"
                                 }}
                             >
                                 <Reveal>
@@ -231,9 +235,9 @@ export default function DongThoiGianPage() {
                                         onClick={handleStep(index)}
                                     >
                                         <span
-                                            className={`text-[1.1rem] ${time.textColor}`}
+                                            className={`text-[1.15rem] w-9 ${activeStep === time.id - 1 ? "text-white" :"text-black"}`}
                                         >
-                                            {time.description}
+                                            {time.description}{" "}
                                             {time.time}
                                         </span>
                                     </StepButton>
@@ -261,14 +265,14 @@ export default function DongThoiGianPage() {
                                     color="inherit"
                                     disabled={activeStep === 0}
                                     onClick={handleBack}
-                                    sx={{ mr: 1 }}
+                                    sx={{ mr: 1, fontSize:"1.15rem" }}
                                 >
                                     {t("common.previous")}
                                 </Button>
                             </Reveal>
                             <Box sx={{ flex: "1 1 auto" }} />
                             <Reveal>
-                                <Button onClick={handleNext} sx={{ mr: 1 }}>
+                                <Button onClick={handleNext}  sx={{ mr: 1, fontSize:"1.15rem" }}>
                                     {t("common.next")}
                                 </Button>
                             </Reveal>

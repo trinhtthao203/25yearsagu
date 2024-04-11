@@ -29,7 +29,7 @@
         />
         @vite('resources/css/app.css')
         @viteReactRefresh
-        @vite('resources/js/main.jsx')
+        @vite('resources/js/app.jsx')
 
     </head>
     <body>

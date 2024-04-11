@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Gallery } from "react-grid-gallery";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
@@ -10,8 +10,10 @@ function ImageList({ title, data }) {
     const [index, setIndex] = useState(-1);
     const handleClick = (index, item) => setIndex(index);
 
+    // Lazy loading image thumbnails
     const images = data.map((image) => ({
         ...image,
+        thumbnail: image.src, // Use the same image as a thumbnail for lazy loading
         customOverlay: (
             <div className=" bg-black max-h-[240px] overflow-hidden absolute bottom-0 w-full text-white p-1 text-[90%]">
                 <div>{t(`${image.caption}`)}</div>
@@ -28,6 +30,7 @@ function ImageList({ title, data }) {
         ),
     }));
 
+    // Prepare slides for lightbox
     const slides = data.map(({ original }) => ({
         src: original,
         width: "100%",

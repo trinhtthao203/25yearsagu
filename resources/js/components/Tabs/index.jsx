@@ -55,17 +55,6 @@ const TabItem = styled(motion.button)`
     overflow: hidden;
 `;
 
-const Slider = styled(motion.div)`
-    height: 4px;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    margin-left: 2px;
-    margin-right: 2px;
-    bottom: 0;
-    position: absolute;
-    background: #08e;
-`;
-
 export function Tabs({ eventData }) {
     const [value, setValue] = useState(0);
     const childRefs = useRef(new Map());
@@ -97,7 +86,7 @@ export function Tabs({ eventData }) {
 
     return (
         <Container>
-            <TabContainer ref={ref}>
+            <TabContainer ref={ref} >
                 <TabList ref={tabListRef}>
                     {eventData.map((event, i) => (
                         <TabItem
@@ -109,21 +98,9 @@ export function Tabs({ eventData }) {
                             ref={(el) => childRefs.current.set(i, el)}
                             onClick={() => setValue(i)}
                         >
-                            {event.time}
+                            <p className=" text-[1rem]">{event.time}</p>
                         </TabItem>
                     ))}
-                    {slider.hasValue && (
-                        <Slider
-                            positionTransition={{
-                                bounceDamping: 3,
-                            }}
-                            initial={false}
-                            style={{
-                                left: slider.left,
-                                right: slider.right,
-                            }}
-                        />
-                    )}
                 </TabList>
             </TabContainer>
             <Pager value={value}>

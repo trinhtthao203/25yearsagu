@@ -9,6 +9,7 @@ import VVThang from "../../../../public/images/BanGiamHieu/vvthang.png";
 import LMTung from "../../../../public/images/BanGiamHieu/lmtung.png";
 import ReadMoreButton from "../ReadMoreButton";
 import { useNavigate } from "react-router-dom";
+import BackGround from "../../../../public/images/background.jpg";
 
 function BanGiamHieu() {
     const navigate = useNavigate();
@@ -39,9 +40,17 @@ function BanGiamHieu() {
         },
     ];
     return (
-        <div id="board-of-directors-time">
+        <div
+            id="board-of-directors-time"
+            style={{
+                backgroundImage: `linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url(${BackGround})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundAttachment: "fixed",
+            }}
+        >
             <Box sx={{ flexGrow: 1, paddingY: "5rem" }}>
-                <p className="text-3xl uppercase text-chathamsblue text-center pb-[5rem]">
+                <p className="px-10 text-xl md:text-3xl uppercase text-chathamsblue text-center pb-[5rem]">
                     <Reveal isAnimation={isAnimation}>
                         {t("home.board-of-directors-time")}
                     </Reveal>
@@ -60,6 +69,7 @@ function BanGiamHieu() {
                                         <img
                                             src={bangiamhieu.image}
                                             alt={bangiamhieu.name}
+                                            loading="lazy"
                                             className=" max-w-full h-auto rounded-lg"
                                         />
                                     </Reveal>

@@ -27,7 +27,7 @@ import GallerySchoolPage from "./pages/GallerySchoolPage";
 function MyApp() {
     const { t } = useTranslation();
     return (
-        <BrowserRouter basename="/agu25years">
+        <BrowserRouter>
             <ScrollToTop />
             <CssBaseline />
             <Routes>

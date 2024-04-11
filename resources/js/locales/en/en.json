@@ -15,7 +15,10 @@
         "gallery-organizations": "/gallery-to-chuc-doan-the",
         "gallery-union": "/gallery-doan-hoi",
         "gallery-school": "/gallery-truong-thuc-hanh-su-pham",
-        "gallery-mitting": "/gallery-mitting"
+        "gallery-mitting": "/gallery-mitting",
+        "event-video": "/event-cuoc-thi-video",
+        "event-write": "/event-cuoc-thi-viet",
+        "event-write-detail": "/bai-viet"
     },
 
     "home": {

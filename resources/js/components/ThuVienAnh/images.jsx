@@ -6,7 +6,6 @@ import Union from "../../../../public/images/Gallery/Union/18.Đại-hội-văn-
 import Organizations from "../../../../public/images/Gallery/Organizations/66.-Công-đoàn-trường-tổ-chức-tham-quan-học-tập-kinh-nghiệm.jpg";
 import School from "../../../../public/images/Gallery/School/1.-Toàn-cảnh-Trường-Thực-Hành-Sư-Phạm.jpg";
 import Mitting from "../../../../public/images/Gallery/Union/46.Tư-vấn-hỗ-trợ-sinh-viên-khởi-nghiệp.jpg";
-import { t } from "i18next";
 
 export const dataImages = [
     {

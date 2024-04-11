@@ -264,6 +264,7 @@ function BoardOfDirectorsPage() {
                                         className="shadow-2xl shadow-blue-500/20 rounded-md translate-x-[-100%] duration-1000 "
                                         src={member.image}
                                         alt={member.name}
+                                        loading="lazy"
                                     />
                                     <p className=" w-full text-center pt-[2rem] translate-x-[-100%] duration-1000 mx-[30px] text-moonMist text-[17px]">
                                         {member.name}

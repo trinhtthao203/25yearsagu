@@ -50,7 +50,7 @@ function BanGiamHieu() {
             }}
         >
             <Box sx={{ flexGrow: 1, paddingY: "5rem" }}>
-                <p className="px-10 text-xl md:text-3xl uppercase text-chathamsblue text-center pb-[5rem]">
+                <p className="px-10 text-xl md:text-3xl font-medium uppercase text-green01 font-oswald text-center pb-[5rem]">
                     <Reveal isAnimation={isAnimation}>
                         {t("home.board-of-directors-time")}
                     </Reveal>
@@ -74,17 +74,17 @@ function BanGiamHieu() {
                                         />
                                     </Reveal>
                                     <div className="text-center mt-2">
-                                        <p className="text-[1rem] font-semibold uppercase">
+                                        <p className="text-[1rem] font-montserrat font-bold text-green01 uppercase">
                                             <Reveal isAnimation={isAnimation}>
                                                 {bangiamhieu.name}
                                             </Reveal>
                                         </p>
-                                        <p className="text-lg text-gray-500 ">
+                                        <p className="text-lg text-green01 font-montserrat font-medium">
                                             <Reveal isAnimation={isAnimation}>
                                                 {bangiamhieu.title}
                                             </Reveal>
                                         </p>
-                                        <p className="text-lg text-gray-500 ">
+                                        <p className="text-lg text-green01 font-montserrat font-medium">
                                             <Reveal isAnimation={isAnimation}>
                                                 {bangiamhieu.year}
                                             </Reveal>

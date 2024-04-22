@@ -12,6 +12,8 @@ export default {
             fontFamily: {
                 rounded: "M PLUS Rounded 1c",
                 meri: "Merriweather",
+                montserrat: "Montserrat",
+                oswald: "Oswald",
             },
             colors: {
                 elephant: "#243c5a",
@@ -21,6 +23,11 @@ export default {
                 chathamsblue: "#143C7C",
                 darkblue: "#1C242C",
                 darkblack: "#131316",
+                green01: "#2D5029",
+                green02: "#769270",
+                green03: "#778A7C",
+                green04: "#E0EFE6",
+                green05: "#57AE47",
             },
         },
     },

@@ -206,6 +206,7 @@ export default function DongThoiGianPage() {
                         activeStep={activeStep}
                         sx={{
                             flexDirection: { xs: "column", sm: "row" },
+
                             height: {sm: "60px"},
                             backgroundColor:"#c8d6e5",
                             borderRadius:"10px",

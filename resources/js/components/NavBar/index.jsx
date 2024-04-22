@@ -90,146 +90,146 @@ export default function HideAppBar(props) {
     return (
         <React.Fragment>
             <CssBaseline />
-            <HideOnScroll {...props}>
-                <AppBar
-                    position="fixed"
-                    sx={{
-                        backgroundColor: "rgba(255, 255, 255, 0.5)",
-                    }}
-                >
-                    <Toolbar disableGutters>
-                        <HistoryEdu
-                            sx={{
-                                display: { xs: "none", md: "flex" },
-                                mr: 1,
-                                color: "black",
-                            }}
-                        />
-                        <Typography
-                            variant="h6"
-                            noWrap
-                            component="a"
-                            // href="/agu25years"
-                            onClick={() => scrollTo("header")}
-                            sx={{
-                                mr: 2,
-                                display: { xs: "none", md: "flex" },
-                                fontFamily: "monospace",
-                                fontWeight: 700,
-                                letterSpacing: ".3rem",
-                                color: "black",
-                                textDecoration: "none",
-                            }}
+            {/* <HideOnScroll {...props}> */}
+            <AppBar
+                position="fixed"
+                sx={{
+                    backgroundColor: "rgba(255, 255, 255, 0.5)",
+                }}
+            >
+                <Toolbar disableGutters>
+                    <HistoryEdu
+                        sx={{
+                            display: { xs: "none", md: "flex" },
+                            mr: 1,
+                            color: "black",
+                        }}
+                    />
+                    <Typography
+                        variant="h6"
+                        noWrap
+                        component="a"
+                        // href="/agu25years"
+                        onClick={() => scrollTo("header")}
+                        sx={{
+                            mr: 2,
+                            display: { xs: "none", md: "flex" },
+                            fontFamily: "monospace",
+                            fontWeight: 700,
+                            letterSpacing: ".3rem",
+                            color: "black",
+                            textDecoration: "none",
+                        }}
+                    >
+                        AGU
+                    </Typography>
+                    <Box
+                        sx={{
+                            flexGrow: 1,
+                            display: { xs: "flex", md: "none" },
+                        }}
+                    >
+                        <IconButton
+                            size="large"
+                            aria-label="account of current user"
+                            aria-controls="menu-appbar"
+                            aria-haspopup="true"
+                            onClick={handleOpenNavMenu}
+                            color="inherit"
                         >
-                            AGU
-                        </Typography>
-                        <Box
-                            sx={{
-                                flexGrow: 1,
-                                display: { xs: "flex", md: "none" },
-                            }}
-                        >
-                            <IconButton
-                                size="large"
-                                aria-label="account of current user"
-                                aria-controls="menu-appbar"
-                                aria-haspopup="true"
-                                onClick={handleOpenNavMenu}
-                                color="inherit"
-                            >
-                                <DragHandle
-                                    sx={{
-                                        color: "black",
-                                    }}
-                                />
-                            </IconButton>
-                            <Menu
-                                id="menu-appbar"
-                                anchorEl={anchorElNav}
-                                anchorOrigin={{
-                                    vertical: "bottom",
-                                    horizontal: "left",
-                                }}
-                                keepMounted
-                                transformOrigin={{
-                                    vertical: "top",
-                                    horizontal: "left",
-                                }}
-                                open={Boolean(anchorElNav)}
-                                onClose={handleCloseNavMenu}
+                            <DragHandle
                                 sx={{
-                                    display: { xs: "block", md: "none" },
+                                    color: "black",
                                 }}
-                            >
-                                {pages.map((page, index) => (
-                                    <MenuItem
-                                        key={index}
-                                        onClick={() => scrollTo(page.link)}
-                                    >
-                                        <Typography
-                                            textAlign="center"
-                                            sx={{ color: "black" }}
-                                        >
-                                            {page.title}
-                                        </Typography>
-                                    </MenuItem>
-                                ))}
-                            </Menu>
-                        </Box>
-                        <HistoryEdu
-                            sx={{
-                                display: { xs: "flex", md: "none" },
-                                mr: 1,
-                                color: "black",
+                            />
+                        </IconButton>
+                        <Menu
+                            id="menu-appbar"
+                            anchorEl={anchorElNav}
+                            anchorOrigin={{
+                                vertical: "bottom",
+                                horizontal: "left",
                             }}
-                        />
-                        <Typography
-                            variant="h5"
-                            noWrap
-                            component="a"
-                            // href="/agu25years"
-                            onClick={() => scrollTo("header")}
-                            sx={{
-                                mr: 2,
-                                display: { xs: "flex", md: "none" },
-                                flexGrow: 1,
-                                fontFamily: "monospace",
-                                fontWeight: 700,
-                                letterSpacing: ".3rem",
-                                color: "black",
-                                textDecoration: "none",
+                            keepMounted
+                            transformOrigin={{
+                                vertical: "top",
+                                horizontal: "left",
                             }}
-                        >
-                            AGU
-                        </Typography>
-                        <Box
+                            open={Boolean(anchorElNav)}
+                            onClose={handleCloseNavMenu}
                             sx={{
-                                flexGrow: 1,
-                                display: { xs: "none", md: "flex" },
+                                display: { xs: "block", md: "none" },
                             }}
                         >
                             {pages.map((page, index) => (
-                                <Button
-                                    key={page}
-                                    onClick={() => {
-                                        scrollTo(page.link);
-                                    }}
-                                    sx={{
-                                        my: 2,
-                                        color: "black",
-                                        display: "block",
-                                    }}
+                                <MenuItem
+                                    key={index}
+                                    onClick={() => scrollTo(page.link)}
                                 >
-                                    {page.title}
-                                </Button>
+                                    <Typography
+                                        textAlign="center"
+                                        sx={{ color: "black" }}
+                                    >
+                                        {page.title}
+                                    </Typography>
+                                </MenuItem>
                             ))}
-                        </Box>
-                        <Box sx={{ flexGrow: 0 }}>
-                            <LanguageSelector />
-                        </Box>
-                    </Toolbar>
-                </AppBar>
-            </HideOnScroll>
+                        </Menu>
+                    </Box>
+                    <HistoryEdu
+                        sx={{
+                            display: { xs: "flex", md: "none" },
+                            mr: 1,
+                            color: "black",
+                        }}
+                    />
+                    <Typography
+                        variant="h5"
+                        noWrap
+                        component="a"
+                        // href="/agu25years"
+                        onClick={() => scrollTo("header")}
+                        sx={{
+                            mr: 2,
+                            display: { xs: "flex", md: "none" },
+                            flexGrow: 1,
+                            fontFamily: "monospace",
+                            fontWeight: 700,
+                            letterSpacing: ".3rem",
+                            color: "black",
+                            textDecoration: "none",
+                        }}
+                    >
+                        AGU
+                    </Typography>
+                    <Box
+                        sx={{
+                            flexGrow: 1,
+                            display: { xs: "none", md: "flex" },
+                        }}
+                    >
+                        {pages.map((page, index) => (
+                            <Button
+                                key={page}
+                                onClick={() => {
+                                    scrollTo(page.link);
+                                }}
+                                sx={{
+                                    my: 2,
+                                    color: "black",
+                                    display: "block",
+                                }}
+                            >
+                                {page.title}
+                            </Button>
+                        ))}
+                    </Box>
+                    <Box sx={{ flexGrow: 0 }}>
+                        <LanguageSelector />
+                    </Box>
+                </Toolbar>
+            </AppBar>
+            {/* </HideOnScroll> */}
             <Toolbar />
         </React.Fragment>
     );

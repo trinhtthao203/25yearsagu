@@ -7,6 +7,7 @@ import NavBar from "../../components/Navbar";
 import SuKien from "../../components/SuKien";
 import Footer from "../../components/Footer";
 import DoiTac from "../../components/DoiTac";
+import ThuNgo from "../../components/ThuNgo";
 import NhaTaiTro from "../../components/NhaTaiTro";
 import ThuVienAnh from "../../components/ThuVienAnh";
 import BanGiamHieu from "../../components/BanGiamHieu";
@@ -54,9 +55,9 @@ function Home() {
                 <div id="header" className="w-full h-full">
                     <NavBar resultRef={resultRef} />
                     <div
-                        className=" h-screen w-screen relative animate-fade animate-duration-[1200ms]"
+                        className="h-screen w-screen relative animate-fade animate-duration-[1200ms]"
                         style={{
-                            backgroundImage: `url(${backgroundImage})`,
+                            backgroundImage: `linear-gradient(to right, rgba(138, 90, 226, 0.2), rgba(255, 255, 150, 0.5)), url(${backgroundImage})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                             backgroundAttachment: "fixed",
@@ -64,24 +65,22 @@ function Home() {
                     >
                         <div className=" h-screen w-screen flex justify-center items-center">
                             <div className="flex flex-col items-center justify-center mt-[-15rem]">
-                                <div className="w-[10rem] sm:w-[11rem] md:w-[19rem] lg:w-[22rem] xl:w-[19rem] animate-flip-down">
+                                {/* <div className="w-[10rem] sm:w-[11rem] md:w-[19rem] lg:w-[22rem] xl:w-[19rem] animate-flip-down"> */}
+                                <Reveal isAnimation={isAnimation}>
+                                    <p className=" text-white uppercase text-[10rem] font-semibold font-montserrat">
+                                        25
+                                    </p>
+                                    {/* <img src={`${Logo25}`} alt="Logo" /> */}
+                                </Reveal>
+                                {/* </div> */}
+                                <div className="transform text-center ">
                                     <Reveal isAnimation={isAnimation}>
-                                        <img src={`${Logo25}`} alt="Logo" />
-                                    </Reveal>
-                                </div>
-                                <div className="transform text-center">
-                                    <Reveal isAnimation={isAnimation}>
-                                        <p className=" uppercase px-[1.2rem] text-[1.7rem] sm:text-[1.7rem] md:text-[2.6rem] lg:text-[3.1rem] xl:text-[3.7rem] font-bold text-gray-900 tracking-wider shadow-retr">
-                                            {t("home.25year-established")}
+                                        <p className=" text-white uppercase text-[1.1rem] sm:text-[1.7rem] md:text-[2rem] lg:text-[2.4rem] xl:text-[2.0rem] font-semibold font-montserrat p-3">
+                                            {t("home.sologan")}
                                         </p>
                                     </Reveal>
                                     <Reveal isAnimation={isAnimation}>
-                                        <p className=" uppercase text-[1.1rem] sm:text-[1.7rem] md:text-[2rem] lg:text-[2.4rem] xl:text-[2.5rem] p-3">
-                                            {t("home.agu")}
-                                        </p>
-                                    </Reveal>
-                                    <Reveal isAnimation={isAnimation}>
-                                        <p className="text-[1rem] sm:text-[1.1rem] md:text-[1.5rem] lg:text-[1.7rem] xl:text-[2rem]">
+                                        <p className="text-white text-[1rem] sm:text-[1.1rem] md:text-[1.5rem] lg:text-[1.7rem] xl:text-[2rem] font-oswald">
                                             {t("home.year-anniversary")}
                                         </p>
                                     </Reveal>
@@ -89,14 +88,14 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <NhaTaiTro />
                     <ThongDiepHieuTruong />
+                    <ThuNgo />
+                    <NhaTaiTro />
                     <DongThoiGian />
                     <BanGiamHieu />
-                    {/* <ThuNgo /> */}
                     {/* <HoiNhapPhatTrien /> */}
                     <SuKien />
-                    <GocNgheThuat />
+                    {/* <GocNgheThuat /> // bị đẩy cột trắng */}
                     <DoiTac />
                     <CuuSinhVien />
                     <ThuVienAnh />

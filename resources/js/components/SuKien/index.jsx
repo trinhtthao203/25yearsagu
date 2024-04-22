@@ -28,31 +28,31 @@ function SuKien() {
             color: "#81ecec",
             link: "path.event-write",
         },
-        {
-            name: t("event.evt3-name"),
-            content: t("event.evt3-content"),
-            color: "#ff9ff3",
-            link: "path.event-write",
-        },
-        {
-            name: t("event.evt4-name"),
-            content: t("event.evt4-content"),
-            color: "#f3a683",
-            link: "path.event-write",
-        },
+        // {
+        //     name: t("event.evt3-name"),
+        //     content: t("event.evt3-content"),
+        //     color: "#ff9ff3",
+        //     link: "path.event-write",
+        // },
+        // {
+        //     name: t("event.evt4-name"),
+        //     content: t("event.evt4-content"),
+        //     color: "#f3a683",
+        //     link: "path.event-write",
+        // },
     ];
 
     return (
         <div
             id="join-the-celebration"
-            className="flex flex-col justify-center items-center bg-[#2c3e50] py-28 "
+            className="flex flex-col justify-center items-center bg-[#0d2c14] py-28 "
         >
-            <p className="text-xl md:text-3xl font-bol uppercase text-[#fdcb6e] text-center pb-2">
-                <Reveal isAnimation={isAnimation}>
+            <Reveal isAnimation={isAnimation}>
+                <p className="text-2xl md:text-3xl font-oswald uppercase text-[#fdcb6e] text-center py-2">
                     {t("home.join-the-celebration")}
-                </Reveal>
-            </p>
-            <p className="text-[1.4rem] font-bold uppercase text-[#fdcb6e] text-center pb-3">
+                </p>
+            </Reveal>
+            <p className="text-[1rem] md:text-[1.2rem] font-montserrat font-medium uppercase text-[#fdcb6e] text-center pb-3">
                 <Reveal isAnimation={isAnimation}>
                     {t("home.join-the-celebration-desciption")}
                 </Reveal>
@@ -61,6 +61,10 @@ function SuKien() {
                 sx={{
                     width: "100%",
                     maxWidth: { md: "50%" },
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    flexDirection: "column",
                 }}
             >
                 {events.map((event) => (
@@ -88,13 +92,15 @@ function SuKien() {
                                 </ListItemAvatar>
                                 <ListItemText
                                     primaryTypographyProps={{
-                                        fontSize: "20px",
-                                        color: "white",
+                                        fontSize: { sx: "17px", md: "20px" },
+                                        color: "#E0EFE6",
+                                        width: "100%",
                                     }}
                                     secondaryTypographyProps={{
-                                        color: "#b2bec3",
+                                        color: "#E0EFE6",
                                         textAlign: "justify",
-                                        fontSize: "16px",
+                                        fontSize: { sx: "14px", md: "16px" },
+                                        width: "100%",
                                     }}
                                     primary={event.name}
                                     secondary={event.content}

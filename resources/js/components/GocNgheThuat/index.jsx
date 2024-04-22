@@ -19,12 +19,12 @@ const GocNgheThuat = () => {
     const isAnimation = JSON.parse(sessionStorage.getItem("visited")) !== false;
 
     const slideData = [
-        {
-            URL: _25Years,
-            title: t("home.25years-development"),
-            description: t("art.25years-development-desciption"),
-            link: _25yplan,
-        },
+        // {
+        //     URL: _25Years,
+        //     title: t("home.25years-development"),
+        //     description: t("art.25years-development-desciption"),
+        //     link: _25yplan,
+        // },
         // {
         //     URL: CuocThiVideo,
         //     title: t("art.video-contest"),
@@ -107,23 +107,19 @@ const GocNgheThuat = () => {
                                 <img src={slide.URL} className="rounded-lg " />
                             </Grid>
                             <Grid item xs={12} md={7}>
-                                <p className=" text-center text-[1rem] md:text-[1.5rem] ">
-                                    <Reveal isAnimation={isAnimation}>
-                                        <p className=" text-[#474787] ">
-                                            {slide.title}
-                                        </p>
-                                    </Reveal>
-                                </p>
-                                <p className=" text-justify text-[0.9rem] md:text-[1.2rem] pl-[1rem]">
-                                    <Reveal isAnimation={isAnimation}>
-                                        <p className=" text-[#30336b] py-5">
-                                            {slide.description}
-                                        </p>
-                                    </Reveal>
-                                </p>
+                                <Reveal isAnimation={isAnimation}>
+                                    <p className=" pt-10 font-medium font-oswald text-green01 text-center text-[1.2rem] md:text-[1.7rem] ">
+                                        {slide.title}
+                                    </p>
+                                </Reveal>
+                                <Reveal isAnimation={isAnimation}>
+                                    <p className=" font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.2rem] pl-[1rem] py-5">
+                                        {slide.description}
+                                    </p>
+                                </Reveal>
                                 <div className="w-full flex justify-end items-end">
                                     <Reveal isAnimation={isAnimation}>
-                                        <button className=" flex justify-center items-center h-[36px] rounded-[4px] bg-[#5ca1e1] border-none text-white text-center text-[32px] px-[15px] scursor-pointer m-[10px] mb-[36px] shadow-[0_10px_20px_-8px_rgba(0,0,0,0.7)] relative duration-300 after:content-['»'] after:absolute after:opacity-0 after:top-[-7px] after:right-[-20px] after:duration-300 hover:pr-[24px] hover:pl-[8px] hover:after:opacity-100 hover:after:right-[10px]">
+                                        <button className=" flex justify-center items-center h-[36px] rounded-[4px] bg-green05 border-none text-green04 text-center text-[32px] px-[15px] scursor-pointer m-[10px] mb-[36px] shadow-[0_10px_20px_-8px_rgba(0,0,0,0.7)] relative duration-300 after:content-['»'] after:absolute after:opacity-0 after:top-[-7px] after:right-[-20px] after:duration-300 hover:pr-[24px] hover:pl-[8px] hover:after:opacity-100 hover:after:right-[10px]">
                                             <a
                                                 href={slide.link}
                                                 target="_blank"
@@ -160,16 +156,16 @@ const GocNgheThuat = () => {
                             </Reveal>
                         </Grid>
                         <Grid item xs={12} md={7}>
-                            <p className=" text-center text-[1rem] md:text-[1.5rem] text-[#474787]">
-                                <Reveal isAnimation={isAnimation}>
+                            <Reveal isAnimation={isAnimation}>
+                                <p className=" pt-10 font-medium font-oswald text-green01 text-center text-[1.2rem] md:text-[1.7rem] ">
                                     {t("art.video-title")}
-                                </Reveal>
-                            </p>
-                            <p className=" text-justify text-[0.9rem] md:text-[1.2rem] text-[#40407a]">
-                                <Reveal isAnimation={isAnimation}>
+                                </p>
+                            </Reveal>
+                            <Reveal isAnimation={isAnimation}>
+                                <p className=" font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.2rem] pl-[1rem] py-5">
                                     {t("art.video-description")}
-                                </Reveal>
-                            </p>
+                                </p>
+                            </Reveal>
                         </Grid>
                     </Grid>
                 </Box>
@@ -198,38 +194,34 @@ const GocNgheThuat = () => {
                             <img src={BaiHatVeTruong} className="rounded-lg" />
                         </Grid>
                         <Grid item xs={12} md={7}>
-                            <p className=" text-center text-[1rem] md:text-[1.5rem] ">
-                                <Reveal isAnimation={isAnimation}>
-                                    <p className=" text-[#474787]">
-                                        {t("art.song-title")}
-                                    </p>
-                                </Reveal>
-                            </p>
-                            <p className=" text-justify text-[0.9rem] md:text-[1.2rem]">
-                                <Reveal isAnimation={isAnimation}>
-                                    <p className=" text-[#40407a]">
-                                        {t("art.song-description")}
-                                    </p>
-                                </Reveal>
-                                <div className=" flex flex-col justify-center items-center md:justify-start md:items-start">
-                                    <p className=" text-[#40407a] py-2">
-                                        {t("art.song-01-title")}
-                                    </p>
-                                    <audio
-                                        controls
-                                        src={Song01}
-                                        className=" w-[95%] md:w-[50%] "
-                                    />
-                                    <p className=" text-[#40407a] py-2">
-                                        {t("art.song-02-title")}
-                                    </p>
-                                    <audio
-                                        controls
-                                        src={Song02}
-                                        className=" w-[95%] md:w-[50%] "
-                                    />
-                                </div>
-                            </p>
+                            <Reveal isAnimation={isAnimation}>
+                                <p className=" pt-10 font-medium font-oswald text-green01 text-center text-[1.2rem] md:text-[1.7rem] ">
+                                    {t("art.song-title")}
+                                </p>
+                            </Reveal>
+                            <Reveal isAnimation={isAnimation}>
+                                <p className=" font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.2rem] pl-[1rem] py-5">
+                                    {t("art.song-description")}
+                                </p>
+                            </Reveal>
+                            <div className=" flex flex-col justify-center items-center md:justify-start md:items-start">
+                                <p className=" font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.2rem] pl-[1rem]">
+                                    {t("art.song-01-title")}
+                                </p>
+                                <audio
+                                    controls
+                                    src={Song01}
+                                    className=" w-[95%] md:w-[50%] "
+                                />
+                                <p className=" font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.2rem] pl-[1rem]">
+                                    {t("art.song-02-title")}
+                                </p>
+                                <audio
+                                    controls
+                                    src={Song02}
+                                    className=" w-[95%] md:w-[50%] "
+                                />
+                            </div>
                         </Grid>
                     </Grid>
                 </Box>

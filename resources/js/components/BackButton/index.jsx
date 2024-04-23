@@ -10,11 +10,11 @@ const BackButton = ({ title, left, textColor }) => {
 
     const buttonHoverStyle = {
         transition: "1s ease-in-out",
-        border: "1px solid #f1c40f",
+        border: "1px solid #2D5029",
         strokeDashoffset: "-480",
     };
     const spanHoverStyle = {
-        color: "#f1c40f",
+        color: "#2D5029",
     };
 
     const svgHoverStyle = {
@@ -60,7 +60,7 @@ const BackButton = ({ title, left, textColor }) => {
                             left: 0,
                             top: 0,
                             fill: "none",
-                            stroke: "#f1c40f",
+                            stroke: "#E0EFE6",
                             strokeDasharray: "150 480",
                             strokeDashoffset: 150,
                             transition: "0.6s ease-in-out",
@@ -78,7 +78,7 @@ const BackButton = ({ title, left, textColor }) => {
                     </svg>
                     <span
                         style={{
-                            color: textColor ? textColor : "#130f40",
+                            color: textColor ? textColor : "#2D5029",
                             fontSize: "18px",
                             fontWeight: "400",
                             ...(isHovered && spanHoverStyle),

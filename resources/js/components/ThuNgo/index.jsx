@@ -7,12 +7,12 @@ function ThuNgos() {
     const isAnimation = JSON.parse(sessionStorage.getItem("visited")) !== false;
     return (
         <div className="flex flex-col justify-center items-center pt-[5rem] bg-green04">
-            <div className="px-2 w-full md:w-2/5 text-center ">
-                <p className="text-[2rem] uppercase text-green01 text-center font-oswald py-5">
-                    Thư Ngỏ
+            <div className="px-2 w-full md:w-2/5 text-center py-[10rem] ">
+                <p className="items-center pb-10 text-[1.5rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2.2rem] uppercase text-green01 font-oswald">
+                    {t("home.open-letter")}
                 </p>
                 <Reveal isAnimation={isAnimation}>
-                    <p className="text-[0.85rem] sm:text-[1.4rem] md:text-[1.5rem] lg:text-[1.2rem] text-green01 font-montserrat font-medium">
+                    <p className="text-center px-[9px] text-[0.9rem] md:text-[1.1rem] lg:text-[1.1rem] text-green01 font-montserrat  font-medium">
                         {t("home.short_content")}
                     </p>
                     <Link

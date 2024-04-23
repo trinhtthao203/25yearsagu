@@ -49,8 +49,8 @@ const TabItem = styled(motion.button)`
     text-overflow: ellipsis;
     line-height: 1.5;
     font-size: 0.875rem;
-    font-weight: 600;
-    color: ${(p) => (p.isActive ? "#2980b9" : "#b2bec3")};
+    font-weight: 700;
+    color: ${(p) => (p.isActive ? "#2D5029" : "#b2bec3")};
     margin: 0px;
     overflow: hidden;
 `;
@@ -86,7 +86,7 @@ export function Tabs({ eventData }) {
 
     return (
         <Container>
-            <TabContainer ref={ref} >
+            <TabContainer ref={ref}>
                 <TabList ref={tabListRef}>
                     {eventData.map((event, i) => (
                         <TabItem
@@ -111,7 +111,7 @@ export function Tabs({ eventData }) {
                             width: "100%",
                             minHeight: "250px",
                             padding: "16px",
-                            color: "black",
+                            color: "#2D5029",
                         }}
                     >
                         <span

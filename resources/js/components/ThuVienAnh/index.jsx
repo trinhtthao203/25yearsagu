@@ -4,7 +4,7 @@ import { Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ImageListItemBar, Box, IconButton } from "@mui/material";
-
+import { Reveal } from "../../motion/Reveal";
 import { dataImages } from "./images";
 
 // const cardVariants = {
@@ -70,7 +70,7 @@ function Card({ image, title, description, link }) {
                         />
                         <Link
                             to={link}
-                            className="text-[32px] flex justify-center items-center h-[35px] mt-[17rem] rounded-[4px] bg-[#5ca1e1] border-none text-white text-center px-[16px] w-[220px] cursor-pointer m-[36px] shadow-[0_10px_20px_-8px_rgba(0,0,0,0.7)] relative duration-1000 after:content-['»'] after:absolute after:opacity-0 after:top-[-7px] after:right-[-20px] after:duration-1000 hover:pr-[24px] hover:pl-[8px] hover:after:opacity-100 hover:after:right-[10px]"
+                            className=" font-oswald text-[32px] flex justify-center items-center h-[35px] mt-[17rem] rounded-[4px] bg-green01 border-none text-white text-center px-[16px] w-[220px] cursor-pointer m-[36px] shadow-[0_10px_20px_-8px_rgba(0,0,0,0.7)] relative duration-1000 after:content-['»'] after:absolute after:opacity-0 after:top-[-7px] after:right-[-20px] after:duration-1000 hover:pr-[24px] hover:pl-[8px] hover:after:opacity-100 hover:after:right-[10px]"
                         >
                             <span className=" text-[17px]">
                                 {t("common.read-more")}
@@ -85,15 +85,19 @@ function Card({ image, title, description, link }) {
 
 function HinhAnh() {
     const { t } = useTranslation();
+    const isAnimation = JSON.parse(sessionStorage.getItem("visited")) !== false;
+
     return (
         <div
             id="gallery"
             className=" py-[2rem] px-[1rem] md:px-[1rem] lg:px-[10rem] bg-moonMist"
         >
             <Box>
-                <p className="text-3xl uppercase text-[#2c2c54] text-center py-5 pt-10">
-                    {t("home.gallery")}
-                </p>
+                <Reveal isAnimation={isAnimation}>
+                    <p className=" py-10 w-full flex justify-center items-center mt-[3rem] text-[1.5rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2.2rem] uppercase text-green01 font-oswald">
+                        {t("home.gallery")}
+                    </p>
+                </Reveal>
                 <Grid container columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                     {dataImages.map((item) => (
                         <Grid item xs={12} sm={6} md={4} key={item}>

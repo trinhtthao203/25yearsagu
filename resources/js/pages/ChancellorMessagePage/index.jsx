@@ -13,10 +13,10 @@ function ThongDiepHieuTruongPage() {
         <div className="w-full h-full">
             <CustomHeader />
             <div className="flex flex-col justify-center items-center bg[#f1f2f6] py-[6rem] ">
-                <p className="text-3xl uppercase text-darkblue text-center px-2 py-10">
+                <p className="text-[1.5rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] uppercase text-green01 font-oswald text-center px-2 py-10">
                     <Reveal>{t("home.chancellor-message")}</Reveal>
                 </p>
-                <p className=" max-w-[49rem] text-[0.9rem] sm:text-[0.5rem]  md:text-[1.5rem]  lg:text-[1.2rem] text-justify  my-5 mx-[5rem] text-[#2C3A47]">
+                <p className=" max-w-[49rem] text-[0.9rem] md:text-[1.1rem] lg:text-[1.1rem]  text-justify  my-5 mx-[5rem] ">
                     <Reveal>{t("chancellor-message.paragraph-1")}</Reveal>
                 </p>
                 <Reveal>

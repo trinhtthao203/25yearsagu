@@ -43,8 +43,8 @@ export default function DongThoiGianPage() {
                     time: t("time.time-gd1-event-6"),
                 },
             ],
-            color: "#18B6B4",
-            textColor: "text-[#18B6B4]",
+            color: "#4CBC3B",
+            textColor: "text-[#4CBC3B]",
         },
         {
             id: 2,
@@ -132,8 +132,8 @@ export default function DongThoiGianPage() {
                     time: t("time.time-gd2-event-20"),
                 },
             ],
-            color: "#2C92D5",
-            textColor: "text-[#2C92D5]",
+            color: "#20bf6b",
+            textColor: "text-[#20bf6b]",
         },
         {
             id: 3,
@@ -149,8 +149,8 @@ export default function DongThoiGianPage() {
                     time: t("time.time-gd3-event-2"),
                 },
             ],
-            color: "#13538A",
-            textColor: "text-[#13538A]",
+            color: "#218c74",
+            textColor: "text-[#218c74]",
         },
     ];
 
@@ -189,27 +189,32 @@ export default function DongThoiGianPage() {
     };
 
     return (
-        <Box sx={{ width: "100%" }} >
+        <Box sx={{ width: "100%" }}>
             <CustomHeader />
             <BackButton title={t("common.back-home")} left={"20%"} />
             <Reveal>
-                <p className="text-3xl uppercase text-darkblue text-center px-2 py-10">
+                <p className="text-3xl font-oswald uppercase text-green01 text-center px-2 py-10">
                     {t("home.time-line")}
                 </p>
             </Reveal>
-
-            <Box  sx={{
-                    margin: { xs: "20px", sm: "0px 100px 100px 100px", lg:"0rem 20rem" } }}>
+            <Box
+                sx={{
+                    margin: {
+                        xs: "20px",
+                        sm: "0px 100px 100px 100px",
+                        lg: "0rem 20rem",
+                    },
+                }}
+            >
                 <Reveal>
                     <Stepper
                         nonLinear
                         activeStep={activeStep}
                         sx={{
                             flexDirection: { xs: "column", sm: "row" },
-
-                            height: {sm: "60px"},
-                            backgroundColor:"#c8d6e5",
-                            borderRadius:"10px",
+                            height: { sm: "60px" },
+                            backgroundColor: "#2D5029",
+                            borderRadius: "10px",
                             justifyContent: { xs: "flex-start", sm: "center" },
                             alignItems: { xs: "flex-start", sm: "center" },
                         }}
@@ -226,8 +231,8 @@ export default function DongThoiGianPage() {
                                         activeStep === time.id - 1
                                             ? time.color
                                             : "none",
-                                            height:"100%",
-                                            borderRadius:"10px"
+                                    height: "100%",
+                                    borderRadius: "10px",
                                 }}
                             >
                                 <Reveal>
@@ -236,10 +241,13 @@ export default function DongThoiGianPage() {
                                         onClick={handleStep(index)}
                                     >
                                         <span
-                                            className={`text-[1.15rem] w-9 ${activeStep === time.id - 1 ? "text-white" :"text-black"}`}
+                                            className={`text-[1.2rem] font-oswald w-9 ${
+                                                activeStep === time.id - 1
+                                                    ? "text-white"
+                                                    : "text-green04"
+                                            }`}
                                         >
-                                            {time.description}{" "}
-                                            {time.time}
+                                            {time.description} {time.time}
                                         </span>
                                     </StepButton>
                                 </Reveal>
@@ -266,15 +274,22 @@ export default function DongThoiGianPage() {
                                     color="inherit"
                                     disabled={activeStep === 0}
                                     onClick={handleBack}
-                                    sx={{ mr: 1, fontSize:"1.15rem" }}
+                                    sx={{ mr: 1, fontSize: "1.15rem" }}
                                 >
-                                    {t("common.previous")}
+                                    <p className="font-oswald ">
+                                        {t("common.previous")}
+                                    </p>
                                 </Button>
                             </Reveal>
                             <Box sx={{ flex: "1 1 auto" }} />
                             <Reveal>
-                                <Button onClick={handleNext}  sx={{ mr: 1, fontSize:"1.15rem" }}>
-                                    {t("common.next")}
+                                <Button
+                                    onClick={handleNext}
+                                    sx={{ mr: 1, fontSize: "1.15rem" }}
+                                >
+                                    <p className=" text-green01 font-oswald">
+                                        {t("common.next")}
+                                    </p>
                                 </Button>
                             </Reveal>
                         </Box>

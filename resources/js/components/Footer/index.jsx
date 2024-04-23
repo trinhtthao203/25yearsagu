@@ -13,7 +13,7 @@ const Footer = forwardRef((props, ref) => {
         <div
             id="footer"
             ref={ref}
-            className="px-4 divide-y dark:bg-gray-800 dark:text-gray-100"
+            className="px-4 divide-y bg-green01 text-green04"
         >
             <div className="container flex flex-col justify-between pt-10 mx-auto lg:flex-row lg:space-y-0">
                 <Box sx={{ flexGrow: 1, position: "relative" }}>
@@ -161,7 +161,7 @@ const Footer = forwardRef((props, ref) => {
                     </Grid>
                     <Fab
                         variant="extended"
-                        color="primary"
+                        color="success"
                         onClick={() => {
                             window.scrollTo({
                                 top: 0,

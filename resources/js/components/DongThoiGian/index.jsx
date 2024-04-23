@@ -68,7 +68,7 @@ function DongThoiGian() {
 
     return (
         <div id="time-line" className=" bg-[#2d3436] py-10">
-            <p className=" font-oswald text-3xl uppercase text-green04 text-center px-2 py-10">
+            <p className=" text-center py-[5rem] text-[1.5rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2.2rem] uppercase text-green04 font-oswald">
                 <Reveal isAnimation={isAnimation}>{t("home.time-line")}</Reveal>
             </p>
             <div className=" flex-grow m-[30px]">
@@ -94,7 +94,7 @@ function DongThoiGian() {
                                     </Reveal>
                                 </p>
                             </button>
-                            <div className=" font-montserrat overflow-hidden max-h-[11rem] p-[0.5rem] text-green04 text-justify">
+                            <div className=" font-montserrat overflow-hidden mb-[7rem] max-h-[14rem] p-[0.5rem] text-green04 text-justify">
                                 {time.events.map((event, eventIndex) => (
                                     <Reveal
                                         isAnimation={isAnimation}

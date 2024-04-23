@@ -1,24 +1,49 @@
 import React from "react";
 import Slider from "react-slick";
-import IMG from "../../../../public/images/logo-vnu.png";
+import _1 from "../../../../public/images/CuuSinhVien/1.jpg";
+import _2 from "../../../../public/images/CuuSinhVien/2.jpg";
+import _3 from "../../../../public/images/CuuSinhVien/3.jpg";
+import _4 from "../../../../public/images/CuuSinhVien/4.jpg";
+import _5 from "../../../../public/images/CuuSinhVien/5.jpg";
+import _6 from "../../../../public/images/CuuSinhVien/6.jpg";
+import _7 from "../../../../public/images/CuuSinhVien/7.jpg";
+import _8 from "../../../../public/images/CuuSinhVien/8.jpg";
+import _9 from "../../../../public/images/CuuSinhVien/9.jpg";
+import _10 from "../../../../public/images/CuuSinhVien/10.jpg";
+import _11 from "../../../../public/images/CuuSinhVien/11.jpg";
+import _12 from "../../../../public/images/CuuSinhVien/12.jpg";
+import _13 from "../../../../public/images/CuuSinhVien/13.jpg";
+import _14 from "../../../../public/images/CuuSinhVien/14.jpg";
+import _15 from "../../../../public/images/CuuSinhVien/15.jpg";
+import _16 from "../../../../public/images/CuuSinhVien/16.jpg";
+import _17 from "../../../../public/images/CuuSinhVien/17.jpg";
+import _18 from "../../../../public/images/CuuSinhVien/18.jpg";
+import _19 from "../../../../public/images/CuuSinhVien/19.jpg";
+import _20 from "../../../../public/images/CuuSinhVien/20.jpg";
+import _21 from "../../../../public/images/CuuSinhVien/21.jpg";
+import _22 from "../../../../public/images/CuuSinhVien/22.jpg";
 import { t } from "i18next";
+import CustomSlide from "../CustomSlide";
+import { Reveal } from "../../motion/Reveal";
 
 function PauseOnHover() {
+    const isAnimation = JSON.parse(sessionStorage.getItem("visited")) !== false;
+
     const comments = [
         {
             message: t("alumni.sv1_message"),
             fullname: t("alumni.sv1_fullname"),
             title: t("alumni.sv1_title"),
             position: t("alumni.sv1_position"),
-            image: IMG,
+            image: _1,
             course: t("alumni.sv1_course"),
         },
         {
             message: t("alumni.sv2_message"),
             fullname: t("alumni.sv2_fullname"),
-            title: t("alumni.sv2_tile"),
+            title: t("alumni.sv2_title"),
             position: t("alumni.sv2_position"),
-            image: IMG,
+            image: _2,
             course: t("alumni.sv2_course"),
         },
         {
@@ -26,7 +51,7 @@ function PauseOnHover() {
             fullname: t("alumni.sv3_fullname"),
             title: t("alumni.sv3_title"),
             position: t("alumni.sv3_position"),
-            image: IMG,
+            image: _3,
             course: t("alumni.sv3_course"),
         },
         {
@@ -34,7 +59,7 @@ function PauseOnHover() {
             fullname: t("alumni.sv4_fullname"),
             title: t("alumni.sv4_title"),
             position: t("alumni.sv4_position"),
-            image: IMG,
+            image: _4,
             course: t("alumni.sv4_course"),
         },
         {
@@ -42,7 +67,7 @@ function PauseOnHover() {
             fullname: t("alumni.sv5_fullname"),
             title: t("alumni.sv5_title"),
             position: t("alumni.sv5_position"),
-            image: IMG,
+            image: _5,
             course: t("alumni.sv5_course"),
         },
         {
@@ -50,7 +75,7 @@ function PauseOnHover() {
             fullname: t("alumni.sv6_fullname"),
             title: t("alumni.sv6_title"),
             position: t("alumni.sv6_position"),
-            image: IMG,
+            image: _6,
             course: t("alumni.sv6_course"),
         },
         {
@@ -58,7 +83,7 @@ function PauseOnHover() {
             fullname: t("alumni.sv7_fullname"),
             title: t("alumni.sv7_title"),
             position: t("alumni.sv7_position"),
-            image: IMG,
+            image: _7,
             course: t("alumni.sv7_course"),
         },
         {
@@ -66,10 +91,123 @@ function PauseOnHover() {
             fullname: t("alumni.sv8_fullname"),
             title: t("alumni.sv8_title"),
             position: t("alumni.sv8_position"),
-            image: IMG,
+            image: _8,
             course: t("alumni.sv8_course"),
         },
+        {
+            message: t("alumni.sv9_message"),
+            fullname: t("alumni.sv9_fullname"),
+            title: t("alumni.sv9_title"),
+            position: t("alumni.sv9_position"),
+            image: _9,
+            course: t("alumni.sv9_course"),
+        },
+        {
+            message: t("alumni.sv10_message"),
+            fullname: t("alumni.sv10_fullname"),
+            title: t("alumni.sv10_title"),
+            position: t("alumni.sv10_position"),
+            image: _10,
+            course: t("alumni.sv10_course"),
+        },
+        {
+            message: t("alumni.sv11_message"),
+            fullname: t("alumni.sv11_fullname"),
+            title: t("alumni.sv11_title"),
+            position: t("alumni.sv11_position"),
+            image: _11,
+            course: t("alumni.sv11_course"),
+        },
+        {
+            message: t("alumni.sv12_message"),
+            fullname: t("alumni.sv12_fullname"),
+            title: t("alumni.sv12_title"),
+            position: t("alumni.sv12_position"),
+            image: _12,
+            course: t("alumni.sv12_course"),
+        },
+        {
+            message: t("alumni.sv13_message"),
+            fullname: t("alumni.sv13_fullname"),
+            title: t("alumni.sv13_title"),
+            position: t("alumni.sv13_position"),
+            image: _13,
+            course: t("alumni.sv13_course"),
+        },
+        {
+            message: t("alumni.sv14_message"),
+            fullname: t("alumni.sv14_fullname"),
+            title: t("alumni.sv14_title"),
+            position: t("alumni.sv14_position"),
+            image: _14,
+            course: t("alumni.sv14_course"),
+        },
+        {
+            message: t("alumni.sv15_message"),
+            fullname: t("alumni.sv15_fullname"),
+            title: t("alumni.sv15_title"),
+            position: t("alumni.sv15_position"),
+            image: _15,
+            course: t("alumni.sv15_course"),
+        },
+        {
+            message: t("alumni.sv16_message"),
+            fullname: t("alumni.sv16_fullname"),
+            title: t("alumni.sv16_title"),
+            position: t("alumni.sv16_position"),
+            image: _16,
+            course: t("alumni.sv16_course"),
+        },
+        {
+            message: t("alumni.sv17_message"),
+            fullname: t("alumni.sv17_fullname"),
+            title: t("alumni.sv17_title"),
+            position: t("alumni.sv17_position"),
+            image: _17,
+            course: t("alumni.sv17_course"),
+        },
+        {
+            message: t("alumni.sv18_message"),
+            fullname: t("alumni.sv18_fullname"),
+            title: t("alumni.sv18_title"),
+            position: t("alumni.sv18_position"),
+            image: _18,
+            course: t("alumni.sv18_course"),
+        },
+        {
+            message: t("alumni.sv19_message"),
+            fullname: t("alumni.sv19_fullname"),
+            title: t("alumni.sv19_title"),
+            position: t("alumni.sv19_position"),
+            image: _19,
+            course: t("alumni.sv19_course"),
+        },
+        {
+            message: t("alumni.sv20_message"),
+            fullname: t("alumni.sv20_fullname"),
+            title: t("alumni.sv20_title"),
+            position: t("alumni.sv20_position"),
+            image: _20,
+            course: t("alumni.sv20_course"),
+        },
+        {
+            message: t("alumni.sv21_message"),
+            fullname: t("alumni.sv21_fullname"),
+            title: t("alumni.sv21_title"),
+            position: t("alumni.sv21_position"),
+            image: _21,
+            course: t("alumni.sv21_course"),
+        },
+        {
+            message: t("alumni.sv22_message"),
+            fullname: t("alumni.sv22_fullname"),
+            title: t("alumni.sv22_title"),
+            position: t("alumni.sv22_position"),
+            image: _22,
+            course: t("alumni.sv22_course"),
+        },
     ];
+
     const settings = {
         dots: true,
         infinite: true,
@@ -86,36 +224,35 @@ function PauseOnHover() {
                     slidesToScroll: 1,
                 },
             },
+            {
+                breakpoint: 900, // breakpoint for screen size sm
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },
         ],
     };
 
     return (
         <div id="alumni" className=" pt-[5rem] ">
-            <p className="text-3xl uppercase text-[#2c2c54] text-center py-5">
-                {t("home.alumni")}
-            </p>
+            <Reveal isAnimation={isAnimation}>
+                <p className=" py-10 w-full flex justify-center items-center mt-[3rem] text-[1.5rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2.2rem] uppercase text-green01 font-oswald">
+                    {t("home.alumni")}
+                </p>
+            </Reveal>
             <div className="slider-container p-10 ">
                 <Slider {...settings}>
                     {comments.map((comment, index) => (
-                        <div
-                            key={index}
-                            className="px-10 flex flex-col items-center"
-                        >
-                            <p className="text-[1rem] sm:text-[1rem] md:text-[0.8rem] lg:text-[1rem] text-justify">
-                                {comment.message}
-                            </p>
-                            <img
-                                src={IMG}
-                                alt={`Image ${index}`}
-                                className="w-3/4 mx-auto"
-                            />
-                            <p className="text-[1.2rem] sm:text-[1rem] text-center">
-                                {comment.fullname}
-                            </p>
-                            <p className="text-[0.9rem] sm:text-[0.9rem] text-center">
-                                {comment.title}-{comment.position}
-                            </p>
-                        </div>
+                        <CustomSlide
+                            index={index}
+                            message={comment.message}
+                            title={comment.title}
+                            image={comment.image}
+                            position={comment.position}
+                            course={comment.course}
+                            fullname={comment.fullname}
+                        />
                     ))}
                 </Slider>
             </div>

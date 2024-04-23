@@ -10,11 +10,11 @@ function CustomHeader() {
     const isAnimation = JSON.parse(sessionStorage.getItem("visited")) !== false;
 
     return (
-        <div className=" w-screen h-[25rem]">
+        <div className=" w-screen">
             <div
-                className=" h-[25rem] animate-fade animate-duration-[1200ms]"
+                className="h-[25rem] relative animate-fade animate-duration-[1200ms]"
                 style={{
-                    backgroundImage: `url(${backgroundImage})`,
+                    backgroundImage: `linear-gradient(to right, rgba(138, 90, 226, 0.2), rgba(255, 255, 150, 0.5)), url(${backgroundImage})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundAttachment: "fixed",
@@ -25,19 +25,23 @@ function CustomHeader() {
                 </div>
                 <div className="flex justify-center items-center">
                     <div className="flex flex-col items-center justify-center ">
-                        <div className="w-[10rem] sm:w-[7rem] md:w-[15rem] lg:w-[19rem] xl:w-[15rem] animate-flip-down">
-                            <img src={`${Logo25}`} alt="Logo" />
-                        </div>
-                        <div className="transform text-center">
-                            <p className=" uppercase px-[1.2rem] text-[1rem] sm:text-[1rem] md:text-[1.9rem] lg:text-[2.6rem] xl:text-[2.5rem] font-bold text-gray-900 tracking-wider shadow-retr">
-                                {t("home.25year-established")}
+                        <Reveal isAnimation={isAnimation}>
+                            <p className=" text-white uppercase text-[10rem] font-semibold font-montserrat">
+                                25
                             </p>
-                            <p className=" uppercase text-[0.9rem] sm:text-[0.9rem] md:text-[1.2rem] lg:text-[1.6rem] xl:text-[1.7rem] p-3">
-                                {t("home.agu")}
-                            </p>
-                            <p className="text-[0.7rem] sm:text-[0.7rem] md:text-[0.8rem] lg:text-[0.9rem] xl:text-[1.2rem]">
-                                {t("home.year-anniversary")}
-                            </p>
+                            {/* <img src={`${Logo25}`} alt="Logo" /> */}
+                        </Reveal>
+                        <div className="transform text-center ">
+                            <Reveal isAnimation={isAnimation}>
+                                <p className=" text-white uppercase text-[1.1rem] sm:text-[1.7rem] md:text-[2rem] lg:text-[2.4rem] xl:text-[2.0rem] font-semibold font-montserrat">
+                                    {t("home.sologan")}
+                                </p>
+                            </Reveal>
+                            <Reveal isAnimation={isAnimation}>
+                                <p className="text-white text-[1rem] sm:text-[1.1rem] md:text-[1.5rem] lg:text-[1.7rem] xl:text-[2rem] font-oswald">
+                                    {t("home.year-anniversary")}
+                                </p>
+                            </Reveal>
                         </div>
                     </div>
                 </div>

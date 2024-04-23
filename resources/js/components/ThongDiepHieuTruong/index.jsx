@@ -25,7 +25,7 @@ function ThongDiepHieuTruong() {
             <Grid container>
                 <Grid item xs={12} md={12}>
                     <Reveal isAnimation={isAnimation}>
-                        <p className=" py-10 w-full flex justify-center items-center text-[1.5rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] uppercase font-medium text-green01 font-oswald">
+                        <p className=" py-10 w-full flex justify-center items-center mt-[3rem] text-[1.5rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2.2rem] uppercase text-green01 font-oswald">
                             {t("home.chancellor-message")}
                         </p>
                     </Reveal>
@@ -47,7 +47,7 @@ function ThongDiepHieuTruong() {
                             {t("home.short_content")}
                         </p>
                         <Link to="/thong-diep-hieu-truong">
-                            <p className=" text-green05 font-medium font-montserrat text-end px-[9px]">
+                            <p className="text-right     text-[0.85rem] sm:text-[1.4rem] md:text-[1.5rem] lg:text-[1.2rem] text-green05 font-montserrat">
                                 {t("common.read-more")}
                             </p>
                         </Link>

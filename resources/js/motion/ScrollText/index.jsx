@@ -17,7 +17,7 @@ export const ScrollText = ({ children }) => {
     return (
         <div ref={inViewRef}>
             <motion.div
-                className=" fixed top-0 left-0 right-0 h-[10px] bg-chathamsblue origin-[0%]"
+                className=" fixed top-0 left-0 right-0 h-[10px] bg-green02 origin-[0%]"
                 style={{ scaleX }}
             />
             {children}

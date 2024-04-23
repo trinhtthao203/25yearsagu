@@ -2,8 +2,12 @@ import React from "react";
 import Slider from "react-slick";
 import IMG from "../../../../public/images/logo-vnu.png";
 import { t } from "i18next";
+import CustomSlide from "../CustomSlide";
+import { Reveal } from "../../motion/Reveal";
 
 function PauseOnHover() {
+    const isAnimation = JSON.parse(sessionStorage.getItem("visited")) !== false;
+
     const comments = [
         {
             message: t("alumni.sv1_message"),
@@ -86,36 +90,35 @@ function PauseOnHover() {
                     slidesToScroll: 1,
                 },
             },
+            {
+                breakpoint: 900, // breakpoint for screen size sm
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },
         ],
     };
 
     return (
         <div id="partner" className=" pt-[5rem] ">
-            <p className="text-3xl uppercase text-[#2c2c54] text-center py-5">
-                {t("home.partner")}
-            </p>
+            <Reveal isAnimation={isAnimation}>
+                <p className=" py-10 w-full flex justify-center items-center mt-[3rem] text-[1.5rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2.2rem] uppercase text-green01 font-oswald">
+                    {t("home.partner")}
+                </p>
+            </Reveal>
             <div className="slider-container p-10 ">
                 <Slider {...settings}>
                     {comments.map((comment, index) => (
-                        <div
-                            key={index}
-                            className="px-10 flex flex-col items-center"
-                        >
-                            <p className="text-[1rem] sm:text-[1rem] md:text-[0.8rem] lg:text-[1rem] text-justify">
-                                {comment.message}
-                            </p>
-                            <img
-                                src={IMG}
-                                alt={`Image ${index}`}
-                                className="w-3/4 mx-auto"
-                            />
-                            <p className="text-[1.2rem] sm:text-[1rem] text-center">
-                                {comment.fullname}
-                            </p>
-                            <p className="text-[0.9rem] sm:text-[0.9rem] text-center">
-                                {comment.title}-{comment.position}
-                            </p>
-                        </div>
+                        <CustomSlide
+                            index={index}
+                            message={comment.message}
+                            title={comment.title}
+                            image={comment.image}
+                            position={comment.position}
+                            course={comment.course}
+                            fullname={comment.fullname}
+                        />
                     ))}
                 </Slider>
             </div>

@@ -96,7 +96,7 @@ function Home() {
                     {/* <HoiNhapPhatTrien /> */}
                     <SuKien />
                     {/* <GocNgheThuat /> // bị đẩy cột trắng */}
-                    <DoiTac />
+                    {/* <DoiTac /> */}
                     <CuuSinhVien />
                     <ThuVienAnh />
                     <Footer />

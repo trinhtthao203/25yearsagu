@@ -34,15 +34,13 @@ function HideOnScroll(props) {
 
 HideOnScroll.propTypes = {
     children: PropTypes.element.isRequired,
-    /**
-     * Injected by the documentation to work in an iframe.
-     * You won't need it on your project.
-     */
     window: PropTypes.func,
 };
 
-export default function HideAppBar(props) {
+export default function NavBar(props) {
+    const { resultRef } = props;
     const [anchorElNav, setAnchorElNav] = React.useState(null);
+
     const scrollTo = (element) => {
         const footerElement = document.getElementById(element);
         footerElement.scrollIntoView({ behavior: "smooth" });
@@ -56,6 +54,7 @@ export default function HideAppBar(props) {
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
+
     const pages = [
         {
             title: t("home.time-line-short"),
@@ -78,7 +77,7 @@ export default function HideAppBar(props) {
             link: "alumni",
         },
         {
-            title: t("home.gallery-short"),
+            title: t("home.gallery"),
             link: "gallery",
         },
         {
@@ -87,14 +86,36 @@ export default function HideAppBar(props) {
         },
     ];
 
+    const [scrollOpacity, setScrollOpacity] = React.useState(1);
+
+    React.useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            const maxScroll = 200;
+            const opacity = Math.min(1, 0.5 + scrollPosition / maxScroll);
+
+            setScrollOpacity(opacity);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
         <React.Fragment>
             <CssBaseline />
-            {/* <HideOnScroll {...props}> */}
             <AppBar
-                position="fixed"
+                position="sticky"
                 sx={{
-                    backgroundColor: "rgba(255, 255, 255, 0.5)",
+                    backgroundColor: `rgba(255, 255, 255, ${scrollOpacity})`,
+                    transition: "background-color 0.3s ease-in-out",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    zIndex: 1000,
                 }}
             >
                 <Toolbar disableGutters>
@@ -229,8 +250,11 @@ export default function HideAppBar(props) {
                     </Box>
                 </Toolbar>
             </AppBar>
-            {/* </HideOnScroll> */}
             <Toolbar />
         </React.Fragment>
     );
 }
+
+NavBar.propTypes = {
+    resultRef: PropTypes.object,
+};

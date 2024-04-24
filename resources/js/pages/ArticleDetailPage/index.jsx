@@ -8,6 +8,7 @@ import Footer from "../../components/Footer";
 import { Button, Box, Grid, TextField } from "@mui/material"; // Import TextField for search bar
 import { ArticleData } from "../ArticleContestPage/articles";
 import { useLocation } from "react-router-dom";
+import CustomFab from "../../components/CustomFab";
 
 function ArticleDetailPage() {
     const location = useLocation();
@@ -60,6 +61,7 @@ function ArticleDetailPage() {
     return (
         <div className="w-full h-full">
             <CustomHeader />
+            <CustomFab />
             <Grid container>
                 <Grid item md={8}>
                     <div className="flex flex-col justify-center items-center bg[#f1f2f6] py-[6rem] ">

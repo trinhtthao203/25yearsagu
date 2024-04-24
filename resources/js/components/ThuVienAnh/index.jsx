@@ -41,7 +41,7 @@ function Card({ image, title, description, link }) {
                         loading="lazy"
                         className="w-full h-full object-cover rounded-[7px]"
                     />
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-1000 ease-in-out">
+                    <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-400 ease-in-out">
                         <ImageListItemBar
                             title={title}
                             subtitle={description}
@@ -70,7 +70,7 @@ function Card({ image, title, description, link }) {
                         />
                         <Link
                             to={link}
-                            className=" font-oswald text-[32px] flex justify-center items-center h-[35px] mt-[17rem] rounded-[4px] bg-green01 border-none text-white text-center px-[16px] w-[220px] cursor-pointer m-[36px] shadow-[0_10px_20px_-8px_rgba(0,0,0,0.7)] relative duration-1000 after:content-['»'] after:absolute after:opacity-0 after:top-[-7px] after:right-[-20px] after:duration-1000 hover:pr-[24px] hover:pl-[8px] hover:after:opacity-100 hover:after:right-[10px]"
+                            className=" font-oswald text-[32px] flex justify-center items-center h-[35px] mt-[17rem] rounded-[4px] bg-green05 border-none text-white text-center px-[16px] w-[220px] cursor-pointer m-[36px] shadow-[0_10px_20px_-8px_rgba(0,0,0,0.7)] relative duration-500 after:content-['»'] after:absolute after:opacity-0 after:top-[-7px] after:right-[-20px] after:duration-500 hover:pr-[24px] hover:pl-[8px] hover:after:opacity-100 hover:after:right-[10px]"
                         >
                             <span className=" text-[17px]">
                                 {t("common.read-more")}

@@ -4,7 +4,6 @@ import LogoVNU from "../../../../public/images/logo-vnu.png";
 import { Box, Fab, Grid, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import { forwardRef } from "react";
-import { Navigation } from "@mui/icons-material";
 
 const Footer = forwardRef((props, ref) => {
     const { t } = useTranslation();
@@ -159,23 +158,6 @@ const Footer = forwardRef((props, ref) => {
                             </div>
                         </Grid>
                     </Grid>
-                    <Fab
-                        variant="extended"
-                        color="success"
-                        onClick={() => {
-                            window.scrollTo({
-                                top: 0,
-                                behavior: "smooth", // Smooth scrolling animation
-                            });
-                        }}
-                        sx={{
-                            position: "absolute",
-                            top: "1.5rem",
-                            right: "0px",
-                        }}
-                    >
-                        <Navigation />
-                    </Fab>
                 </Box>
             </div>
             <div className="py-6 text-sm text-center dark:text-gray-400">

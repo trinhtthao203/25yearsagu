@@ -6,12 +6,17 @@ import { Reveal } from "../../motion/Reveal";
 import { ScrollText } from "../../motion/ScrollText";
 import BackButton from "../../components/BackButton";
 import { useTranslation } from "react-i18next";
+import CustomFab from "../../components/CustomFab";
 
 function ThongDiepHieuTruongPage() {
     const { t } = useTranslation();
     return (
         <div className="w-full h-full">
             <CustomHeader />
+            <CustomFab />
+            <div className=" justify-end items-end">
+                <BackButton title={t("common.back-home")} left={"30%"} />
+            </div>
             <div className="flex flex-col justify-center items-center bg[#f1f2f6] py-[6rem] ">
                 <p className="text-[1.5rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2rem] uppercase text-green01 font-oswald text-center px-2 py-10">
                     <Reveal>{t("home.chancellor-message")}</Reveal>
@@ -31,9 +36,6 @@ function ThongDiepHieuTruongPage() {
                         className=" rounded-[10rem] border-solid border-[0.5rem] border-[#f7f1e3] w-[10rem]"
                     />
                 </Reveal>
-                <div className=" justify-end items-end">
-                    <BackButton title={t("common.back-home")} left={"0px"} />
-                </div>
             </div>
             <ScrollText />
             <Footer />

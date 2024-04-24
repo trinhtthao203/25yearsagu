@@ -3,11 +3,12 @@ import LoadingScreen from "../Loading";
 import Logo25 from "../../../../public/images/logo25.png";
 import backgroundImage from "../../../../public/images/gate.jpg"; // Điều chỉnh đường dẫn đến hình ảnh của bạn
 
-import NavBar from "../../components/Navbar";
+import NavBar from "../../components/NavBar";
 import SuKien from "../../components/SuKien";
 import Footer from "../../components/Footer";
 import DoiTac from "../../components/DoiTac";
 import ThuNgo from "../../components/ThuNgo";
+import CustomFab from "../../components/CustomFab";
 import NhaTaiTro from "../../components/NhaTaiTro";
 import ThuVienAnh from "../../components/ThuVienAnh";
 import BanGiamHieu from "../../components/BanGiamHieu";
@@ -54,17 +55,19 @@ function Home() {
             ) : (
                 <div id="header" className="w-full h-full">
                     <NavBar resultRef={resultRef} />
+                    <CustomFab />
                     <div
-                        className="h-screen w-screen relative animate-fade animate-duration-[1200ms]"
+                        className=" relative top-[-7.6rem] md:top-[-8.7rem] h-screen w-screen animate-fade animate-duration-[1200ms]"
                         style={{
                             backgroundImage: `linear-gradient(to right, rgba(138, 90, 226, 0.2), rgba(255, 255, 150, 0.5)), url(${backgroundImage})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                             backgroundAttachment: "fixed",
+                            // marginTop: "-130px",
                         }}
                     >
                         <div className=" h-screen w-screen flex justify-center items-center">
-                            <div className="flex flex-col items-center justify-center mt-[-15rem]">
+                            <div className="flex flex-col items-center justify-center ">
                                 {/* <div className="w-[10rem] sm:w-[11rem] md:w-[19rem] lg:w-[22rem] xl:w-[19rem] animate-flip-down"> */}
                                 <Reveal isAnimation={isAnimation}>
                                     <p className=" text-white uppercase text-[10rem] font-semibold font-montserrat">

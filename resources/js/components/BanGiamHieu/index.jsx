@@ -50,7 +50,7 @@ function BanGiamHieu() {
             }}
         >
             <Box sx={{ flexGrow: 1, paddingY: "5rem" }}>
-                <p className="px-10 text-xl md:text-3xl font-medium uppercase text-green01 font-oswald text-center pb-[5rem]">
+                <p className=" pb-[7rem] w-full flex justify-center items-center mt-[7.5rem] text-[1.5rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2.2rem] uppercase text-green01 font-oswald">
                     <Reveal isAnimation={isAnimation}>
                         {t("home.board-of-directors-time")}
                     </Reveal>

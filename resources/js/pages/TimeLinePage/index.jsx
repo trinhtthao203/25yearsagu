@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 import BackButton from "../../components/BackButton";
 import CustomHeader from "../../components/CustomHeader";
 import { Stepper, Step, StepButton, Button, Box } from "@mui/material";
-
+import CustomFab from "../../components/CustomFab";
 export default function DongThoiGianPage() {
     const { t } = useTranslation();
     const params = new URLSearchParams(location.search);
@@ -191,6 +191,7 @@ export default function DongThoiGianPage() {
     return (
         <Box sx={{ width: "100%" }}>
             <CustomHeader />
+            <CustomFab />
             <BackButton title={t("common.back-home")} left={"20%"} />
             <Reveal>
                 <p className="text-3xl font-oswald uppercase text-green01 text-center px-2 py-10">
@@ -274,7 +275,7 @@ export default function DongThoiGianPage() {
                                     color="inherit"
                                     disabled={activeStep === 0}
                                     onClick={handleBack}
-                                    sx={{ mr: 1, fontSize: "1.15rem" }}
+                                    sx={{ mr: 1, fontSize: "1.05rem" }}
                                 >
                                     <p className="font-oswald ">
                                         {t("common.previous")}
@@ -285,7 +286,7 @@ export default function DongThoiGianPage() {
                             <Reveal>
                                 <Button
                                     onClick={handleNext}
-                                    sx={{ mr: 1, fontSize: "1.15rem" }}
+                                    sx={{ mr: 1, fontSize: "1.05rem" }}
                                 >
                                     <p className=" text-green01 font-oswald">
                                         {t("common.next")}

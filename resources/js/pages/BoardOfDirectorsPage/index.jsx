@@ -18,6 +18,7 @@ import LQCuong from "../../../../public/images/BanGiamHieu/lqcuong.png";
 import HTBinh from "../../../../public/images/BanGiamHieu/htbinh.png";
 
 import { Box } from "@mui/material";
+import CustomFab from "../../components/CustomFab";
 
 function BoardOfDirectorsPage() {
     const { t } = useTranslation();
@@ -238,6 +239,7 @@ function BoardOfDirectorsPage() {
     return (
         <div className=" bg-[#1f242d]">
             <CustomHeader />
+            <CustomFab />
             <BackButton
                 title={t("common.back-home")}
                 textColor={"white"}
@@ -250,7 +252,7 @@ function BoardOfDirectorsPage() {
                             <h1 className="translate-x-[-100%] duration-1000 text-[35px] text-white font-meri px-[2rem]">
                                 {bgh.term}
                             </h1>
-                            <p className="translate-x-[-100%] duration-1000 text-[20px] text-[#0ef] font-[600]">
+                            <p className="translate-x-[-100%] duration-1000 text-[20px] text-green05 font-[600]">
                                 {bgh.time}
                             </p>
                         </div>

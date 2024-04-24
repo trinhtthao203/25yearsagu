@@ -6,6 +6,7 @@ import { dataLand, dataClass, dataLab } from "./images";
 import Footer from "../../components/Footer";
 import BackButton from "../../components/BackButton";
 import CustomHeader from "../../components/CustomHeader";
+import CustomFab from "../../components/CustomFab";
 
 import { useTranslation } from "react-i18next";
 import ImageList from "../../components/ImageList";
@@ -18,6 +19,7 @@ function GalleryFacilitiesPage() {
     return (
         <div>
             <CustomHeader />
+            <CustomFab />
             <BackButton title={t("common.back-home")} left={"30%"} />
             <div className=" py-10 px-10 ">
                 <Reveal isAnimation={isAnimation}>

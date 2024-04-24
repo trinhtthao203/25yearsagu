@@ -10,13 +10,15 @@ import CustomHeader from "../../components/CustomHeader";
 import { useTranslation } from "react-i18next";
 import ImageList from "../../components/ImageList";
 import { Reveal } from "../../motion/Reveal";
+import CustomFab from "../../components/CustomFab";
+
 function GalleryResearchPage() {
     const { t } = useTranslation();
     const isAnimation = JSON.parse(sessionStorage.getItem("visited")) !== false;
-
     return (
         <div>
             <CustomHeader />
+            <CustomFab />
             <BackButton title={t("common.back-home")} left={"30%"} />
             <div className=" py-10 px-10 ">
                 <Reveal isAnimation={isAnimation}>

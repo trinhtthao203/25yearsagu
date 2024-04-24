@@ -19,6 +19,7 @@ import ThongDiepHieuTruong from "../../components/ThongDiepHieuTruong";
 
 import { Reveal } from "../../motion/Reveal";
 import { useTranslation } from "react-i18next";
+import HoiNhapPhatTrien from "../../components/HoiNhapPhatTrien";
 
 function Home() {
     const { t, i18n } = useTranslation();
@@ -96,7 +97,7 @@ function Home() {
                     <NhaTaiTro />
                     <DongThoiGian />
                     <BanGiamHieu />
-                    {/* <HoiNhapPhatTrien /> */}
+                    <HoiNhapPhatTrien />
                     <SuKien />
                     {/* <GocNgheThuat /> // bị đẩy cột trắng */}
                     {/* <DoiTac /> */}

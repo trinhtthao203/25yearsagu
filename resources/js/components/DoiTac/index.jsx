@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import IMG from "../../../../public/images/logo-vnu.png";
+import IMG from "../../../../public/images/NhaTaiTro/logo-BIDV.png";
 import { t } from "i18next";
 import CustomSlide from "../CustomSlide";
 import { Reveal } from "../../motion/Reveal";
@@ -8,70 +8,51 @@ import { Reveal } from "../../motion/Reveal";
 function PauseOnHover() {
     const isAnimation = JSON.parse(sessionStorage.getItem("visited")) !== false;
 
-    const comments = [
+    const partners = [
         {
-            message: t("alumni.sv1_message"),
-            fullname: t("alumni.sv1_fullname"),
-            title: t("alumni.sv1_title"),
-            position: t("alumni.sv1_position"),
             image: IMG,
-            course: t("alumni.sv1_course"),
+            fullname: t("partners.partner01"),
+            message: t("partners.partner01-message"),
         },
         {
-            message: t("alumni.sv2_message"),
-            fullname: t("alumni.sv2_fullname"),
-            title: t("alumni.sv2_tile"),
-            position: t("alumni.sv2_position"),
             image: IMG,
-            course: t("alumni.sv2_course"),
+            fullname: t("partners.partner02"),
+            message: t("partners.partner02-message"),
         },
         {
-            message: t("alumni.sv3_message"),
-            fullname: t("alumni.sv3_fullname"),
-            title: t("alumni.sv3_title"),
-            position: t("alumni.sv3_position"),
             image: IMG,
-            course: t("alumni.sv3_course"),
+            fullname: t("partners.partner03"),
+            message: t("partners.partner03-message"),
         },
         {
-            message: t("alumni.sv4_message"),
-            fullname: t("alumni.sv4_fullname"),
-            title: t("alumni.sv4_title"),
-            position: t("alumni.sv4_position"),
             image: IMG,
-            course: t("alumni.sv4_course"),
+            fullname: t("partners.partner04"),
+            message: t("partners.partner04-message"),
         },
         {
-            message: t("alumni.sv5_message"),
-            fullname: t("alumni.sv5_fullname"),
-            title: t("alumni.sv5_title"),
-            position: t("alumni.sv5_position"),
             image: IMG,
-            course: t("alumni.sv5_course"),
+            fullname: t("partners.partner05"),
+            message: t("partners.partner05-message"),
         },
         {
-            message: t("alumni.sv6_message"),
-            fullname: t("alumni.sv6_fullname"),
-            title: t("alumni.sv6_title"),
-            position: t("alumni.sv6_position"),
             image: IMG,
-            course: t("alumni.sv6_course"),
+            fullname: t("partners.partner06"),
+            message: t("partners.partner06-message"),
         },
         {
-            message: t("alumni.sv7_message"),
-            fullname: t("alumni.sv7_fullname"),
-            title: t("alumni.sv7_title"),
-            position: t("alumni.sv7_position"),
             image: IMG,
-            course: t("alumni.sv7_course"),
+            fullname: t("partners.partner07"),
+            message: t("partners.partner07-message"),
         },
         {
-            message: t("alumni.sv8_message"),
-            fullname: t("alumni.sv8_fullname"),
-            title: t("alumni.sv8_title"),
-            position: t("alumni.sv8_position"),
             image: IMG,
-            course: t("alumni.sv8_course"),
+            fullname: t("partners.partner08"),
+            message: t("partners.partner08-message"),
+        },
+        {
+            image: IMG,
+            fullname: t("partners.partner09"),
+            message: t("partners.partner09-message"),
         },
     ];
     const settings = {
@@ -109,15 +90,12 @@ function PauseOnHover() {
             </Reveal>
             <div className="slider-container p-10 ">
                 <Slider {...settings}>
-                    {comments.map((comment, index) => (
+                    {partners.map((partner, index) => (
                         <CustomSlide
                             index={index}
-                            message={comment.message}
-                            title={comment.title}
-                            image={comment.image}
-                            position={comment.position}
-                            course={comment.course}
-                            fullname={comment.fullname}
+                            message={partner.message}
+                            fullname={partner.name}
+                            image={partner.image}
                         />
                     ))}
                 </Slider>

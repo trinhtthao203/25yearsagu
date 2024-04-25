@@ -11,6 +11,7 @@ function NotFound() {
                 title={t("common.back-home")}
                 left={"0px"}
                 textColor={"white"}
+                backHome={true}
             />
         </div>
     );

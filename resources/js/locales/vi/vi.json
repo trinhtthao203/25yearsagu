@@ -231,6 +231,35 @@
         "search-placeholder": "Nhập tiêu đề cần tìm..."
     },
 
+    "partners": {
+        "partner01": "Công ty A",
+        "partner01-message": "Dưới ánh sáng mặt trời tất cả chúng ta đều hoàn hảo! Hãy không ngừng phấn đấu để phát triển bản thân ",
+
+        "partner02": "Công ty B",
+        "partner02-message": "Dưới ánh sáng mặt trời tất cả chúng ta đều hoàn hảo! Hãy không ngừng phấn đấu để phát triển bản thân ",
+
+        "partner03": "Công ty C",
+        "partner03-message": "Dưới ánh sáng mặt trời tất cả chúng ta đều hoàn hảo! Hãy không ngừng phấn đấu để phát triển bản thân ",
+
+        "partner04": "Công ty D",
+        "partner04-message": "Dưới ánh sáng mặt trời tất cả chúng ta đều hoàn hảo! Hãy không ngừng phấn đấu để phát triển bản thân ",
+
+        "partner05": "Công ty E",
+        "partner05-message": "Dưới ánh sáng mặt trời tất cả chúng ta đều hoàn hảo! Hãy không ngừng phấn đấu để phát triển bản thân ",
+
+        "partner06": "Công ty F",
+        "partner06-message": "Dưới ánh sáng mặt trời tất cả chúng ta đều hoàn hảo! Hãy không ngừng phấn đấu để phát triển bản thân ",
+
+        "partner07": "Công ty G",
+        "partner07-message": "Dưới ánh sáng mặt trời tất cả chúng ta đều hoàn hảo! Hãy không ngừng phấn đấu để phát triển bản thân ",
+
+        "partner08": "Công ty H",
+        "partner08-message": "Dưới ánh sáng mặt trời tất cả chúng ta đều hoàn hảo! Hãy không ngừng phấn đấu để phát triển bản thân ",
+
+        "partner09": "Công ty I",
+        "partner09-message": "Dưới ánh sáng mặt trời tất cả chúng ta đều hoàn hảo! Hãy không ngừng phấn đấu để phát triển bản thân "
+    },
+
     "alumni": {
         "sv1_message": "Dưới ánh sáng mặt trời tất cả chúng ta đều hoàn hảo! Hãy không ngừng phấn đấu để phát triển bản thân và đem lại những thứ tốt đẹp nhất cho bản thân, gia đình và xã hội!",
         "sv1_fullname": "Đoàn Văn An",
@@ -262,23 +291,23 @@
         "sv5_position": "Saigon Technology Solutions",
         "sv5_course": "DH13TH",
 
-        "sv6_message": "Em xin được gửi lời cảm ơn sâu sắc đến Ban Giám Hiệu Nhà trường và toàn thể Giảng viên trường Đại học An Giang, đặc biệt em xin gửi lời cảm ơn sâu sắc nhất đến Giảng viên Khoa KT-QTKD đã truyền đạt cho em những bài học & kinh nghiệm quý báo để làm hành trang cho em bước vào đời. Nhân dịp kỷ niệm 20 năm thành lập trường. Em xin kính chúc quý thầy cô thật nhiều sức khỏe để tiếp tục dẫn dắt, đồng hành cùng các thế hệ sinh viên AUG trên con đường lập thân, lập nghiệp. Chúc AGU ở tuổi 20 ngày càng lớn mạnh, tiếp tục giữ vững và khẳng định vị thế của mình trong nền giáo dục nước nhà, thành công hơn nữa với sứ mệnh đào tạo nguồn nhân lực chất lượng, đáp ứng nhu cầu của xã hội trước bối cảnh nước ta đang trên đà hội nhập và phát triển. Chúng em tự hào là sinh viên AGU.",
-        "sv6_fullname": "Dương Tiểu My",
-        "sv6_title": "Trade Marketing Assistant",
-        "sv6_position": "Công ty TNHH Thực phẩm Pepsico Việt Nam",
-        "sv6_course": "DH14TC",
+        "sv6_message": "Em xin cảm ơn các thầy cô và nhân viên của Đại học An Giang và đặc biệt là khoa sư phạm tiếng Anh. Em xin chúc cho tập thể trường ta ngày càng lớn mạnh và vươn tầm cao mới trong thời gian tới!",
+        "sv6_fullname": "Phạm Phan Minh Nguyên",
+        "sv6_title": "Phát thanh viên/ biên tập viên",
+        "sv6_position": "Đài Phát thanh - Truyền hình An Giang",
+        "sv6_course": "DH9D2",
 
-        "sv7_message": "Chúc mừng kỉ niệm 20 năm thành lập.",
-        "sv7_fullname": "Lê Thị Diễm My",
-        "sv7_title": "Phó phòng Marketing",
-        "sv7_position": "Công ty TNHH Thương mại Dịch vụ Navifeed",
-        "sv7_course": "DH15CT",
+        "sv7_message": "Hãy luôn tự hào là sinh viên AGU và hãy làm thầy cô, sinh viên AGU tự hào về điều đó!",
+        "sv7_fullname": "Dương Văn Hây",
+        "sv7_title": "Nghiên cứu viên",
+        "sv7_position": "Viện Khoa học Kỹ thuật Nông nghiệp Miền Nam",
+        "sv7_course": "DH8SH",
 
-        "sv8_message": "Nhân kỷ niệm 20 năm thành lập trường ĐH An Giang, tôi xin gửi lời chúc tốt đẹp nhất đến ngôi trường thân yêu, nơi đã đào tạo tôi suốt 4 năm đại học! Mong rằng, sau kỷ niệm 20 thành lập, sẽ có nhiều lần kỷ niệm thành lập nữa đi kèm với những thành tích vượt bậc trong giáo dục và các hoạt động của sinh viên, cán bộ, giảng viên nhà trường.",
-        "sv8_fullname": "Võ Thị Thảo Nguyên ",
-        "sv8_title": "Hướng dẫn viên",
-        "sv8_position": "Vietravel",
-        "sv8_course": "DH15VN",
+        "sv8_message": "Kính chúc trường ngày càng phát triển, ươm mầm tài năng cho tỉnh và nước nhà!",
+        "sv8_fullname": "Đoàn Thanh Đức",
+        "sv8_title": "Chuyên viên",
+        "sv8_position": "Sở Nông nghiệp và Phát triển nông thôn An Giang",
+        "sv8_course": "DH8TS",
 
         "sv9_message": "Đừng bao giờ đánh mất niềm tin vào bản thân mình ...Chỉ cần tin mình có thể làm được là bạn lại có thêm lí do để cố gắng thực hiện điều đó “...”Dám ước mơ, đề ra mục tiêu và quyết tâm thực hiện thì bản thân sẽ nhận lại một kết quả xứng đáng...Và nếu trên con đường đi đến ước mơ có khó khăn hay vấp ngã..Hãy mạnh mẽ đứng lên và xem thất bại là nhung thử thách bản thân mình. Chúc các bạn SV sẽ có những kỉ niệm tuyệt vời của thanh xuân và đừng quên cống hiến sức trẻ để góp phần xây dựng trường Đại học An Giang của chúng ta ngày càng vững mạnh, phát triển, vươn xa hội nhập.",
         "sv9_fullname": "Trần Thị Chính",
@@ -292,31 +321,31 @@
         "sv10_position": "TRƯỜNG HỘI NHẬP QUỐC TẾ ISCHOOL RẠCH GIÁ",
         "sv10_course": "DH16NV",
 
-        "sv11_message": "Nhân dịp kỷ niệm 20 năm thành lập trường, tôi chúc các thầy giáo, cô giáo và công nhân viên chức nhà trường mạnh khỏe, đạt nhiều thành tích hơn nữa trong sự nghiệp giáo dục - đào tạo. Chúc các em sinh viên tu dưỡng, rèn luyện tốt, học tập tiến bộ và tiếp tục phấn đấu, trưởng thành; góp phần xây dựng quê hương ngày càng giàu mạnh. Câu nói truyền cảm hứng đến các bạn sinh viên: Các bạn phải tìm ra được đam mê của mình là gì, hãy dấn thân vào công việc, nếu chưa tìm được đam mê thì hãy tiếp tục tìm kiếm. Đừng dừng lại!",
+        "sv11_message": "Xin gửi lời chúc sức khoẻ và lời cảm ơn đến quí Thầy Cô, Đại Học An Giang đã dạy em thành nhân trước khi thành danh.",
         "sv11_fullname": "Lê Nhựt Hào",
-        "sv11_title": "Kỹ sư kiểm tra phần mềm và triển khai dự án",
-        "sv11_position": "CÔNG TY TNHH CÔNG NGHỆ ĐIỆN TOÁN SÀI GÒN (CINOTEC)",
+        "sv11_title": "Giám đốc chi nhánh du lịch Cái Bè",
+        "sv11_position": "Công Ty Cổ phần Việt Phong Mekong",
         "sv11_course": "DH16TH",
 
         "sv12_message": "Chúc quý thầy cô thật nhiều sức khỏe, chúc các bạn sinh viên học tập thật tốt và chúc ngôi nhà AGU ngày càng phát triển và vươn xa hơn nữa.",
-        "sv12_fullname": "Nguyễn Văn Đủ",
+        "sv12_fullname": "Trần Vũ Em",
         "sv12_title": "Sale Admin",
         "sv12_position": "Công ty Cổ phần Thương mại Dịch vụ IBG",
-        "sv12_course": "DH16QT",
+        "sv12_course": "DH9VN",
 
-        "sv13_message": "Gửi đến trường lời chúc mừng trân trọng nhân kỉ niệm 20 năm thành lập. Chúc trường ngày càng đào tạo thêm nhiều lớp sinh viên ưu tú, chất lượng cao!",
+        "sv13_message": "Gửi đến trường lời chúc mừng trân trọng nhân kỉ niệm thành lập. Chúc trường ngày càng đào tạo thêm nhiều lớp sinh viên ưu tú, chất lượng cao!",
         "sv13_fullname": "Lê Thị Hồng Cúc",
         "sv13_title": "Giáo viên Mỹ thuật",
         "sv13_position": "Trường THCS Tà Đảnh",
         "sv13_course": "25H",
 
-        "sv14_message": "Nhân kỷ niệm 20 năm thành lập Trường, Kính chúc nhà Trường nhiều thành công và phát triển trong sự nghiệp giảng dạy va đào tạo.",
+        "sv14_message": "Nhân kỷ niệm thành lập Trường, Kính chúc nhà Trường nhiều thành công và phát triển trong sự nghiệp giảng dạy va đào tạo.",
         "sv14_fullname": "Đào Văn Phụng",
         "sv14_title": "Giảng viên, Tiến sĩ Ngôn ngữ học ứng dụng và Giảng dạy Tiếng Anh, Khoa Ngôn Ngữ",
         "sv14_position": "Trường Đại học Manchestser Metropolitan University, UK",
         "sv14_course": "DH4D1",
 
-        "sv15_message": "Nhân dịp kỷ niệm 20 năm thành lập trường Đại học An Giang. Kính chúc các thầy cô giáo, các bạn nghiên cứu sinh, sinh viên luôn mạnh khỏe và thành công.",
+        "sv15_message": "Nhân dịp kỷ niệm thành lập trường Đại học An Giang. Kính chúc các thầy cô giáo, các bạn nghiên cứu sinh, sinh viên luôn mạnh khỏe và thành công.",
         "sv15_fullname": "Trác Bội Dao",
         "sv15_title": "Trưởng phòng kinh doanh",
         "sv15_position": "Cathay Life Cần Thơ",
@@ -334,7 +363,7 @@
         "sv17_position": "Trường Mẫu giáo Hoa Hồng",
         "sv17_course": "DH5M1",
 
-        "sv18_message": "Nhân dịp kỷ niệm 20 năm thành lập AGU, em xin kính chúc Quý thầy cô và toàn toàn mọi người Sức khỏe, Công tác tốt và Đào tạo được nhiều nhiều thế hệ tài giỏi hơn nữa!",
+        "sv18_message": "Nhân dịp kỷ niệm thành lập AGU, em xin kính chúc Quý thầy cô và toàn toàn mọi người Sức khỏe, Công tác tốt và Đào tạo được nhiều nhiều thế hệ tài giỏi hơn nữa!",
         "sv18_fullname": "La Văn Sáng",
         "sv18_title": "Chủ Doanh nghiệp",
         "sv18_position": "Công ty TNHH Dịch vụ Tin học Mekongtech",
@@ -352,71 +381,17 @@
         "sv20_position": "Công ty TNHH Thực Phẩm Dinh Dưỡng Asean",
         "sv20_course": "DH6SH",
 
-        "sv21_message": "Trân trọng gửi lời Tri ân sâu sắc đến quý Thầy Cô vì trong sự nghiệp trồng người suốt 20 năm qua tại AGU. Hy vọng các bạn SV thế hệ tiếp nối tại AGU luôn sáng Tri thức - vững Niềm tin, rèn đức, luyện tài để trở thành niềm tự hào cho nhà trường, gia đình và xã hội. Xin kính chúc toàn thể quý Thầy cô, cán bộ nhà trường lúc nào cũng tràn đầy năng lượng, hạnh phúc để tiếp tục sự nghiệp ươm mầm tài năng cho đất nước. Chúc AGU ngày càng phát triển.",
-        "sv21_fullname": "Lâm Thị Trúc Giang",
-        "sv21_title": "Phó trưởng Khoa An toàn thực phẩm",
-        "sv21_position": "Trung tâm y tế Huyện Gò Quao",
-        "sv21_course": "DH6TP2",
+        "sv21_message": "Trải nghiệm học tại trường đại học An Giang đã cho em cơ hội tiếp cận với nguồn kiến thức và kỹ năng cần thiết để học tập và làm việc tốt trong môi trường học thuật và giảng dạy tiếng Anh. Em rất hy vọng trường tiếp tục phát triển và thành công trong công tác đào tạo sinh viên và nghiên cứu khoa học. Em vẫn luôn cố gắng để có thể là một trong nhiều ví dụ cho thấy sinh viên đại học An Giang có thể đi xa đến đâu, và có thể làm được những gì.",
+        "sv21_fullname": "Nguyễn Hoài Anh Thư",
+        "sv21_title": "Du học sinh ngành Giảng dạy ngôn ngữ tiếng Anh",
+        "sv21_position": "Leeds Beckett University, UK",
+        "sv21_course": "DH13TA",
 
         "sv22_message": "Tôi tự hào và biết ơn về những năm tháng được sống trong mái nhà Đại học An Giang, nơi đã yêu thương và trao cho tôi hành trang vững bước vào đời. Chúc cho Đại học An Giang ngày càng vững bước đi lên, khẳng định vị thế trong nước và quốc tế.",
         "sv22_fullname": "Nguyễn Thiên Thanh",
         "sv22_title": "Phó Trưởng Ban Tuyên giáo Tỉnh",
         "sv22_position": "Đoàn",
-        "sv22_course": "DH6H",
-
-        "sv23_message": "Nhân dịp kỷ niệm 20 năm thành lập AGU, em xin kính chúc Quý thầy cô và toàn toàn mọi người Sức khỏe, Công tác tốt và Đào tạo được nhiều nhiều thế hệ tài giỏi hơn nữa!",
-        "sv23_fullname": "La Văn Sáng",
-        "sv23_title": "Chủ Doanh nghiệp",
-        "sv23_position": "Công ty TNHH Dịch vụ Tin học Mekongtech",
-        "sv23_course": "DH5TH2",
-
-        "sv24_message": "Nhân dịp kỷ niệm 20 năm thành lập AGU, em xin kính chúc Quý thầy cô và toàn toàn mọi người Sức khỏe, Công tác tốt và Đào tạo được nhiều nhiều thế hệ tài giỏi hơn nữa!",
-        "sv24_fullname": "La Văn Sáng",
-        "sv24_title": "Chủ Doanh nghiệp",
-        "sv24_position": "Công ty TNHH Dịch vụ Tin học Mekongtech",
-        "sv24_course": "DH5TH2",
-
-        "sv25_message": "Nhân dịp kỷ niệm 20 năm thành lập AGU, em xin kính chúc Quý thầy cô và toàn toàn mọi người Sức khỏe, Công tác tốt và Đào tạo được nhiều nhiều thế hệ tài giỏi hơn nữa!",
-        "sv25_fullname": "La Văn Sáng",
-        "sv25_title": "Chủ Doanh nghiệp",
-        "sv25_position": "Công ty TNHH Dịch vụ Tin học Mekongtech",
-        "sv25_course": "DH5TH2",
-
-        "sv26_message": "Nhân dịp kỷ niệm 20 năm thành lập AGU, em xin kính chúc Quý thầy cô và toàn toàn mọi người Sức khỏe, Công tác tốt và Đào tạo được nhiều nhiều thế hệ tài giỏi hơn nữa!",
-        "sv26_fullname": "La Văn Sáng",
-        "sv26_title": "Chủ Doanh nghiệp",
-        "sv26_position": "Công ty TNHH Dịch vụ Tin học Mekongtech",
-        "sv26_course": "DH5TH2",
-
-        "sv27_message": "Nhân dịp kỷ niệm 20 năm thành lập AGU, em xin kính chúc Quý thầy cô và toàn toàn mọi người Sức khỏe, Công tác tốt và Đào tạo được nhiều nhiều thế hệ tài giỏi hơn nữa!",
-        "sv27_fullname": "La Văn Sáng",
-        "sv27_title": "Chủ Doanh nghiệp",
-        "sv27_position": "Công ty TNHH Dịch vụ Tin học Mekongtech",
-        "sv27_course": "DH5TH2",
-
-        "sv28_message": "Nhân dịp kỷ niệm 20 năm thành lập AGU, em xin kính chúc Quý thầy cô và toàn toàn mọi người Sức khỏe, Công tác tốt và Đào tạo được nhiều nhiều thế hệ tài giỏi hơn nữa!",
-        "sv28_fullname": "La Văn Sáng",
-        "sv28_title": "Chủ Doanh nghiệp",
-        "sv28_position": "Công ty TNHH Dịch vụ Tin học Mekongtech",
-        "sv28_course": "DH5TH2",
-
-        "sv29_message": "Nhân dịp kỷ niệm 20 năm thành lập AGU, em xin kính chúc Quý thầy cô và toàn toàn mọi người Sức khỏe, Công tác tốt và Đào tạo được nhiều nhiều thế hệ tài giỏi hơn nữa!",
-        "sv29_fullname": "La Văn Sáng",
-        "sv29_title": "Chủ Doanh nghiệp",
-        "sv29_position": "Công ty TNHH Dịch vụ Tin học Mekongtech",
-        "sv29_course": "DH5TH2",
-
-        "sv30_message": "Nhân dịp kỷ niệm 20 năm thành lập AGU, em xin kính chúc Quý thầy cô và toàn toàn mọi người Sức khỏe, Công tác tốt và Đào tạo được nhiều nhiều thế hệ tài giỏi hơn nữa!",
-        "sv30_fullname": "La Văn Sáng",
-        "sv30_title": "Chủ Doanh nghiệp",
-        "sv30_position": "Công ty TNHH Dịch vụ Tin học Mekongtech",
-        "sv30_course": "DH5TH2",
-
-        "sv31_message": "Nhân dịp kỷ niệm 20 năm thành lập AGU, em xin kính chúc Quý thầy cô và toàn toàn mọi người Sức khỏe, Công tác tốt và Đào tạo được nhiều nhiều thế hệ tài giỏi hơn nữa!",
-        "sv31_fullname": "La Văn Sáng",
-        "sv31_title": "Chủ Doanh nghiệp",
-        "sv31_position": "Công ty TNHH Dịch vụ Tin học Mekongtech",
-        "sv31_course": "DH5TH2"
+        "sv22_course": "DH6H"
     },
 
     "hieutruong": {

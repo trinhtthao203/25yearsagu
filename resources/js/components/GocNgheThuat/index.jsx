@@ -4,7 +4,7 @@ import Song02 from "../../../../public/audio/tien-len-dai-hoc-an-giang.mp3";
 import KeHoach from "../../../../public/images/planning.jpg";
 import _25Years from "../../../../public/images/Gallery/Facilities/Landscape/1.-Toàn-cảnh-Trường-Đại-học-An-Giang.jpg";
 import BackGround from "../../../../public/images/background.jpg";
-import BaiHatVeTruong from "../../../../public/images/music.png";
+import BaiHatVeTruong from "../../../../public/images/music_player.gif";
 import VideoVeTruong from "../../../../public/video/agu_20th_years_anniversary.mp4";
 import _25yplan from "../../../../public/files/kehoach25nam.pdf";
 
@@ -15,6 +15,14 @@ import { Reveal } from "../../motion/Reveal";
 import ReadMoreButton from "../ReadMoreButton";
 import ReactPlayer from "react-player";
 
+function CustomSlide(props) {
+    const { index, ...otherProps } = props;
+    return (
+        <div {...otherProps}>
+            <h3>{index}</h3>
+        </div>
+    );
+}
 const GocNgheThuat = () => {
     const isAnimation = JSON.parse(sessionStorage.getItem("visited")) !== false;
 
@@ -72,7 +80,8 @@ const GocNgheThuat = () => {
 
     return (
         <div
-            className={`slider-container `}
+            class="slider-container "
+            className=" flex justify-center items-center"
             style={{
                 backgroundImage: `linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url(${BackGround})`,
                 backgroundSize: "cover",
@@ -80,71 +89,9 @@ const GocNgheThuat = () => {
                 backgroundAttachment: "fixed",
             }}
         >
-            <Slider {...settings}>
-                {slideData.map((slide, index) => (
-                    <Box
-                        sx={{
-                            flexGrow: 1,
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            padding: "30px",
-                            borderRadius: "15px",
-                        }}
-                    >
-                        <Grid container spacing={2}>
-                            <Grid
-                                item
-                                xs={12}
-                                md={5}
-                                sx={{
-                                    width: "100%",
-                                    justifyContent: "center",
-                                    alignItems: "center",
-                                    display: "flex",
-                                }}
-                            >
-                                <img src={slide.URL} className="rounded-lg " />
-                            </Grid>
-                            <Grid item xs={12} md={7}>
-                                <Reveal isAnimation={isAnimation}>
-                                    <p className=" pt-10 font-medium font-oswald text-green01 text-center text-[1.2rem] md:text-[1.7rem] ">
-                                        {slide.title}
-                                    </p>
-                                </Reveal>
-                                <Reveal isAnimation={isAnimation}>
-                                    <p className=" font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.2rem] pl-[1rem] py-5">
-                                        {slide.description}
-                                    </p>
-                                </Reveal>
-                                <div className="w-full flex justify-end items-end">
-                                    <Reveal isAnimation={isAnimation}>
-                                        <button className=" flex justify-center items-center h-[36px] rounded-[4px] bg-green05 border-none text-green04 text-center text-[32px] px-[15px] scursor-pointer m-[10px] mb-[36px] shadow-[0_10px_20px_-8px_rgba(0,0,0,0.7)] relative duration-300 after:content-['»'] after:absolute after:opacity-0 after:top-[-7px] after:right-[-20px] after:duration-300 hover:pr-[24px] hover:pl-[8px] hover:after:opacity-100 hover:after:right-[10px]">
-                                            <a
-                                                href={slide.link}
-                                                target="_blank"
-                                                className="text-[17px] pt-[2px] pr-2"
-                                            >
-                                                {t("common.read-more")}
-                                            </a>
-                                        </button>
-                                    </Reveal>
-                                </div>
-                            </Grid>
-                        </Grid>
-                    </Box>
-                ))}
-                <Box
-                    sx={{
-                        flexGrow: 1,
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        padding: "35px",
-                        borderRadius: "15px",
-                    }}
-                >
-                    <Grid container spacing={2}>
+            <Slider {...settings} className="w-[90%]">
+                <div className="p-10">
+                    <Grid container spacing={1}>
                         <Grid item xs={12} md={5}>
                             <Reveal isAnimation={isAnimation}>
                                 <ReactPlayer
@@ -157,41 +104,31 @@ const GocNgheThuat = () => {
                         </Grid>
                         <Grid item xs={12} md={7}>
                             <Reveal isAnimation={isAnimation}>
-                                <p className=" pt-10 font-medium font-oswald text-green01 text-center text-[1.2rem] md:text-[1.7rem] ">
+                                <p className=" font-medium font-oswald text-green01 text-center text-[1.2rem] md:text-[1.7rem] ">
                                     {t("art.video-title")}
                                 </p>
                             </Reveal>
                             <Reveal isAnimation={isAnimation}>
-                                <p className=" font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.2rem] pl-[1rem] py-5">
+                                <p className=" px-5 font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.2rem]">
                                     {t("art.video-description")}
                                 </p>
                             </Reveal>
                         </Grid>
                     </Grid>
-                </Box>
-                <Box
-                    sx={{
-                        flexGrow: 1,
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        padding: "30px",
-                        borderRadius: "15px",
-                    }}
-                >
-                    <Grid container spacing={2}>
+                </div>
+                <div className="p-10">
+                    <Grid container spacing={1}>
                         <Grid
                             item
                             xs={12}
                             md={5}
                             sx={{
-                                width: "100%",
                                 justifyContent: "center",
-                                alignItems: "center",
                                 display: "flex",
+                                alignItems: "center",
                             }}
                         >
-                            <img src={BaiHatVeTruong} className="rounded-lg" />
+                            <img src={BaiHatVeTruong} className=" w-3/5" />
                         </Grid>
                         <Grid item xs={12} md={7}>
                             <Reveal isAnimation={isAnimation}>
@@ -200,31 +137,35 @@ const GocNgheThuat = () => {
                                 </p>
                             </Reveal>
                             <Reveal isAnimation={isAnimation}>
-                                <p className=" font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.2rem] pl-[1rem] py-5">
+                                <p className=" font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.2rem] py-5">
                                     {t("art.song-description")}
                                 </p>
                             </Reveal>
-                            <div className=" flex flex-col justify-center items-center md:justify-start md:items-start">
-                                <p className=" font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.2rem] pl-[1rem]">
-                                    {t("art.song-01-title")}
-                                </p>
-                                <audio
-                                    controls
-                                    src={Song01}
-                                    className=" w-[95%] md:w-[50%] "
-                                />
-                                <p className=" font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.2rem] pl-[1rem]">
-                                    {t("art.song-02-title")}
-                                </p>
-                                <audio
-                                    controls
-                                    src={Song02}
-                                    className=" w-[95%] md:w-[50%] "
-                                />
+                            <div className=" flex-col md:flex-row flex justify-center items-center md:justify-start md:items-start">
+                                <div className="md:pr-10 ">
+                                    <p className=" font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.1rem]">
+                                        {t("art.song-01-title")}
+                                    </p>
+                                    <audio
+                                        controls
+                                        src={Song01}
+                                        className=" w-[95%] md:w-[90%] "
+                                    />
+                                </div>
+                                <div>
+                                    <p className=" font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.1rem]">
+                                        {t("art.song-02-title")}
+                                    </p>
+                                    <audio
+                                        controls
+                                        src={Song02}
+                                        className=" w-[95%] md:w-[90%] "
+                                    />
+                                </div>
                             </div>
                         </Grid>
                     </Grid>
-                </Box>
+                </div>
             </Slider>
         </div>
     );

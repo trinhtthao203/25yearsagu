@@ -1,7 +1,7 @@
 import "tailwindcss/tailwind.css"; // Import Tailwind CSS
 import "../css/app.css";
 import React from "react";
-import { CssBaseline } from "@mui/material";
+import { CssBaseline, ThemeProvider } from "@mui/material";
 // import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./i18n";
@@ -23,59 +23,74 @@ import GalleryOrganizationsPage from "./pages/GalleryOrganizationsPage";
 import GalleryUnionPage from "./pages/GalleryUnionPage";
 import GalleryMittingPage from "./pages/GalleryMittingPage";
 import GallerySchoolPage from "./pages/GallerySchoolPage";
+import { createTheme } from "@mui/material";
+
+const theme = createTheme({
+    typography: {
+        fontFamily: ["Montserrat"].join(","),
+    },
+});
 
 function MyApp() {
     const { t } = useTranslation();
     return (
         <BrowserRouter>
-            <ScrollToTop />
-            <CssBaseline />
-            <Routes>
-                <Route path={t("path.home")} element={<Home />} />
-                <Route
-                    path={t("path.chancellor-message")}
-                    element={<ChancellorMessagePage />}
-                />
-                <Route path={t("path.loading")} element={<LoadingScreen />} />
-                <Route path={t("path.time-line")} element={<TimeLinePage />} />
-                <Route
-                    path={t("path.board-of-directors")}
-                    element={<BoardOfDirectorsPage />}
-                />
-                <Route
-                    path={t("path.gallery-facilities")}
-                    element={<GalleryFacilitiesPage />}
-                />
-                <Route
-                    path={t("path.gallery-education")}
-                    element={<GalleryEducationPage />}
-                />
-                <Route
-                    path={t("path.gallery-foreign")}
-                    element={<GalleryForeignPage />}
-                />
-                <Route
-                    path={t("path.gallery-research")}
-                    element={<GalleryResearchPage />}
-                />
-                <Route
-                    path={t("path.gallery-organizations")}
-                    element={<GalleryOrganizationsPage />}
-                />
-                <Route
-                    path={t("path.gallery-union")}
-                    element={<GalleryUnionPage />}
-                />
-                <Route
-                    path={t("path.gallery-school")}
-                    element={<GallerySchoolPage />}
-                />
-                <Route
-                    path={t("path.gallery-mitting")}
-                    element={<GalleryMittingPage />}
-                />
-                <Route path="*" element={<NotFoundPage />} />
-            </Routes>
+            <ThemeProvider theme={theme}>
+                <ScrollToTop />
+                <CssBaseline />
+                <Routes>
+                    <Route path={t("path.home")} element={<Home />} />
+                    <Route
+                        path={t("path.chancellor-message")}
+                        element={<ChancellorMessagePage />}
+                    />
+                    <Route
+                        path={t("path.loading")}
+                        element={<LoadingScreen />}
+                    />
+                    <Route
+                        path={t("path.time-line")}
+                        element={<TimeLinePage />}
+                    />
+                    <Route
+                        path={t("path.board-of-directors")}
+                        element={<BoardOfDirectorsPage />}
+                    />
+                    <Route
+                        path={t("path.gallery-facilities")}
+                        element={<GalleryFacilitiesPage />}
+                    />
+                    <Route
+                        path={t("path.gallery-education")}
+                        element={<GalleryEducationPage />}
+                    />
+                    <Route
+                        path={t("path.gallery-foreign")}
+                        element={<GalleryForeignPage />}
+                    />
+                    <Route
+                        path={t("path.gallery-research")}
+                        element={<GalleryResearchPage />}
+                    />
+                    <Route
+                        path={t("path.gallery-organizations")}
+                        element={<GalleryOrganizationsPage />}
+                    />
+                    <Route
+                        path={t("path.gallery-union")}
+                        element={<GalleryUnionPage />}
+                    />
+                    <Route
+                        path={t("path.gallery-school")}
+                        element={<GallerySchoolPage />}
+                    />
+                    <Route
+                        path={t("path.gallery-mitting")}
+                        element={<GalleryMittingPage />}
+                    />
+                    <Route path="*" element={<NotFoundPage />} />
+                </Routes>
+            </ThemeProvider>
         </BrowserRouter>
     );
 }

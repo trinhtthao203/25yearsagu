@@ -1,11 +1,17 @@
+import { t } from "i18next";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const BackButton = ({ title, left, textColor }) => {
+const BackButton = ({ title, left, textColor, backHome }) => {
     const [isHovered, setIsHovered] = useState(false);
     const navigate = useNavigate();
     const goBack = () => {
-        navigate(-1);
+        if (backHome) {
+            navigate(`${t("path.home")}`);
+            n;
+        } else {
+            navigate(-1);
+        }
     };
 
     const buttonHoverStyle = {

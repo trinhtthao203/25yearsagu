@@ -27,7 +27,7 @@ function CustomSlide(props) {
                     {fullname}
                 </p>
                 <p className=" font-montserrat font-medium text-[0.8rem] sm:text-[0.9rem] text-center">
-                    {title} - {position}
+                    {title} {title && "-"} {position}
                 </p>
                 <p className="pb-5 pt-2 text-[0.9rem] sm:text-[0.9rem] text-center text-green03 font-medium">
                     {course}

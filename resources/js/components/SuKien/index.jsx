@@ -7,7 +7,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
-import LocalFloristIcon from "@mui/icons-material/LocalFlorist";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import { PopZoom } from "../../motion/PopZoom";
 import { Link } from "react-router-dom";
 
@@ -19,13 +19,13 @@ function SuKien() {
         {
             name: t("event.evt1-name"),
             content: t("event.evt1-content"),
-            color: "#ff7979",
+            color: "#7d5fff",
             link: "path.event-video",
         },
         {
             name: t("event.evt2-name"),
             content: t("event.evt2-content"),
-            color: "#81ecec",
+            color: "#f6b93b",
             link: "path.event-write",
         },
         // {
@@ -84,22 +84,23 @@ function SuKien() {
                                             },
                                         }}
                                     >
-                                        <LocalFloristIcon
+                                        <AutoAwesomeIcon
                                             style={{ color: event.color }}
-                                            // fontSize={"large"}
                                         />
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
                                     primaryTypographyProps={{
-                                        fontSize: { sx: "17px", md: "20px" },
+                                        fontSize: { xs: "18px", md: "20px" },
+                                        fontFamily: "Montserrat",
                                         color: "#E0EFE6",
                                         width: "100%",
                                     }}
                                     secondaryTypographyProps={{
                                         color: "#E0EFE6",
+                                        fontFamily: "Montserrat",
                                         textAlign: "justify",
-                                        fontSize: { sx: "14px", md: "16px" },
+                                        fontSize: { xs: "15px", md: "16px" },
                                         width: "100%",
                                     }}
                                     primary={event.name}

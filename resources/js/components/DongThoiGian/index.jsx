@@ -63,7 +63,7 @@ function DongThoiGian() {
     ];
 
     function goTimeLineDetails(id) {
-        navigate(`/theo-dong-thoi-gian?id=${id}`);
+        navigate(`${t("path.time-line")}?id=${id}`);
     }
 
     return (

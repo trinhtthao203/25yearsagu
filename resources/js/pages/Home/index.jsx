@@ -97,11 +97,11 @@ function Home() {
                     <NhaTaiTro />
                     <DongThoiGian />
                     <BanGiamHieu />
-                    <HoiNhapPhatTrien />
+                    {/* <HoiNhapPhatTrien /> */}
                     <SuKien />
-                    {/* <GocNgheThuat /> // bị đẩy cột trắng */}
-                    {/* <DoiTac /> */}
+                    <DoiTac />
                     <CuuSinhVien />
+                    <GocNgheThuat />
                     <ThuVienAnh />
                     <Footer />
                 </div>

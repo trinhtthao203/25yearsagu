@@ -211,7 +211,7 @@
         "write-contest-desciption": "Alos Lorem ipsum dolor sit amet consectetur",
 
         "video-title": "Video giới thiệu về Trường",
-        "video-description": "Alos Lorem ipsum dolor sit amet consectetur adipisicing elit.        Eveniet sit corporis, eligendi, temporibus nisi sapiente        dolorum eius vero, sequi dolore minus quae ipsam!        Praesentium aspernatur minima elig",
+        "video-description": "Alos Lorem ipsusequi dolore minus quae ipsam! Praesentium aspernatur minima elig",
 
         "song-title": "Bài hát giới thiệu về Trường",
         "song-01-title": "Đại Học An Giang Trường Chúng Tôi",
@@ -400,6 +400,9 @@
     },
 
     "gallery": {
+        "seminar": "Hội nghị/Hội thảo",
+        "community": "Phục vụ cộng đồng",
+
         "facilities": "Cơ sở vật chất",
         "facilities-landscape": "Cảnh quan chung",
         "facilities-lab": "Thực hành thí nghiệm",
@@ -534,7 +537,7 @@
         "foreign-description": "ĐHAG đã ký kết 71 bản ghi nhớ và triển khai nhiều hoạt động hợp tác trong đào tạo và NCKH với các viện, trường đại học ở nhiều quốc gia.",
         "research": "Nghiên cứu khoa học",
         "research-description": "ĐHAG xác định nghiên cứu khoa học và chuyển giao công nghệ là nhiệm vụ then chốt. Tính đến nay, Trường đã triển khai 149 dự án NCKH thực hiện trên 1.190 đề tài NCKH các cấp; công bố trên 1.534 bài báo khoa học.",
-        "union": "Đoàn-Hội(Hoạt động sinh viên)",
+        "union": "Hoạt động sinh viên",
         "organizations": "Các tổ chức đoàn thể",
         "school": "Trường Phổ thông Thực hành Sư Phạm"
     },

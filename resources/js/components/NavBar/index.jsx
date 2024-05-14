@@ -92,7 +92,7 @@ export default function NavBar(props) {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
             const maxScroll = 200;
-            const opacity = Math.min(1, 0.5 + scrollPosition / maxScroll);
+            const opacity = Math.min(1, 0.1 + scrollPosition / maxScroll);
 
             setScrollOpacity(opacity);
         };

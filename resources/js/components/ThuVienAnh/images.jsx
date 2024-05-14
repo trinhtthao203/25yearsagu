@@ -6,14 +6,16 @@ import Union from "../../../../public/images/Gallery/Union/18.Đại-hội-văn-
 import Organizations from "../../../../public/images/Gallery/Organizations/66.-Công-đoàn-trường-tổ-chức-tham-quan-học-tập-kinh-nghiệm.jpg";
 import School from "../../../../public/images/Gallery/School/1.-Toàn-cảnh-Trường-Thực-Hành-Sư-Phạm.jpg";
 import Mitting from "../../../../public/images/Gallery/Union/46.Tư-vấn-hỗ-trợ-sinh-viên-khởi-nghiệp.jpg";
+import Seminar from "../../../../public/images/Gallery/Seminar/1.-Tiếp-ĐH-Yuhan-–-Hàn-Quốc.jpg";
+import Community from "../../../../public/images/Gallery/Community/1.Sinh-viên-AGU-xung-kích-tình-nguyện-vì-cộng-đồng.jpg";
 
 export const dataImages = [
-    {
-        img: Landscape,
-        title: "gallery.facilities",
-        description: "gallery.facilities-description",
-        link: "path.gallery-facilities",
-    },
+    // {
+    //     img: Landscape,
+    //     title: "gallery.facilities",
+    //     description: "gallery.facilities-description",
+    //     link: "path.gallery-facilities",
+    // },
     {
         img: Education,
         title: "gallery.education",
@@ -21,10 +23,11 @@ export const dataImages = [
         link: "path.gallery-education",
     },
     {
-        img: Research,
-        title: "gallery.research",
-        description: "gallery.research-description",
-        link: "path.gallery-research",
+        img: Mitting,
+        title: "gallery.mitting",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, cumque.",
+        link: "path.gallery-mitting",
     },
     {
         img: Foreign,
@@ -33,11 +36,22 @@ export const dataImages = [
         link: "path.gallery-foreign",
     },
     {
-        img: Organizations,
-        title: "gallery.organizations",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, cumque.",
-        link: "path.gallery-organizations",
+        img: Research,
+        title: "gallery.research",
+        description: "gallery.research-description",
+        link: "path.gallery-research",
+    },
+    {
+        img: Community,
+        title: "gallery.community",
+        description: "gallery.research-description",
+        link: "path.gallery-research",
+    },
+    {
+        img: Seminar,
+        title: "gallery.seminar",
+        description: "gallery.facilities-description",
+        link: "path.gallery-facilities",
     },
     {
         img: Union,
@@ -47,17 +61,17 @@ export const dataImages = [
         link: "path.gallery-union",
     },
     {
+        img: Organizations,
+        title: "gallery.organizations",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, cumque.",
+        link: "path.gallery-organizations",
+    },
+    {
         img: School,
         title: "gallery.school",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, cumque.",
         link: "path.gallery-school",
-    },
-    {
-        img: Mitting,
-        title: "gallery.mitting",
-        description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, cumque.",
-        link: "path.gallery-mitting",
     },
 ];

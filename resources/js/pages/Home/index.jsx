@@ -60,7 +60,7 @@ function Home() {
                     <div
                         className=" relative top-[-7.6rem] md:top-[-8.7rem] h-screen w-screen animate-fade animate-duration-[1200ms]"
                         style={{
-                            backgroundImage: `linear-gradient(to right, rgba(138, 90, 226, 0.2), rgba(255, 255, 150, 0.5)), url(${backgroundImage})`,
+                            backgroundImage: `linear-gradient(to right, rgba(28, 33, 87, 0.3), rgba(28, 33, 87, 0.3)), url(${backgroundImage})`,
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                             backgroundAttachment: "fixed",
@@ -71,15 +71,19 @@ function Home() {
                             <div className="flex flex-col items-center justify-center ">
                                 {/* <div className="w-[10rem] sm:w-[11rem] md:w-[19rem] lg:w-[22rem] xl:w-[19rem] animate-flip-down"> */}
                                 <Reveal isAnimation={isAnimation}>
-                                    <p className=" text-white uppercase text-[10rem] font-semibold font-montserrat">
+                                    {/* <p className=" text-white uppercase text-[10rem] font-semibold font-montserrat">
                                         25
-                                    </p>
-                                    {/* <img src={`${Logo25}`} alt="Logo" /> */}
+                                    </p> */}
+                                    <img
+                                        src={`${Logo25}`}
+                                        className="w-[20rem]"
+                                        alt="Logo"
+                                    />
                                 </Reveal>
                                 {/* </div> */}
                                 <div className="transform text-center ">
                                     <Reveal isAnimation={isAnimation}>
-                                        <p className=" text-white uppercase text-[1.1rem] sm:text-[1.7rem] md:text-[2rem] lg:text-[2.4rem] xl:text-[2.0rem] font-semibold font-montserrat p-3">
+                                        <p className=" text-white uppercase text-[1.1rem] sm:text-[1.7rem] md:text-[2rem] lg:text-[2.4rem] xl:text-[2.0rem] font-semibold font-montserrat">
                                             {t("home.sologan")}
                                         </p>
                                     </Reveal>

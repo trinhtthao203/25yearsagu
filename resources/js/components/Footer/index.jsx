@@ -52,6 +52,9 @@ const Footer = forwardRef((props, ref) => {
                             <div>
                                 <p rel="noopener noreferrer">
                                     {t("contact.address-content")}
+                                    <br/>
+                                    {t("contact.city-content")}
+                                    {t("contact.province-content")}
                                 </p>
                                 <a
                                     className="text-[#27ae60]"
@@ -105,7 +108,7 @@ const Footer = forwardRef((props, ref) => {
                             <div className="flex justify-start space-x-3">
                                 <a
                                     rel="noopener noreferrer"
-                                    href="https://www.facebook.com/pages/%C4%90%E1%BA%A1i-h%E1%BB%8Dc-An-Giang/1574368222658744"
+                                    href="https://www.facebook.com/AGUDHAG"
                                     title="Facebook"
                                     className="flex items-center p-1"
                                     target="_blank"

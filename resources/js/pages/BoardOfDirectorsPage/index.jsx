@@ -16,6 +16,7 @@ import NTHai from "../../../../public/images/BanGiamHieu/nthai.png";
 import TVDat from "../../../../public/images/BanGiamHieu/tvdat.png";
 import LQCuong from "../../../../public/images/BanGiamHieu/lqcuong.png";
 import HTBinh from "../../../../public/images/BanGiamHieu/htbinh.png";
+import NHTri from "../../../../public/images/BanGiamHieu/nhtri.png";
 
 import { Box } from "@mui/material";
 import CustomFab from "../../components/CustomFab";
@@ -147,6 +148,12 @@ function BoardOfDirectorsPage() {
                     title: t("board-of-directors.vice-principal"),
                     year: t("board-of-directors.time-lqcuong-term-IV"),
                 },
+                {
+                    image: HTBinh,
+                    name: t("board-of-directors.htbinh"),
+                    title: t("board-of-directors.vice-principal"),
+                    year: t("board-of-directors.time-htbinh-term-IV"),
+                },
             ],
         },
         ,
@@ -165,6 +172,12 @@ function BoardOfDirectorsPage() {
                     name: t("board-of-directors.htbinh"),
                     title: t("board-of-directors.vice-principal"),
                     year: t("board-of-directors.time-htbinh-term-V"),
+                },
+                {
+                    image: NHTri,
+                    name: t("board-of-directors.nhtri"),
+                    title: t("board-of-directors.vice-principal"),
+                    year: t("board-of-directors.time-nhtri-term-V"),
                 },
             ],
         },

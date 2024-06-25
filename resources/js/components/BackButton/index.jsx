@@ -6,12 +6,7 @@ const BackButton = ({ title, left, textColor, backHome }) => {
     const [isHovered, setIsHovered] = useState(false);
     const navigate = useNavigate();
     const goBack = () => {
-        if (backHome) {
-            navigate(`${t("path.home")}`);
-            n;
-        } else {
-            navigate(-1);
-        }
+        navigate(`${t("path.home")}`);
     };
 
     const buttonHoverStyle = {

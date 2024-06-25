@@ -105,9 +105,13 @@
         "time-nthai-term-IV": "2017-2021",
         "time-tvdat-term-IV": "2017-2021",
         "time-lqcuong-term-IV": "2017-08/2019",
+        "time-htbinh-term-IV": "2020-T6/2024",
 
         "time-vvthang-term-V": "2021-đến nay",
-        "time-htbinh-term-V": "2021-đến nay",
+        "time-htbinh-term-V": "2020-T6/2024",
+
+        "nhtri":"Nguyễn Hữu Trí",
+        "time-nhtri-term-V": "T6/2024-đến nay",
 
         "vtxuan-time": "2000-2007",
         "lmtung-time": "2007-2012",
@@ -544,7 +548,9 @@
 
     "contact": {
         "address": "Địa chỉ :",
-        "address-content": "Số 18 Ung Văn Khiêm, P. Đông Xuyên, Tp. Long Xuyên - An Giang",
+        "address-content": "Số 18 Ung Văn Khiêm, P. Đông Xuyên, ",
+        "city-content": " Tp. Long Xuyên,",
+        "province-content": " An Giang",
         "contact": "Liên hệ ",
         "social-media": "Social Media",
         "view-in-map": "Xem trên bản đồ..."

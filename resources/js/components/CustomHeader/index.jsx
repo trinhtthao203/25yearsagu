@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import backgroundImage from "../../../../public/images/gate.jpg"; // Adjust the path to your image
+import backgroundImage from "../../../../public/images/gate2.jpg"; // Adjust the path to your image
 import Logo25 from "../../../../public/images/logo25.png";
 import LanguageSelector from "../LanguageSelector";
 import { Reveal } from "../../motion/Reveal";
@@ -12,12 +12,11 @@ function CustomHeader() {
     return (
         <div className=" w-screen">
             <div
-                className="h-[25rem] relative animate-fade animate-duration-[1200ms]"
+                className="h-[32rem] relative animate-fade animate-duration-[1200ms]"
                 style={{
-                    backgroundImage: `linear-gradient(to right, rgba(138, 90, 226, 0.2), rgba(255, 255, 150, 0.5)), url(${backgroundImage})`,
+                    backgroundImage: `linear-gradient(to right, rgba(28, 33, 87, 0.3), rgba(28, 33, 87, 0.3)), url(${backgroundImage})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    backgroundAttachment: "fixed",
                 }}
             >
                 <div className="w-screen flex justify-end items-end ">
@@ -26,10 +25,11 @@ function CustomHeader() {
                 <div className="flex justify-center items-center">
                     <div className="flex flex-col items-center justify-center ">
                         <Reveal isAnimation={isAnimation}>
-                            <p className=" text-white uppercase text-[10rem] font-semibold font-montserrat">
-                                25
-                            </p>
-                            {/* <img src={`${Logo25}`} alt="Logo" /> */}
+                            <img
+                                src={`${Logo25}`}
+                                className="w-[17rem]"
+                                alt="Logo"
+                            />
                         </Reveal>
                         <div className="transform text-center ">
                             <Reveal isAnimation={isAnimation}>

@@ -84,6 +84,9 @@ export function Tabs({ eventData }) {
         }
     }, [value, bounds]);
 
+    console.log(eventData[0].image);
+
+
     return (
         <Container>
             <TabContainer ref={ref}>
@@ -109,12 +112,16 @@ export function Tabs({ eventData }) {
                         key={event}
                         style={{
                             width: "100%",
-                            minHeight: "250px",
                             padding: "16px",
                             color: "#2D5029",
+                            display:"flex",
+                            justifyContent:"center",
+                            alignItems:"center",
+                            flexDirection:"column"
                         }}
                     >
                         <span
+                        className="text-[1.2rem] pb-[1rem]"
                             dangerouslySetInnerHTML={{
                                 __html: event.description.replace(
                                     /\n/g,
@@ -122,6 +129,11 @@ export function Tabs({ eventData }) {
                                 ),
                             }}
                         ></span>
+                        <img
+                            src={event.image}
+                            loading="lazy"
+                            className=" max-w-full h-auto rounded-lg"
+                        />
                     </div>
                 ))}
             </Pager>

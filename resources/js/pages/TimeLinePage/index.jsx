@@ -7,6 +7,12 @@ import BackButton from "../../components/BackButton";
 import CustomHeader from "../../components/CustomHeader";
 import { Stepper, Step, StepButton, Button, Box } from "@mui/material";
 import CustomFab from "../../components/CustomFab";
+
+import _1970 from "../../../../public/images/DongThoiGian/1970.jpg"
+import _1981 from "../../../../public/images/DongThoiGian/1981.jpg"
+import _1995 from "../../../../public/images/DongThoiGian/1995.jpg"
+
+
 export default function DongThoiGianPage() {
     const { t } = useTranslation();
     const params = new URLSearchParams(location.search);
@@ -21,6 +27,7 @@ export default function DongThoiGianPage() {
                 {
                     description: t("time.gd1-event-1"),
                     time: t("time.time-gd1-event-1"),
+                    image:_1970,
                 },
                 {
                     description: t("time.gd1-event-2"),
@@ -33,14 +40,12 @@ export default function DongThoiGianPage() {
                 {
                     description: t("time.gd1-event-4"),
                     time: t("time.time-gd1-event-4"),
+                    image:_1981,
                 },
                 {
                     description: t("time.gd1-event-5"),
                     time: t("time.time-gd1-event-5"),
-                },
-                {
-                    description: t("time.gd1-event-6"),
-                    time: t("time.time-gd1-event-6"),
+                    image:_1995,
                 },
             ],
             color: "#4CBC3B",

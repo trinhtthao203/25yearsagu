@@ -116,16 +116,15 @@ export function Tabs({ eventData }) {
                             color: "#2D5029",
                             display:"flex",
                             justifyContent:"center",
-                            alignItems:"center",
                             flexDirection:"column"
                         }}
                     >
                         <span
-                        className="text-[1.2rem] pb-[1rem]"
+                        className="text-[1.2rem] pb-[1rem] text-justify"
                             dangerouslySetInnerHTML={{
                                 __html: event.description.replace(
                                     /\n/g,
-                                    "<br> - "
+                                    "<br> "
                                 ),
                             }}
                         ></span>

@@ -27,19 +27,31 @@ function SuKien() {
             content: t("event.evt2-content"),
             color: "#f6b93b",
             link: "path.event-write",
+        },   
+        {
+            name: t("event.evt3-name"),
+            content: t("event.evt3-content"),
+            color: "#ff9ff3",
+            link: "https://enews.agu.edu.vn/index.php?option=com_content&view=article&id=24256&Itemid=115",
         },
-        // {
-        //     name: t("event.evt3-name"),
-        //     content: t("event.evt3-content"),
-        //     color: "#ff9ff3",
-        //     link: "path.event-write",
-        // },
-        // {
-        //     name: t("event.evt4-name"),
-        //     content: t("event.evt4-content"),
-        //     color: "#f3a683",
-        //     link: "path.event-write",
-        // },
+        {
+            name: t("event.evt4-name"),
+            content: t("event.evt4-content"),
+            color: "#f3a683",
+            link: "https://www.agu.edu.vn/vi/chi-tiet-thong-tin/ron-rang-hoi-thi-ca-mua-nhac-sinh-vien-agu-nam-2024",
+        },        
+        {
+            name: t("event.evt5-name"),
+            content: t("event.evt5-content"),
+            color: "#e67e22",
+            link: "https://www.agu.edu.vn/vi/chi-tiet-thong-tin/ngay-hoi-tuyen-dung-nam-2024-cau-noi-vung-chac-giua-nha-truong-doanh-nghiep-va-sinh-vien",
+        },      
+        {
+            name: t("event.evt6-name"),
+            content: t("event.evt6-content"),
+            color: "#7d5fff",
+            link: "https://www.agu.edu.vn/vi/chi-tiet-thong-tin/chuong-trinh-giao-luu-van-hoa-quoc-te-voi-truong-dai-hoc-surindra-rajabhat",
+        },
     ];
 
     return (
@@ -61,15 +73,12 @@ function SuKien() {
                 sx={{
                     width: "100%",
                     maxWidth: { md: "50%" },
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
                     flexDirection: "column",
                 }}
             >
                 {events.map((event) => (
                     <PopZoom>
-                        <Link to={t(`${event.link}`)}>
+                        <Link to={t(`${event.link}`)} target="_blank">
                             <ListItem>
                                 <ListItemAvatar>
                                     <Avatar

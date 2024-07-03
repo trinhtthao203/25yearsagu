@@ -10,6 +10,7 @@ import { render } from "react-dom";
 import Home from "../js/pages/Home";
 import LoadingScreen from "../js/pages/Loading";
 import ChancellorMessagePage from "./pages/ChancellorMessagePage";
+import OpenLatterPage from "./pages/OpenLetterPage";
 import TimeLinePage from "./pages/TimeLinePage";
 import NotFoundPage from "./pages/NotFound"; // Import your NotFoundPage component
 import ScrollToTop from "./scrollToTop";
@@ -41,6 +42,7 @@ function MyApp() {
                 />
                 <Route path={t("path.loading")} element={<LoadingScreen />} />
                 <Route path={t("path.time-line")} element={<TimeLinePage />} />
+                <Route path={t("path.open-letter")} element={<OpenLatterPage />} />
                 <Route
                     path={t("path.board-of-directors")}
                     element={<BoardOfDirectorsPage />}

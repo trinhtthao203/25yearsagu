@@ -153,6 +153,22 @@ export default function DongThoiGianPage() {
                     description: t("time.gd3-event-2"),
                     time: t("time.time-gd3-event-2"),
                 },
+                {
+                    description: t("time.gd3-event-2"),
+                    time: t("time.time-gd3-event-3"),
+                },
+                {
+                    description: t("time.gd3-event-2"),
+                    time: t("time.time-gd3-event-4"),
+                },
+                {
+                    description: t("time.gd3-event-2"),
+                    time: t("time.time-gd3-event-5"),
+                },
+                {
+                    description: t("time.gd3-event-2"),
+                    time: t("time.time-gd3-event-6"),
+                },
             ],
             color: "#218c74",
             textColor: "text-[#218c74]",

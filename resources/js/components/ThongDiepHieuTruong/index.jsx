@@ -46,8 +46,8 @@ function ThongDiepHieuTruong() {
                         <p className=" text-center px-[9px] text-[0.9rem] md:text-[1.1rem] lg:text-[1.1rem] text-green01 font-montserrat  font-medium">
                             {t("home.short_content")}
                         </p>
-                        <Link to="/thong-diep-hieu-truong">
-                            <p className="text-right     text-[0.85rem] sm:text-[1.4rem] md:text-[1.5rem] lg:text-[1.2rem] text-green05 font-montserrat">
+                        <Link to={t("path.chancellor-message")}>
+                            <p className="text-right text-[0.85rem] sm:text-[1.4rem] md:text-[1.5rem] lg:text-[1.2rem] text-green05 font-montserrat">
                                 {t("common.read-more")}
                             </p>
                         </Link>

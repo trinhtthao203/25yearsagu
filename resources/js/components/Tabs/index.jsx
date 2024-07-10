@@ -109,31 +109,35 @@ export function Tabs({ eventData }) {
             <Pager value={value}>
                 {eventData.map((event) => (
                     <div
-                        key={event}
-                        style={{
-                            width: "100%",
-                            padding: "16px",
-                            color: "#2D5029",
-                            display:"flex",
-                            justifyContent:"center",
-                            flexDirection:"column"
-                        }}
-                    >
-                        <span
+                    key={event}
+                    style={{
+                        width: "100%",
+                        padding: "16px",
+                        color: "#2D5029",
+                        display: "flex",
+                        justifyContent: "center",  // Horizontal centering of the container's children
+                        flexDirection: "column"
+                    }}
+                >
+                    <span
                         className="text-[1.2rem] pb-[1rem] text-justify"
-                            dangerouslySetInnerHTML={{
-                                __html: event.description.replace(
-                                    /\n/g,
-                                    "<br> "
-                                ),
-                            }}
-                        ></span>
-                        <img
-                            src={event.image}
-                            loading="lazy"
-                            className=" max-w-full h-auto rounded-lg"
-                        />
-                    </div>
+                        dangerouslySetInnerHTML={{
+                            __html: event.description.replace(
+                                /\n/g,
+                                "<br> "
+                            ),
+                        }}
+                    ></span>
+                    <img
+                        src={event.image}
+                        loading="lazy"
+                        className="w-full md:w-3/5 h-auto rounded-lg"
+                        style={{
+                            margin: "0 auto"  // Centers the image horizontally within its container
+                        }}
+                    />
+                </div>
+                
                 ))}
             </Pager>
         </Container>

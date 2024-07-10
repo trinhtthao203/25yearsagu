@@ -11,6 +11,11 @@ import CustomFab from "../../components/CustomFab";
 import _1970 from "../../../../public/images/DongThoiGian/1970.jpg"
 import _1981 from "../../../../public/images/DongThoiGian/1981.jpg"
 import _1995 from "../../../../public/images/DongThoiGian/1995.jpg"
+import _1999 from "../../../../public/images/DongThoiGian/1999.jpg"
+import _2000 from "../../../../public/images/DongThoiGian/2000.jpg"
+import _2001 from "../../../../public/images/DongThoiGian/2001.jpg"
+import _2002 from "../../../../public/images/DongThoiGian/2002.jpg"
+import _2003 from "../../../../public/images/DongThoiGian/2003.jpg"
 
 
 export default function DongThoiGianPage() {
@@ -32,16 +37,17 @@ export default function DongThoiGianPage() {
                 {
                     description: t("time.gd1-event-2"),
                     time: t("time.time-gd1-event-2"),
-                },
-                {
-                    description: t("time.gd1-event-3"),
-                    time: t("time.time-gd1-event-3"),
-                },
-                {
-                    description: t("time.gd1-event-4"),
-                    time: t("time.time-gd1-event-4"),
                     image:_1981,
                 },
+                // {
+                //     description: t("time.gd1-event-3"),
+                //     time: t("time.time-gd1-event-3"),
+                // },
+                // {
+                //     description: t("time.gd1-event-4"),
+                //     time: t("time.time-gd1-event-4"),
+                    
+                // },
                 {
                     description: t("time.gd1-event-5"),
                     time: t("time.time-gd1-event-5"),
@@ -59,22 +65,27 @@ export default function DongThoiGianPage() {
                 {
                     description: t("time.gd2-event-1"),
                     time: t("time.time-gd2-event-1"),
+                    image:_1999
                 },
                 {
                     description: t("time.gd2-event-2"),
                     time: t("time.time-gd2-event-2"),
+                    image:_2000
                 },
                 {
                     description: t("time.gd2-event-3"),
                     time: t("time.time-gd2-event-3"),
+                    image:_2001
                 },
                 {
                     description: t("time.gd2-event-4"),
                     time: t("time.time-gd2-event-4"),
+                    image:_2002
                 },
                 {
                     description: t("time.gd2-event-5"),
                     time: t("time.time-gd2-event-5"),
+                    image:_2003
                 },
                 {
                     description: t("time.gd2-event-6"),

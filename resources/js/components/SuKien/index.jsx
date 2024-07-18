@@ -7,7 +7,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
-import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
+import {AutoAwesome, Create, VideoCameraBack, LocalFlorist,  LibraryMusic, Work } from "@mui/icons-material";
 import { PopZoom } from "../../motion/PopZoom";
 import { Link } from "react-router-dom";
 
@@ -19,38 +19,38 @@ function SuKien() {
         {
             name: t("event.evt1-name"),
             content: t("event.evt1-content"),
-            color: "#7d5fff",
             link: "path.event-video",
+            icon:<VideoCameraBack style={{ color: "#7d5fff" }}/>
         },
         {
             name: t("event.evt2-name"),
             content: t("event.evt2-content"),
-            color: "#f6b93b",
             link: "path.event-write",
+            icon:<Create style={{ color:"#f6b93b" }}/>
         },   
         {
             name: t("event.evt3-name"),
             content: t("event.evt3-content"),
-            color: "#ff9ff3",
             link: "https://enews.agu.edu.vn/index.php?option=com_content&view=article&id=24256&Itemid=115",
+            icon:<LocalFlorist style={{ color: "#ff9ff3" }}/>
         },
         {
             name: t("event.evt4-name"),
             content: t("event.evt4-content"),
-            color: "#f3a683",
             link: "https://www.agu.edu.vn/vi/chi-tiet-thong-tin/ron-rang-hoi-thi-ca-mua-nhac-sinh-vien-agu-nam-2024",
+            icon:<LibraryMusic style={{ color: "f3a683"}}/>
         },        
         {
             name: t("event.evt5-name"),
             content: t("event.evt5-content"),
-            color: "#e67e22",
             link: "https://www.agu.edu.vn/vi/chi-tiet-thong-tin/ngay-hoi-tuyen-dung-nam-2024-cau-noi-vung-chac-giua-nha-truong-doanh-nghiep-va-sinh-vien",
+            icon:<Work style={{ color: "#e67e22"}}/>
         },      
         {
             name: t("event.evt6-name"),
             content: t("event.evt6-content"),
-            color: "#7d5fff",
             link: "https://www.agu.edu.vn/vi/chi-tiet-thong-tin/chuong-trinh-giao-luu-van-hoa-quoc-te-voi-truong-dai-hoc-surindra-rajabhat",
+            icon:<AutoAwesome style={{ color: "#7d5fff" }}/>
         },
     ];
 
@@ -93,16 +93,14 @@ function SuKien() {
                                             },
                                         }}
                                     >
-                                        <AutoAwesomeIcon
-                                            style={{ color: event.color }}
-                                        />
+                                       {event.icon}
                                     </Avatar>
                                 </ListItemAvatar>
                                 <ListItemText
                                     primaryTypographyProps={{
                                         fontSize: { xs: "18px", md: "20px" },
                                         fontFamily: "Montserrat",
-                                        color: "#E0EFE6",
+                                        color: "#FFFFFF",
                                         width: "100%",
                                     }}
                                     secondaryTypographyProps={{
@@ -113,7 +111,7 @@ function SuKien() {
                                         width: "100%",
                                     }}
                                     primary={event.name}
-                                    secondary={event.content}
+                                    // secondary={event.content}
                                 />
                             </ListItem>
                         </Link>

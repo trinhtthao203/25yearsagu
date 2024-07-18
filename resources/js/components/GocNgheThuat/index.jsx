@@ -89,21 +89,57 @@ const GocNgheThuat = () => {
                 backgroundAttachment: "fixed",
             }}
         >
-            <Slider {...settings} className="w-[90%]">
-                <div className="p-10">
-                    <Grid container spacing={1}>
-                        <Grid item xs={12} md={5}>
-                            <Reveal isAnimation={isAnimation}>
-                                <ReactPlayer
-                                    controls={true}
-                                    url={VideoVeTruong}
-                                    height={"300"}
-                                    width={"450"}
-                                />
-                            </Reveal>
-                        </Grid>
-                        <Grid item xs={12} md={7}>
-                            <Reveal isAnimation={isAnimation}>
+            {/* <Slider {...settings} className="w-[90%]"> */}
+            <div className="p-10">
+                <Grid container spacing={1}>
+                    <Grid item xs={12} md={5}>
+                        <Reveal isAnimation={isAnimation}>
+                            <p className=" font-medium font-oswald text-green01 text-center text-[1.2rem] md:text-[1.7rem] ">
+                                {t("art.video-title")}
+                            </p>
+                        </Reveal>
+                        <Reveal isAnimation={isAnimation}>
+                            <ReactPlayer
+                                controls={true}
+                                url={VideoVeTruong}
+                                height={"300"}
+                                width={"450"}
+                            />
+                        </Reveal>
+                    </Grid>
+                    <Grid item xs={12} md={7} sx={{ alignItems: "center", display: "flex", flexDirection: "column" }}>
+                        <Reveal isAnimation={isAnimation}>
+                            <p className=" font-medium font-oswald text-green01 text-center text-[1.2rem] md:text-[1.7rem] ">
+                                {t("art.song-title")}
+                            </p>
+                        </Reveal>
+                        <div className="pt-10 flex-col md:flex-col flex justify-center items-center md:justify-start md:items-start px-[2rem]">
+                            <div className="flex flex-row">
+                                <div className="md:pr-10">
+                                    <p className=" font-bold font-montserrat text-green01 text-justify text-[0.9rem] md:text-[1.1rem]">
+                                        {t("art.song-01-title")}
+                                    </p>
+                                    <audio
+                                        controls
+                                        src={Song01}
+                                        className=" w-[95%] md:w-[90%] "
+                                    />
+                                </div>
+                                <div>
+                                    <p className=" font-montserrat font-bold text-green01 text-justify text-[0.9rem] md:text-[1.1rem]">
+                                        {t("art.song-02-title")}
+                                    </p>
+                                    <audio
+                                        controls
+                                        src={Song02}
+                                        className=" w-[95%] md:w-[90%] "
+                                    />
+                                </div>
+                            </div>
+
+                        </div>
+                            <div className=" flex items-center justify-center">   <img src={BaiHatVeTruong} className=" w-1/2" /></div>
+                        {/* <Reveal isAnimation={isAnimation}>
                                 <p className=" font-medium font-oswald text-green01 text-center text-[1.2rem] md:text-[1.7rem] ">
                                     {t("art.video-title")}
                                 </p>
@@ -112,11 +148,11 @@ const GocNgheThuat = () => {
                                 <p className=" px-5 font-montserrat font-medium text-green01 text-justify text-[0.9rem] md:text-[1.2rem]">
                                     {t("art.video-description")}
                                 </p>
-                            </Reveal>
-                        </Grid>
+                            </Reveal> */}
                     </Grid>
-                </div>
-                <div className="p-10">
+                </Grid>
+            </div>
+            {/* <div className="p-10">
                     <Grid container spacing={1}>
                         <Grid
                             item
@@ -165,8 +201,8 @@ const GocNgheThuat = () => {
                             </div>
                         </Grid>
                     </Grid>
-                </div>
-            </Slider>
+                </div> */}
+            {/* </Slider> */}
         </div>
     );
 };

@@ -7,22 +7,14 @@ import { ScrollText } from "../../motion/ScrollText";
 import BackButton from "../../components/BackButton";
 import { useTranslation } from "react-i18next";
 import CustomFab from "../../components/CustomFab";
+import { t } from "i18next";
 
 function OpenLetterPage() {
     const { t } = useTranslation();
     const contentData = [
         {
-            title: 'Kính gửi: Quý Doanh nghiệp',
-            content: `
-            Trải qua 25 năm xây dựng, trưởng thành và phát triển, Trường Đại học An Giang, Đại học Quốc gia - HCM đã từng bước khẳng định được vị thế của mình trong cộng đồng giáo dục và đóng góp tích cực vào sự phát triển của tỉnh An Giang và đất nước Việt Nam.
-            </br></br>
-            Với mong muốn tôn vinh những thành tựu đã đạt được, tạo điểm đến giao lưu, quy tụ các cựu sinh viên, giảng viên và đối tác quan trọng của Trường, cũng như quảng bá hình ảnh của nhà trường đến với cộng đồng xã hội trong và ngoài nước, Trường Đại học An Giang sẽ triển khai tổ chức kỷ niệm 25 ngày thành lập Trường. Các chuỗi sự kiện được thực hiện từ tháng 01/2024, bao gồm: tổ chức các hội thi, các hoạt động thể thao, văn nghệ, hội trại truyền thống, tổ chức các hội nghị, hội thảo quốc tế; giao lưu văn hoá với giảng viên, sinh viên các Trường đối tác quốc tế; tổ chức triển lãm 25 hình thành và phát triển của Trường; xuất bản phim tư liệu, tập san,...; đồng thời, tổng kết đánh giá, khen thưởng các cá nhân, đơn vị có công lao đóng góp vào sự phát triển của Trường.
-            </br></br>
-            Để thực hiện thành công các sự kiện kỷ niệm 25 năm ngày thành lập, Nhà trường rất mong nhận được sự đồng hành, ủng hộ về tinh thần, tài chính và vật chất của quý tổ chức, đoàn thể, doanh nghiệp, chính quyền các cấp cũng như của toàn thể thế hệ viên chức, giảng viên, học viên, sinh viên và cựu sinh viên của Trường. Nhà trường tin rằng sự hỗ trợ của quý vị sẽ là động lực to lớn đóng góp quan trọng vào sự thành công của sự kiện.
-            </br></br>
-            Trân trọng cảm ơn và kính chúc quý tổ chức, đoàn thể, doanh nghiệp ngày càng phát triển và thành công../
-            </br></br>
-            `,
+            title: t("open-letter.title-hello"),
+            content: t("open-letter.content"),
         },]
 
     return (
@@ -44,19 +36,31 @@ function OpenLetterPage() {
                         <div
                             className="text-justify"
                             dangerouslySetInnerHTML={{
-                                __html: contentData[0].title,
+                                __html: contentData[0].title.replace(
+                                    /\n/g,
+                                    "<br> "
+                                ),
                             }}
                         ></div>
                     </Reveal>
                 </p>
                 <p className=" max-w-[49rem] text-[0.9rem] md:text-[1.1rem] lg:text-[1.1rem]  text-justify  my-5 mx-[5rem] ">
                     <Reveal>
-                        <div
+                    <span
+                        className="text-[1.2rem] pb-[1rem] text-justify"
+                        dangerouslySetInnerHTML={{
+                            __html: contentData[0].content.replace(
+                                /\n/g,
+                                "<br> "
+                            ),
+                        }}
+                    ></span>
+                        {/* <div
                             className="text-justify"
                             dangerouslySetInnerHTML={{
-                                __html: contentData[0].content,
+                                __html: t("open-letter.content")
                             }}
-                        ></div>
+                        ></div> */}
                     </Reveal>
                 </p>
                 <Reveal>

@@ -182,30 +182,6 @@ function PauseOnHover() {
             image: _19,
             course: t("alumni.sv19_course"),
         },
-        {
-            message: t("alumni.sv20_message"),
-            fullname: t("alumni.sv20_fullname"),
-            title: t("alumni.sv20_title"),
-            position: t("alumni.sv20_position"),
-            image: _20,
-            course: t("alumni.sv20_course"),
-        },
-        {
-            message: t("alumni.sv21_message"),
-            fullname: t("alumni.sv21_fullname"),
-            title: t("alumni.sv21_title"),
-            position: t("alumni.sv21_position"),
-            image: _21,
-            course: t("alumni.sv21_course"),
-        },
-        {
-            message: t("alumni.sv22_message"),
-            fullname: t("alumni.sv22_fullname"),
-            title: t("alumni.sv22_title"),
-            position: t("alumni.sv22_position"),
-            image: _22,
-            course: t("alumni.sv22_course"),
-        },
     ];
 
     const settings = {

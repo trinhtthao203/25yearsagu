@@ -10,12 +10,12 @@ import Seminar from "../../../../public/images/Gallery/Seminar/1.-Tiếp-ĐH-Yuh
 import Community from "../../../../public/images/Gallery/Community/1.Sinh-viên-AGU-xung-kích-tình-nguyện-vì-cộng-đồng.jpg";
 
 export const dataImages = [
-    // {
-    //     img: Landscape,
-    //     title: "gallery.facilities",
-    //     description: "gallery.facilities-description",
-    //     link: "path.gallery-facilities",
-    // },
+    {
+        img: Landscape,
+        title: "gallery.facilities",
+        description: "gallery.facilities-description",
+        link: "path.gallery-facilities",
+    },
     {
         img: Education,
         title: "gallery.education",
@@ -26,7 +26,7 @@ export const dataImages = [
         img: Mitting,
         title: "gallery.mitting",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, cumque.",
+            "",
         link: "path.gallery-mitting",
     },
     {
@@ -36,42 +36,42 @@ export const dataImages = [
         link: "path.gallery-foreign",
     },
     {
-        img: Research,
-        title: "gallery.research",
-        description: "gallery.research-description",
-        link: "path.gallery-research",
-    },
-    {
-        img: Community,
-        title: "gallery.community",
-        description: "gallery.research-description",
-        link: "path.gallery-research",
-    },
-    {
         img: Seminar,
         title: "gallery.seminar",
         description: "gallery.facilities-description",
         link: "path.gallery-facilities",
     },
     {
+        img: Research,
+        title: "gallery.research",
+        description: "gallery.research-description",
+        link: "path.gallery-research",
+    },
+    // {
+    //     img: Community,
+    //     title: "gallery.community",
+    //     description: "gallery.research-description",
+    //     link: "path.gallery-research",
+    // },
+    {
         img: Union,
         title: "gallery.union",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, cumque.",
+            "",
         link: "path.gallery-union",
     },
     {
         img: Organizations,
         title: "gallery.organizations",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, cumque.",
+            "",
         link: "path.gallery-organizations",
     },
     {
         img: School,
         title: "gallery.school",
         description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, cumque.",
+            "",
         link: "path.gallery-school",
     },
 ];

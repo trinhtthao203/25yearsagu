@@ -2,6 +2,17 @@
     "greeting": {
         "hello": "Hello Word!"
     },
+    
+    "common": {
+        "explore": "Explore",
+        "read-more": " More",
+        "view-detail": "More",
+        "back-home": "Home",
+        "back": "Back",
+        "next": "Next",
+        "previous": "Previous"
+    },
+
     "path": {
         "home": "/",
         "loading": "/loading",
@@ -25,8 +36,167 @@
     "home": {
         "25year-established": "25th Anniversary Celebration",
         "agu": "An Giang University",
-        "year-anniversary": "(1999-2024)"
+        "sologan": "Integrity - Dedication - Creativity",
+        "year-anniversary": "(1999-2024)",
+        "board-of-directors-time": "Leadership over time",
+        "board-of-directors-time-short": "President Board",
+        "art": "Góc nghệ thuật",
+        "open-letter": "Open letter",
+        "video-introduction": "Videos",
+        "song-introduction": "An Giang University Song",
+        "time-line": "Timelines",
+        "time-line-short": "Timelines",
+        "short_content": "Lorem  ipsum dolor oribus nisi piente d sit am ipsum ipsum dolor oribus nisi piente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am",
+        "chancellor-message": "President’s Message",
+        "join-the-celebration": "Events",
+        "25years-development": "An Giang University: 25 Years of Construction, Integration and Development",
+        "join-the-celebration-short": "Events",
+        "join-the-celebration-desciption": "25th Anniversary Celebration Events",
+        "gallery": "Gallery",
+        "partner": "Partnerships",
+        "alumni": "Alumni"
     },
+
+    "open-letter":{
+        "title":"Open letter",
+        "title-hello":"Dear Esteemed Businesses,",
+        "sub-title":"An Giang University, VNU-HCM  25 -Year Anniversary: An Open Letter",
+        "short-content":"Over the past 25 years, An Giang University, VNU-HCM, has progressively established its position within the educational community and significantly contributed to the development of An Giang province and Vietnam...",
+        "content":"University, VNU-HCM, has progressively established its position within the educational community and significantly contributed to the development of An Giang province and Vietnam.\n\nTo honor our achievements, create a gathering place for alumni, lecturers, and key partners, and promote the university's image both domestically and internationally, An Giang University will celebrate its 25th anniversary. Starting in January 2024, the series of events will include competitions, sports activities, cultural performances, traditional camping events, international conferences and seminars, cultural exchanges with lecturers and students from international partner institutions, an exhibition showcasing 25 years of the university's formation and development, the publication of documentary films and newsletters, and recognition of individuals and units that have contributed to the university's growth.\n\nTo ensure the successful organization of the 25th anniversary celebrations, the university earnestly seeks spiritual, financial, and material support from organizations, associations, businesses, authorities at all levels, and from all generations of the university's staff, lecturers, students, and alumni. We are confident that your support will serve as a profound motivation and greatly contribute to the success of the event. We extend sincere thanks and wish continued growth and success to your organizations, associations, and businesses.\n\n"
+    },
+
+    "board-of-directors": {
+        "term-I": "Term I",
+        "term-II": "Term II",
+        "term-III": "Term III",
+        "term-IV": "Term IV",
+        "term-V": "Term V",
+
+        "term-I-time": "2000-2007",
+        "term-II-time": "2007-2012",
+        "term-III-time": "2012-2017",
+        "term-IV-time": "2017-2022",
+        "term-V-time": "2022-now",
+
+        "principal": "President",
+        "vice-principal": "Vice - President",
+
+        "vtxuan": "GS, TS. Võ Tòng Xuân",
+        "lmtung": "THS. Lê Minh Tùng",
+        "hxquang": "THS. Hoàng Xuân Quảng",
+        "dhluc": "THS. Đoàn Hữu Lực",
+        "vvthang": "PGS, TS Võ Văn Thắng",
+        "nthai": "THS Nguyễn Thanh Hải",
+        "tvdat": "PGS, TS. Trần Văn Đạt",
+        "lqcuong": "THS. Lê Quốc Cường",
+        "htbinh": "PGS, TS Hồ Thanh Bình",
+
+        "time-vtxuan-term-I": "2000-2007",
+        "time-lmtung-term-I": "2000-2004",
+        "time-hxquang-term-I": "2000-2006",
+        "time-dhluc-term-I": "2005-2010",
+
+        "time-lmtung-term-II": "2007-2012",
+        "time-hxquang-term-II": "2006-2011",
+        "time-dhluc-term-II": "2010-2012",
+        "time-vvthang-term-II": "2008-2012",
+
+        "time-vvthang-term-III": "2012-2017",
+        "time-hxquang-term-III": "2011-2016",
+        "time-nthai-term-III": "2013-2017",
+        "time-tvdat-term-III": "2016-8/2020",
+        "time-lqcuong-term-III": "2016-8/2019",
+
+        "time-vvthang-term-IV": "2017-2022",
+        "time-nthai-term-IV": "2017-11/2019",
+        "time-tvdat-term-IV": "2016-8/2020",
+        "time-lqcuong-term-IV": "2017-08/2019",
+        "time-htbinh-term-IV": "1/2020-6/2024",
+
+        "time-vvthang-term-V": "10/2022-now",
+        "time-htbinh-term-V": "1/2020-6/2024",
+
+        "nhtri":"Nguyễn Hữu Trí",
+        "time-nhtri-term-V": "6/2024-now",
+
+        "vtxuan-time": "2000-2007",
+        "lmtung-time": "2007-2012",
+        "vvthang-time": "2012-now"
+    },
+
+    "time": {
+        "gd1": "Stages 1",
+        "gd2": "Stages 2",
+        "gd3": "Stages 3",
+        "time-gd1": "(1970-1998)",
+        "time-gd2": "(1999-2018)",
+        "time-gd3": "(2019-Now)",
+        "gd1-event-1": "\nTrường Sư phạm Long Xuyên được thành lập với 4 lớp và 260 giáo sinh được đào tạo giảng dạy tiểu học. Sau 30/4/1975, Trường được đổi tên thành Trường Trung học Sư phạm An Giang.",
+        "time-gd1-event-1": "1970",
+        "gd1-event-2": "\nBộ Giáo dục cho thành lập cơ sở Cao đẳng Sư phạm An Giang (Trường Sư phạm cấp II). Trường có nhiệm vụ đào tạo giáo viên cấp 2, tọa lạc tại số 5A Tôn Đức Thắng, Long Xuyên - An Giang (nay là Trường Thoại Ngọc Hầu).\nCơ sở Cao đẳng Sư phạm An Giang chuyển sang trụ sở tại số 25A Võ Thị Sáu, phường Đông Xuyên, thành phố Long Xuyên (Khu A của Khoa Sư phạm ngày nay)\nCơ sở Cao đẳng Sư phạm An Giang được công nhận là Trường Cao đẳng Sư phạm An Giang theo Quyết định số 115/TTG ngày 14 tháng 5 năm 1981 do Phó Thủ tướng Võ Nguyên Giáp ký. Trường thuộc hệ thống giáo dục đại học, cao đẳng quốc gia và là trường cao đẳng sư phạm đầu tiên của Đồng bằng sông Cửu Long. Đến năm 1985, Trường được giao lại cho tỉnh An Giang quản lý.",
+        "time-gd1-event-2": "1976-1981",
+        "gd1-event-3": "",
+        "time-gd1-event-3": "1980",
+        "gd1-event-4": "",
+        "time-gd1-event-4": "1981",
+        "gd1-event-5": "\nTỉnh quyết định sáp nhập Trường Trung học Sư phạm vào Trường Cao đẳng Sư An Giang thành Trường Cao đẳng Sư phạm An Giang với nhiệm vụ đào tạo và bồi dưỡng giáo viên đa ngành và đa cấp học.",
+        "time-gd1-event-5": "1995",
+        
+        "gd2-event-1": "\n<strong>Ngày 30/12/1999: </strong> ký thay Thủ tướng Chính phủ, Phó Thủ tướng Chính phủ Phạm Gia Khiêm ký Quyết định số 241/1999/QĐ-TTg thành lập Trường Đại học An Giang trên cơ sở Trường Cao đẳng Sư phạm An Giang.",
+        "time-gd2-event-1": "1999",
+        "gd2-event-2": "\nTrường Đại học An Giang là cơ sở đào tạo, nghiên cứu trực thuộc UBND tỉnh An Giang và chịu sự quản lý nhà nước trong phạm vi chức năng, quyền hạn của các Bộ, Ngành Trung ương có liên quan. Trường có tư cách pháp nhân, con dấu riêng, có tài khoản riêng. Trụ sở của Trường đặt tại thành phố Long Xuyên. Trường hoạt động trên cơ sở Quy chế tạm thời, ban hành kèm theo Quyết định số 367/2000/QĐ-UB-TC ngày 02/3/2000 của Chủ tịch UBND tỉnh An Giang.\nTrường có nhiệm vụ:\n1.Đào tạo cán bộ có trình độ đại học và các trình độ thấp hơn phục vụ nhu cầu phát triển kinh tế - xã hội của tỉnh An Giang và các Tỉnh lân cận.\n2.Nghiên cứu ứng dụng và chuyển giao công nghệ phục vụ phát triển kinh tế - xã hội của tỉnh An Giang và các Tỉnh lân cận.\n<strong>Ngày 11/01/2000</strong> UBND tỉnh ban hành Quyết định số 47/QĐ.UB về việc giao nhiệm vụ quản lý đầu tư xây dựng các hạn mục: nhà Hiệu bộ, Thư viện, Giảng đường, mua sắm trang thiết bị và sửa chữa phòng ở, sử dụng tạm cơ sở của Trường Cao đẳng sư phạm phục vụ cho Trường Đại học An Giang.\n<strong>Ngày 22/02/2000</strong>Chủ tịch UBND tỉnh An Giang ban hành Quyết định số 304/QĐ.UB.TC bổ nhiệm GS. TS. Võ Tòng Xuân, nguyên Phó Hiệu trưởng Trường Đại học Cần Thơ làm Hiệu trưởng Trường Đại học An Giang.\n<strong>Ngày 24/02/2000</strong>Chủ tịch UBND tỉnh An Giang ban hành Quyết định số 323/QĐ.UB.TC bổ nhiệm ông Hoàng Xuân Quảng, Phó Hiệu trưởng Trường Cao đẳng Sư phạm giữ chức vụ Phó Hiệu trưởng Trường Đại học An Giang.\n<strong>Ngày 25/02/2000</strong> Chủ tịch UBND tỉnh An Giang ban hành Quyết định số 327/QĐ.UB.TC giải quyết cho ông Hà Duy Long, Hiệu trưởng Trường Cao đẳng sư phạm nghỉ hưu và bàn giao công việc lại cho Ban Giám hiệu Trường Đại học An Giang.\n<strong>Ngày 10/3/2000</strong> Ban Giám hiệu Trường Cao đẳng sư phạm An Giang do ông Hà Duy Long đại diện thực hiện bàn giao công việc cho Ban Giám hiệu Trường Đại học An Giang.\nSau thời gian chuẩn bị, ngày 11/3/2000 Trường Đại học An Giang ban hành Công văn giới thiệu con dấu và chức danh lãnh đạo Trường Đại học An Giang, đồng thời công bố chính thức hoạt động của Trường.\nThứ Hai ngày 20/3/2000, toàn bộ khu làm việc của Ban Giám hiệu và phòng chức năng của Trường Đại học An Giang chuyển từ khu B sang làm việc tại khu A (số 25 Võ Thị Sáu, phường Mỹ Xuyên, thành phố Long Xuyên).\nNgày 28/3/2000 Chủ tịch UBND tỉnh An Giang ban hành Quyết định số 589/QĐ.UB.TC điều động và bổ nhiệm ông Lê Minh Tùng, Giám đốc Sở Khoa học Công nghệ và Môi trường tỉnh đến nhận nhiệm vụ tại Trường Đại học An Giang và giữ giữ chức vụ Phó Hiệu trưởng.\n<strong>Ngày 06/4/2000 </strong> Ban Giám hiệu nhà trường tổ chức phiên họp toàn thể cơ quan để công bố các Quyết định tổ chức bộ máy quản lý của Trường, bao gồm:\n Ban giám hiệu\n<strong>GS, TS. Võ Tòng Xuân</strong> Hiệu Trưởng, Bí thư Đảng ủy\n<strong>Ths. Lê Minh Tùng</strong> Phó Hiệu trưởng\n<strong>Ths. Hoàng Xuân Quảng</strong> Phó Hiệu trưởng\nCác đơn vị: Phòng Hành chính – Quản trị, Khoa Sư phạm, Phòng Tổ chức chính trị, Phòng Đào tạo, Phòng Kế hoạch tài vụ, QLKH & HTQT, Đoàn - Công Đoàn, Hội Sinh viên – Hội cựu chiến binh\n<strong>Từ 22/4/2000 đến 09/5/2000</strong> ông Võ Tòng Xuân và Lê Minh Tùng đi công tác tại các nước Bỉ, Hà Lan và Hoa Kỳ. Nội dung chuyến công tác là tìm đối tác đầu tư cho nhà trường.\n<strong>Ngày 04/5/2000</strong> đoàn dại biểu Trường Đại học Hồng Đức - Thanh Hoá đến thăm và làm việc với Trường. Ngày 11/5/2000 PTS. Vũ Tiến Lương, Vụ phó Vụ Kế hoạch – Bộ Kế hoạch đầu tư đến làm việc với Trường về thẩm định Dự án đầu tư xây dựng Trường Đại học An Giang.\n<strong>Từ 11/6/2000 đến 24/6/2000</strong> ông Võ Tòng Xuân, Hoàng Xuân Quảng và Hồ Văn Các, xuất cảnh đi Hoa Kỳ học tập kinh nghiệm tại một số Trường đại học.\n<strong>Ngày 17, 18/7/2000</strong> nhà trường tổ chức thi tuyển sinh khoá đầu tiên hệ đại học (khoá 1). Có 7.496 thí sinh đăng ký dự thi, có mặt dự thi là 6.209 (82,83%), tuyển các ngành sư phạm: Toán, Ngữ văn, Anh văn, Tài chính doanh nghiệp, Kế toán doanh nghiệp. Ngày 21, 22/7/2000 , tổ chức tuyển sinh hệ trung học, cao đẳng sư phạm. Có 6.175 thí sinh đăng ký dự thi, có mặt 4.969 (80,5%).\n<strong> Ngày 24/7/2000</strong> Trường tổ chức bàn giao cơ sở thực hành sư phạm cho Phòng Giáo dục thành phố Long Xuyên (bàn giao giáo viên và học sinh).\n<strong>Ngày 27/7/2000</strong> Bộ Trưởng Bộ Giáo dục và Đào tạo Nguyễn Minh Hiển đến thăm Trường Đại học An Giang.\n<strong>Từ ngày 15/4/2000 đến ngày 20/7/2000</strong> nhà trường phát động cuộc thi vẽ biểu trưng (logo) Trường Đại học An Giang. Qua 95 ngày, nhà trường nhận được 87 tác phẩm của 48 tác giả các nơi trên cả nước. Ngày 15/8/2000 tổ chức trao giải thưởng (10 tác phẩm được chọn trao giải). Giải nhất thuộc về tác giả Nguyễn Văn Đông, hoạ sỹ phòng Kỹ thuật, nhà máy thuốc lá Khánh Hội – Thành phố Hồ Chí Minh. 09 giải còn lại đạt khuyến khích. Nhà trường đã yêu cầu tác giả giải nhất chỉnh sửa một vài chi tiết để trở thành logo chính thức của Trường.\n<strong>Năm học đầu tiên (2000 – 2001)</strong> được khai giảng vào ngày <strong>09/9/2000</strong>. Đây cũng là ngày Lễ ra mắt của Trường, có trên 400 đại biểu trong và ngoài nước đến tham dự sự kiện trọng đại này. Năm học đầu tiên Trường có 4.323 sinh viên (hệ đại học 563; hệ cao đẳng sư phạm 2012; hệ trung học sư phạm 528; hệ bồi dưỡng tại chức 1682).\n<strong>Tháng 8 năm 2000</strong> Khoa Kinh tế - Quản trị kinh doanh được thành lập, ông Tô Thiện Hiền làm Phó Trưởng khoa; tháng 9 năm 2000 thành lập 02 Trung tâm: Trung tâm Ngoại ngữ, ông Nguyễn Đức Thuỵ làm Phó Giám đốc; Trung tâm Tin học, ông Nguyễn Danh Cởn làm Phó Giám đốc. Lúc này nhân sự của Trường trên 200 người.",        
+        "time-gd2-event-2": "2000",
+        "gd2-event-3": "\nHoà cùng với sân chơi của sinh viên các trường cao đẳng, đại học khu vực đồng bằng sông Cửu Long, từ ngày 06 đến 07/01/2001 nhà trường đăng cai tổ chức ngày Hội văn hoá thể thao lần thứ IX sinh viên khu vực đồng bằng sông Cửu Long. Đây là biểu hiện bước đầu sự hoà nhập vào các hoạt động và phong trào sinh viên trong khu vực, đồng thời tổ chức nhiều buổi giao lưu văn hoá, văn nghệ; với nhà văn Sơn Nam, nhạc sỹ Hoàng Hiệp, nhà thơ Trần Đăng Khoa, giao lưu 3 thế hệ thầy giáo, giao lưu với các doanh nghiệp như Intel… Tờ thông tin khoa học ra đời trong năm 2001. Sinh viên Dương Phước Sang, ngành Sư phạm Toán là thủ khoa kỳ thi tuyển sinh năm 2000, số điểm là 35 điểm.\n<strong>Ngày 03/01/2001</strong> nhà trường tiếp đoàn đại biểu Ban Khoa giáo Trung ương.\nTrong mùa lũ lịch sử năm 2000 nhà trường nhận được sự trợ giúp của nhiều tổ chức cá nhân trong và ngoài nước, số tiền là 99.800.000 đ, hỗ trợ cho 480 sinh viên có hoàn cảnh khó khăn. Nhà trường bắt đầu khởi công xây dựng một số công trình như ký túc xá (dãy U), nhà Hiệu bộ, Thư viện (khu A), huyện Tịnh Biên khởi công ký túc xá đầu tiên theo mô hình xã hội hoá.\n<strong>Tháng 5 năm 2001</strong> thành lập một số đơn vị mới: Phòng Công tác sinh viên, Khoa Nông nghiệp – Tài nguyên thiên nhiên, Khoa Kỹ thuật – Công nghệ - Môi trường.\nThời điểm này cán bộ, công chức của trường gần 300 người.<strong>Ngày 24/5/2001</strong> Nhà trường tiếp và làm việc với Chủ tịch UBND tỉnh An Giang Nguyễn Minh Nhị.\nThứ trưởng Bộ Giáo dục và Đào tạo Lê Vũ Hùng đến thăm Trường vào ngày <strong>02/6/2001.</strong>\n<strong>Ngày 26/6/2001</strong>Phó Chủ tịch UBND tỉnh Đặng Hoài Dũng đến làm việc với Trường, Phó Chủ tịch đánh giá cao sự nỗ lực của Trường trong thời gian đầu còn nhiều khó khăn, nhưng đã có những bước đi khá tốt.\nKỳ thi tuyển sinh năm 2001 được tổ chức thành 03 đợt thi: đợt 1 (6, 7/7/2001), đợt 2 (10, 11/7/2001), đợt 3 (19, 20/7/2001). Tổng số có 20.352 thí sinh đăng ký dự thi, tỷ lệ thí sinh tham dự kỳ thi là 77,89%.\n<strong>Từ ngày 06/8/2001</strong> đến 25/8/2001 được sự tài trợ của quỹ Ford nhà trường tổ chức đợt hội thảo tập huấn hè cho tập thể cán bộ, giáo viên. Những chuyên gia phụ trách nội dung trong đợt hội thảo này gồm: ông Thuỳ, cô Nga, ông Dan, cô Kim).\n<strong>Ngày 15/9/2001</strong> nhà trường tổ chức lễ Khai giảng năm học 2001 – 2002, đến dự có bà Nguyễn Thị Huỳnh Mai, Thứ trưởng Bộ Giáo dục và Đào tạo, có bí thư tỉnh uỷ, Chủ tịch, Phó Chủ tịch UBND tỉnh An Giang cùng nhiều vị khách mời danh dự của Trường. Năm học này Trường có 3.544 sinh viên.\nKỷ niệm ngày Nhà giáo Việt Nam <strong>20/11/2001</strong> nhà trường tổ chức trao danh hiệu Nhà giáo Nhân dân đối với thầy Võ Tòng Xuân. Đây là danh hiệu Nhà giáo Nhân dân đầu tiên của An Giang. Trong ngày này Ban Giám hiệu cũng tiếp và làm việc với Ban Kinh tế Trung ương và Ban Thường vụ Tỉnh uỷ An Giang.",
+        "time-gd2-event-3": "2001",
+        "gd2-event-4": "\nCuối tháng 3 đầu tháng 4 năm 2002, thầy Xuân làm Trưởng đoàn hướng dẫn một số lãnh đạo phòng, khoa của Trường sang thăm và làm việc với một số Trường đại học Thái Lan, đoàn gồm 10 người (thầy Xuân, Quảng, Quang, Huy, Đức, Phương, Bính, Thắng, Đào, Dung).\nTrong hai ngày 18, 19/5/2002 nhà trường đăng cai tổ chức Hội thao liên trường, khối các trường liên kết đào tạo sinh viên ngành thể dục thể thao: Đồng Tháp, Kiên Giang, Bà Rịa-Vũng Tàu, Bạc Liêu, Vĩnh Long, TDTT Trung ương 2 TP. HCM và An Giang. Kết quả, Trường Đại học An Giang đạt giải nhất toàn đoàn.Kỳ thi tuyển sinh năm 2002 được tổ chức thành hai đợt thi: đợt 1 ngày 04, 05/7/2002; đợt 2 thi vào các ngày 09,10/7/2002. Tổng số có 10.514/12.207 thí sinh, đạt 86,16%.\nNăm học 2002 – 2003 tổ chức Lễ Khai giảng vào ngày 16/9/2002, đến dự có ông Lê Phú Hội, Bí thư tỉnh uỷ cùng lãnh đạo một số đơn vị trong và ngoài tỉnh.Tháng 10 năm 2002 UBND tỉnh tỉnh An Giang phê duyệt chủ trương xây dựng làng giáo viên Trường Đại học An Giang. Sau thời gian tìm vị trí và thực hiện mua đất, đến tháng 9 năm 2003 nhà trường hoàn thành việc mua đất tại khóm Tây Huề, phường Mỹ Hoà, thành phố Long Xuyên, diện tích 12,8 ha.\n<strong>Ngày 13/12/2002</strong> Phó Chủ tịch UBND tỉnh Đặng Hoài Dũng, cùng đoàn cán bộ Sở, Ngành tỉnh đến làm việc với nhà trường để giải quyết, tháo gỡ một số khó khăn vướng mắc của Trường.",
+        "time-gd2-event-4": "2002",
+        "gd2-event-5": "\n<strong>Ngày 09/02/2003</strong>Thủ tướng Chính phủ Phan Văn Khải đến thăm Trường.\n<strong>Ngày 28/01/2003</strong> Thủ tướng Chính phủ ban hành Quyết định phê duyệt dự án đầu tư phát triển Trường Đại học An Giang, tổng vốn 512,4 tỷ đồng.\n<strong>Ngày 09/4/2003</strong> Phó Thủ tướng Phạm Gia Khiêm cùng đoàn công tác của Chính phủ đến thăm Trường.\nKỳ thi tuyển sinh năm 2003 được tổ chức thành hai đợt thi: đợt 1 ngày 04, 05/7/2003; đợt 2 thi vào các ngày 09,10/7/2003. Tổng số có 21.291 thí sinh đăng ký dự thi. Đây là năm đầu tiên Trường được Bộ Giáo dục và Đào tạo cho phép tự in sao đề thi phục vụ cho Trường. Lúc này, Trường có 15 ngành hệ đại học, 09 ngành hệ cao đẳng, 2 ngành trung học sư phạm.\n<strong>Ngày 15/9/2003</strong> nhà trường tổ chức Lễ khai giảng năm học 2003 – 2004, đến dự có ông Cao Đức Phát, Phó Bí thư Tỉnh uỷ An Giang.\n<strong>Tháng 6 năm 2003</strong> Đại hội Đảng bộ Trường nhiệm kỳ II (2003 – 2005) bầu 15 người trong BCH Đảng uỷ, thầy Võ Tòng Xuân làm Bí thư Đảng uỷ.\n<strong>Ngày 26/10/2003</strong> tổ chức Hội nghị Công nhân viên chức năm học 2003 – 2004, tổ chức với hình thức Hội nghị đại biểu cán bộ, công chức (50%).\n<strong>Ngày 10/10/2003</strong> Ban Giám hiệu tiếp và làm việc với tổng lãnh sự quán Lào cùng phu nhân.\n<strong>Ngày 10/10/2003</strong> tiếp Thứ trưởng Bộ Giáo dục và Đào tạo Trần Văn Nhung, cùng với ông Huy - Chánh Văn phòng Bộ Giáo dục và Đào tạo phụ trách phía Nam.",
+        "time-gd2-event-5": "2003",
+        "gd2-event-6": "\n<strong>Ngày 20/5/2004:</strong> Phó Hiệu trưởng Lê Minh Tùng được bầu giữ chức vụ Phó Chủ tịch UBND tỉnh. \n<strong>Ngày 25/7/2004:</strong> Trường tổ chức Lễ Tốt nghiệp hệ đại học khoá I với 998 sinh viên hệ đại học, cao đẳng tốt nghiệp. \nThành lập Phòng Khảo thí và Kiểm định chất lượng (19/10/2004).",
+        "time-gd2-event-6": "2004",
+        "gd2-event-7": "\n<strong>Ngày 04/3/2005:</strong> Sáp nhập Trường Trung học Nông nghiệp tỉnh An Giang vào khoa Nông nghiệp và Tài nguyên thiên nhiên, trực thuộc Trường ĐHAG. \n<strong>Ngày 02/6/2005:</strong> Chủ tịch UBND tỉnh An Giang ra quyết định điều động và bổ nhiệm ông Đoàn Hữu Lực giữ chức vụ Phó Hiệu trưởng.\nTại Đại hội Đảng bộ tỉnh An Giang lần thứ VIII, diễn ra từ ngày 20 đến 23/12/2005, Phó Hiệu trưởng Đoàn Hữu Lực được trúng cử Tỉnh uỷ viên, Hiệu trưởng Võ Tòng Xuân được bầu vào Đoàn Đại biểu dự Đại hội Đảng toàn quốc lần thứ X tại Hà Nội.\nThành lập Khoa Văn hoá nghệ thuật (15/5/2005), Trung tâm Tạo nguồn nhân lực và Phát triển cộng đồng (12/9/2005).",
+        "time-gd2-event-7": "2005",
+        "gd2-event-8": "\n<strong>Ngày 30/12/2006:</strong> Tổ chức Lễ khởi công xây dựng Trường mới tại đất khu 39,5 ha, số 18, Ung Văn Khiêm, p. Đông Xuyên, tp. Long Xuyên, tỉnh An Giang.\nKý túc xá do huyện Tân Châu và huyện An Phú xây dựng được đưa vào sử dụng.\nTrường có 76 cán bộ, giảng viên nhận Kỷ niệm chương vì sự nghiệp giáo dục.",
+        "time-gd2-event-8": "2006",
+        "gd2-event-9": "\n<strong>Ngày 30/6/2007:</strong> UBND tỉnh An Giang ban hành Quyết định điều động ông Nguyễn Thanh Bình, Phó Trưởng khoa Sư phạm giữ chức vụ Phó Giám đốc Sở Giáo dục và Đào tạo An Giang.\n<strong>Tháng 9/2007:</strong> Khánh thành Ký túc xá do UBND huyện Thoại Sơn xây dựng.\n<strong>Ngày 21/11/2007:</strong> UBND tỉnh An Giang ban hành quyết định nghỉ hưu đối với Hiệu trưởng Võ Tòng Xuân, đồng thời bổ nhiệm ông Lê Minh Tùng, Phó Chủ tịch UBND tỉnh An Giang kiêm nhiệm Hiệu trưởng Trường ĐHAG.",
+        "time-gd2-event-9": "2007",
+        "gd2-event-10": "\n<strong>Ngày 28/3/2008:</strong> UBND tỉnh An Giang ban hành quyết định bổ nhiệm ông Võ Văn Thắng giữ chức vụ Phó Hiệu trưởng Trường ĐHAG.\n<strong>Ngày 06/6/2008:</strong> Thành lập Trường Phổ thông thực hành sư phạm, ông Vũ Tiến Dũng giữ chức vụ Hiệu trưởng.\nTriển khai lộ trình chuyển công tác đào tạo hệ cao đẳng, đại học chính quy từ niên chế sang học chế tín chỉ.\nThành lập Phòng Thanh tra - Pháp chế (tháng 12/2008).",
+        "time-gd2-event-10": "2008",
+        "gd2-event-11": "\nTrường chuyển đổi toàn bộ hệ đào tạo chính quy từ niên chế sang học chế tín chỉ.\nKhu Trường mới được đưa vào sử dụng.\n<strong>Ngày 26/6/2009:</strong> Thứ trưởng Bộ Giáo dục và Đào tạo Phạm Vũ Luận cùng lãnh đạo tỉnh, giám đốc Sở GD&ĐT trong Khu vực Đồng bằng sông Cửu Long đến thăm và làm việc với Trường.\n<strong>Ngày 13/8/2009:</strong> Bộ trưởng Bộ Kế hoạch đầu tư Võ Hồng Phúc đến thăm và làm việc với Trường.",
+        "time-gd2-event-11": "2009",
+        "gd2-event-12": "\n<strong>Ngày 12/02/2010:</strong> Phó Thủ tướng kiêm Bộ trưởng Bộ Giáo dục và Đào tạo Nguyễn Thiện Nhân đến thăm và làm việc với Trường.\n<strong>Ngày 01/4/2010:</strong> Ban Giám hiệu và các phòng ban chức năng chuyển sang làm việc tại Khu Hiệu bộ, cơ sở 18 Ung Văn Khiêm.\nKhởi công xây dựng Ký túc xá cơ sở 2 - Châu Phú và Ký túc xá Châu Đốc; Ký túc xá Khánh toàn đưa vào khai thác block nhà thứ nhất 700 chỗ.\n<strong>Tháng 11/2010:</strong> Phó Hiệu trưởng Võ Văn Thắng được Hội đồng nhà nước phong tặng danh hiệu Phó Giáo sư và được bầu vào Ban Chấp hành Tỉnh Đảng bộ, nhiệm kỳ 2010-2015.",
+        "time-gd2-event-12": "2010",
+        "gd2-event-13": "\nTrường được công nhận đơn vị văn hoá tiêu biểu của Tỉnh.\nHoàn thành việc xây dựng Ký túc xá Châu Đốc.\nCác lô nền trong khu đất làng giáo viên được cấp giấy chứng nhận quyền sử dụng đất.",
+        "time-gd2-event-13": "2011",
+        "gd2-event-14": "\nTrường triển khai đào tạo sau đại học, bước đầu thực hiện liên kết đào tạo với các trường đại học trong nước.\n<strong>Ngày 16/4-25/6/2012:</strong> UBND tỉnh An Giang trao Quyết định nghỉ hưu đối với Hiệu trưởng Lê Minh Tùng; điều động bổ nhiệm Phó Hiệu trưởng Đoàn Hữu Lực giữ chức vụ Giám đốc Sở Ngoại vụ An Giang; bổ nhiệm PGS,TS. Võ Văn Thắng giữ chức vụ Hiệu trưởng Trường ĐHAG.\n<strong>Ngày 24/8/2012:</strong> Bàn giao Cơ sở 2 – Châu Phú cho Trường Trung cấp Kinh tế kỹ thuật tỉnh An Giang.",
+        "time-gd2-event-14": "2012",
+        "gd2-event-15": "\n<strong>Ngày 13/12/2013:</strong> Chủ tịch UBND tỉnh An Giang ban hành quyết định bổ nhiệm ông Nguyễn Thanh Hải giữ chức vụ Phó Hiệu trưởng Trường ĐHAG.\nTạp chí Khoa học Trường Đại học An Giang được Bộ Thông tin và Truyền thông cấp Giấy phép số 243/GP-BTTTT ngày 02/7/2013",
+        "time-gd2-event-15": "2013",
+        "gd2-event-16": "\nTrường được Bộ Giáo dục và Đào tạo cho phép đào tạo sau đại học ngành Khoa học cây trồng; Trường liên kết với các trường đại học tổ chức được nhiều khoá đào tạo sau đại học.\n<strong>Tháng 4/2014:</strong> Thành lập Hội Cựu Sinh viên Trường ĐHAG.\n<strong>Tháng 9/2014:</strong> Trường chọn cử 20 sinh viên tốt nghiệp khoa Nông nghiệp và Tài nguyên thiên nhiên đi thực tập sinh một năm tại Israel.",
+        "time-gd2-event-16": "2014",
+        "gd2-event-17": "\nPGS, TS. Võ Văn Thắng trúng cử Uỷ viên Ban Chấp hành Đảng bộ Tỉnh An Giang nhiệm kỳ 2015-2020, được bầu làm đại biểu chính thức tham dự Đại hội đại biểu toàn quốc lần thứ XII diễn ra tại Hà Nội. Đồng thời, trúng cử đại biểu HĐND tỉnh An Giang khóa IX, nhiệm kỳ 2016-2021.\nTS Hồ Thanh Bình, Phó Trưởng khoa Nông nghiệp và Tài nguyên thiên nhiên trúng cử đại biểu Quốc hội tại Kỳ bầu cử Quốc hội khoá XIV.\nTriển khai xây dựng chương trình đào tạo theo chuẩn CDIO cho tất cả các hệ đào tạo đại học.\nThành lập Khoa Ngoại ngữ trên cơ sở bộ môn Ngoại ngữ, Khoa Sư phạm (09/4/2015).",
+        "time-gd2-event-17": "2015",
+        "gd2-event-18": "\n<strong>Tháng 7/ 2016:</strong> Phó Hiệu trưởng Hoàng Xuân Quảng nghỉ hưu.Tháng 8/2016: UBND tỉnh An Giang trao quyết định bổ nhiệm TS.Trần Văn Đạt, Ths. Lê Quốc Cường giữ chức vụ Phó Hiệu trưởng.\n<strong>Tháng 8/ 2016:</strong> UBND tỉnh An Giang có văn bản đề nghị Đại học quốc gia Thành phố Hồ Chí Minh tiếp nhận Trường Đại học An Giang là trường thành viên.\n<strong>Tháng 10/2016:</strong> TS. Trần Văn Đạt, TS. Võ Lâm được phong hàm Phó Giáo sư.",
+        "time-gd2-event-18": "2016",
+        "gd2-event-19": "\n<strong>Ngày 05/5/2017:</strong> Thành lập Hội đồng Trường Đại học An Giang nhiệm kỳ 2017 – 2022, gồm 19 thành viên. Chủ tịch Hội đồng là ông Nguyễn Thanh Bình – Phó Chủ tịch UBND tỉnh An Giang.\n<strong>Từ ngày 17/05/2017,</strong> bài đăng trên Tạp chí Trường được tính 0,50 điểm đối với Hội đồng Chức danh Giáo sư.\n<strong>Ngày 21/6/2017:</strong> UBND tỉnh An Giang trao quyết định bổ nhiệm lại Hiệu trưởng Võ Văn Thắng.\nThành lập Khoa Công nghệ thông tin trên cơ sở Bộ môn Tin học, Khoa Kỹ thuật - Công nghệ - Môi trường (14/08/2017); Trung tâm Quản lý dịch vụ (30/12/2017); đổi tên Khoa Lý luận chính trị thành Khoa Luật và Khoa học chính trị; Khoa Văn hóa – Nghệ thuật thành Khoa Du lịch và Văn hóa – Nghệ thuật; Phòng Khảo thí và Kiểm định chất lượng thành Phòng Khảo thí và Đảm bảo chất lượng.",
+        "time-gd2-event-19": "2017",
+        "gd2-event-20": "\n<strong>Ngày 19/3/2018:</strong> Trường được Trung tâm Kiểm định chất lượng giáo dục - Đại học Quốc gia Thành phố Hồ Chí Minh trao giấy chứng nhận đạt chuẩn kiểm định chất lượng giáo dục.\n<strong>Ngày 26/3/2018:</strong> TS. Nguyễn Trung Thành được phong hàm Phó Giáo sư.\n<strong>Ngày 14/4/2018:</strong> Thành lập Phòng Quản lý khoa học và Đào tạo sau đại học, Phòng Quan hệ đối ngoại trên cơ sở chia tách Phòng Quản lý khoa học và Hợp tác Quốc tế.\n<strong>Ngày 09/7/2018:</strong> thẩm định thực tế Đề án chuyển Trường ĐHAG là trường đại học thành viên của ĐHQG TP.HCM.",
+        "time-gd2-event-20": "2018",
+        
+        "gd3-event-1": "\n<strong>Ngày 6/3/2019:</strong> UBND tỉnh An Giang trao quyết định bổ nhiệm lại Phó Hiệu trưởng Nguyễn Thanh Hải.\n<strong>Ngày 07/03/2019:</strong> Trường Đại học An Giang được chấp nhận trở thành thành viên liên kết (Associate Member) của Mạng lưới đảm bảo chất lượng thuộc Mạng lưới các trường Đại học Đông Nam Á (ASEAN University Network – Quality Assurance - AUN-QA).\nTạp chí Khoa học Trường ĐHAG được đổi tên thành Tạp chí Khoa học quốc tế AGU (AGU International Journal of Sciences).\n<strong>Ngày 17/7/2019:</strong> Phó Thủ tướng Chính phủ Vũ Đức Đam đến thăm và làm việc với Trường.\n<strong>Ngày 13/8/2019:</strong> Thủ tướng Chính phủ ban hành Quyết định số 1007/QĐ-TTg chuyển Trường ĐHAG là trường đại học thành viên của ĐHQG-HCM.\n<strong>Ngày 12/9/2019:</strong> Tổ chức Lễ công bố quyết định của Thủ tướng Chính phủ về việc chuyển Trường ĐH An Giang là trường đại học thành viên của Đại học quốc gia Thành phố Hồ Chí Minh; trao quyết định bổ nhiệm, bổ nhiệm lại Ban Giám hiệu và Khai giảng năm học 2019-2020.",
+        "time-gd3-event-1": "2019",
+        "gd3-event-2": "\nChưa có",
+        "time-gd3-event-2": "2020",
+        "gd3-event-3": "\nChưa có",
+        "time-gd3-event-3": "2021",
+        "gd3-event-4": "\nChưa có",
+        "time-gd3-event-4": "2022",
+        "gd3-event-5": "\nChưa có",
+        "time-gd3-event-5": "2023",
+        "gd3-event-6": "\nChưa có",
+        "time-gd3-event-6": "2024"
+    },
+
     "ht-message": {
         "title": "Principal's Message",
         "short_content": "Lorem ipsum dolor ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am ipsum dolor oribus nisi sapiente d sit am"
@@ -34,5 +204,58 @@
     "hieutruong": {
         "title": "Chancellor",
         "vvthang": "PGS, TS Võ Văn Thắng"
+    },
+
+    "gallery": {
+        "seminar": "Workshops",
+        "community": "Phục vụ cộng đồng",
+        
+        "education": "Teaching & Learning Activities",
+        "education-description": "The school is currently operating 4 master's degree programs, 42 bachelor's degree programs, and 19 associate degree programs.",
+        
+        "mitting": "Commemorative Meeting",
+
+        "foreign": "External Relations",
+        "foreign-description": "An Giang University has signed 71 memorandums of understanding and implemented numerous cooperation activities in training and scientific research with institutes and universities in various countries.",
+
+        "research": "Research Activities",
+        "research-description": "An Giang University identifies scientific research and technology transfer as key tasks. To date, the university has implemented 149 research projects, carried out over 1,190 scientific research topics at various levels, and published more than 1,534 scientific papers.",
+
+        "union": "Students’ Activities",
+        "organizations": "Labour Union & Party Committee",
+        "school": "Pedagogical Practice School",
+        "facilities": "Facilities & Equipment",
+        "facilities-landscape": "General landscape",
+        "facilities-lab": "Laboratory experiment",
+        "facilities-class": "Classrooms, auditoriums, and library spaces",
+        "facilities-description": "The school has two well-invested, modern campuses with a total area of 419,679.5 square meters."
+    },
+
+    "event": {
+        "evt1-name": "Video design contest to celebrate the 25th anniversary of the university",
+        "evt2-name": "Writing contest to celebrate the 25th anniversary of the university",
+        "evt3-name": "AGU Spring Festival 2024",
+        "evt4-name": "Vibrant AGU Student Music and Dance Competition 2024",
+        "evt5-name": "AGU Career Fair 2024",
+        "evt6-name": "International Cultural Exchange Program with Surindra Rajabhat University"
+    },
+
+    "art": {
+        "video-title": "AGU video",
+        "song-title": "AGU song",
+        "song-01-title": "“Đại Học An Giang Trường Chúng Tôi” Song ",
+        "song-02-title": "“Tiến Lên Trường Đại Học An Giang” Song",
+        "plan": "25th Anniversary Celebration Plan",
+        "25years-development-desciption": "An Giang University: 25 Years of Construction, Integration and Development"
+    },
+
+    "contact": {
+        "address": "Address :",
+        "address-content": "8 Ung Van Khiem Street, Ward Dong Xuyen, ",
+        "city-content": " Long Xuyen City,",
+        "province-content": " An Giang Province",
+        "contact": "Contacts ",
+        "social-media": "Social Media",
+        "view-in-map": "Google Map..."
     }
 }

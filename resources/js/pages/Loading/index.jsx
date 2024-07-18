@@ -13,7 +13,7 @@ function LoadingScreen() {
 
     return (
         <div className="h-screen w-full flex justify-center items-center relative">
-            <Lottie options={loadingOptions} height={230} width={230} />
+            <Lottie options={loadingOptions} height={300} width={300} />
             <p className=" animate-fade-up absolute text-7xl font-meri bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text">
                 25
             </p>

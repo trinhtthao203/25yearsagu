@@ -3,6 +3,7 @@ import { useMeasure } from "./use-measure";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Pager } from "./Pager";
+import { Modal, Box, Typography } from '@mui/material';
 
 const Container = styled.div`
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
@@ -61,6 +62,11 @@ export function Tabs({ eventData }) {
     const tabListRef = useRef();
     const [slider, setSlider] = useState({ left: 0, right: 0 });
     const { bounds, ref } = useMeasure();
+    const [open, setOpen] = React.useState(false);
+
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
 
     React.useEffect(() => {
         const target = childRefs.current.get(value);
@@ -84,9 +90,6 @@ export function Tabs({ eventData }) {
         }
     }, [value, bounds]);
 
-    console.log(eventData[0].image);
-
-
     return (
         <Container>
             <TabContainer ref={ref}>
@@ -109,37 +112,57 @@ export function Tabs({ eventData }) {
             <Pager value={value}>
                 {eventData.map((event) => (
                     <div
-                    key={event}
-                    style={{
-                        width: "100%",
-                        padding: "16px",
-                        color: "#2D5029",
-                        display: "flex",
-                        justifyContent: "center",  // Horizontal centering of the container's children
-                        flexDirection: "column"
-                    }}
-                >
-                    <span
-                        className="text-[1.2rem] pb-[1rem] text-justify"
-                        dangerouslySetInnerHTML={{
-                            __html: event.description.replace(
-                                /\n/g,
-                                "<br> "
-                            ),
+                        key={event}
+                        style={{
+                            width: "100%",
+                            padding: "16px",
+                            color: "#2D5029",
+                            display: "flex",
+                            justifyContent: "center",  // Horizontal centering of the container's children
+                            flexDirection: "column"
                         }}
-                    ></span>
+                    >
+                        <span
+                            className="text-[1.2rem] pb-[1rem] text-justify"
+                            dangerouslySetInnerHTML={{
+                                __html: event.description.replace(
+                                    /\n/g,
+                                    "<br> "
+                                ),
+                            }}
+                        ></span>
+                        <img
+                            onClick={handleOpen}
+                            src={event.image}
+                            loading="lazy"
+                            className="w-full md:w-3/5 h-auto rounded-lg"
+                            style={{
+                                margin: "0 auto"  // Centers the image horizontally within its container
+                            }}
+                        />
+                    </div>
+
+                ))}
+            </Pager>
+            <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+                sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+            >
+                <Box sx={{ width: "50%" }}>
                     <img
-                        src={event.image}
+                        onClick={handleOpen}
+                        src={eventData[value].image}
                         loading="lazy"
-                        className="w-full md:w-3/5 h-auto rounded-lg"
+                        className="w-full h-auto rounded-lg"
                         style={{
                             margin: "0 auto"  // Centers the image horizontally within its container
                         }}
                     />
-                </div>
-                
-                ))}
-            </Pager>
+                </Box>
+            </Modal>
         </Container>
     );
 }

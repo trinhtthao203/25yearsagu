@@ -66,8 +66,10 @@ function DongThoiGian() {
         navigate(`${t("path.time-line")}?id=${id}`);
     }
 
+
+    
     return (
-        <div id="time-line" className=" bg-[#2d3436] py-10">
+        <div id="time-line" className=" bg-[#0b242b] py-10">
             <p className=" text-center py-[5rem] text-[1.5rem] sm:text-[1.6rem] md:text-[1.8rem] lg:text-[2.2rem] uppercase text-green04 font-oswald">
                 <Reveal isAnimation={isAnimation}>{t("home.time-line")}</Reveal>
             </p>

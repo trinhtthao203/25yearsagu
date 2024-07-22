@@ -17,12 +17,6 @@ export const dataImages = [
         link: "path.gallery-facilities",
     },
     {
-        img: Education,
-        title: "gallery.education",
-        description: "gallery.education-description",
-        link: "path.gallery-education",
-    },
-    {
         img: Mitting,
         title: "gallery.mitting",
         description:
@@ -30,10 +24,16 @@ export const dataImages = [
         link: "path.gallery-mitting",
     },
     {
-        img: Foreign,
-        title: "gallery.foreign",
-        description: "gallery.foreign-description",
-        link: "path.gallery-foreign",
+        img: Education,
+        title: "gallery.education",
+        description: "gallery.education-description",
+        link: "path.gallery-education",
+    },
+    {
+        img: Research,
+        title: "gallery.research",
+        description: "gallery.research-description",
+        link: "path.gallery-research",
     },
     {
         img: Seminar,
@@ -42,23 +42,16 @@ export const dataImages = [
         link: "path.gallery-facilities",
     },
     {
-        img: Research,
-        title: "gallery.research",
+        img: Community,
+        title: "gallery.community",
         description: "gallery.research-description",
         link: "path.gallery-research",
     },
-    // {
-    //     img: Community,
-    //     title: "gallery.community",
-    //     description: "gallery.research-description",
-    //     link: "path.gallery-research",
-    // },
     {
-        img: Union,
-        title: "gallery.union",
-        description:
-            "",
-        link: "path.gallery-union",
+        img: Foreign,
+        title: "gallery.foreign",
+        description: "gallery.foreign-description",
+        link: "path.gallery-foreign",
     },
     {
         img: Organizations,
@@ -66,6 +59,13 @@ export const dataImages = [
         description:
             "",
         link: "path.gallery-organizations",
+    },
+    {
+        img: Union,
+        title: "gallery.union",
+        description:
+            "",
+        link: "path.gallery-union",
     },
     {
         img: School,

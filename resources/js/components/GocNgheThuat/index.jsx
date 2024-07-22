@@ -3,7 +3,7 @@ import Song01 from "../../../../public/audio/dai-hoc-an-giang-truong-chung-toi.m
 import Song02 from "../../../../public/audio/tien-len-dai-hoc-an-giang.mp3";
 import KeHoach from "../../../../public/images/planning.jpg";
 import _25Years from "../../../../public/images/Gallery/Facilities/Landscape/1.-Toàn-cảnh-Trường-Đại-học-An-Giang.jpg";
-import BackGround from "../../../../public/images/background.jpg";
+import BackGround from "../../../../public/images/Gallery/Facilities//Landscape/11.-Tòa-nhà-Thư-viện-và-các-Trung-tâm.jpg";
 import BaiHatVeTruong from "../../../../public/images/music_player.gif";
 import VideoVeTruong from "../../../../public/video/agu_20th_years_anniversary.mp4";
 import _25yplan from "../../../../public/files/kehoach25nam.pdf";
@@ -83,7 +83,7 @@ const GocNgheThuat = () => {
             class="slider-container "
             className=" flex justify-center items-center"
             style={{
-                backgroundImage: `linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url(${BackGround})`,
+                backgroundImage: `linear-gradient(rgba(0, 40, 0,0.8), rgba(0, 40, 0,0.8)), url(${BackGround})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundAttachment: "fixed",
@@ -94,7 +94,7 @@ const GocNgheThuat = () => {
                 <Grid container spacing={1}>
                     <Grid item xs={12} md={5}>
                         <Reveal isAnimation={isAnimation}>
-                            <p className=" font-medium font-oswald text-green01 text-center text-[1.2rem] md:text-[1.7rem] ">
+                            <p className=" font-medium font-oswald text-moonMist text-center text-[1.2rem] md:text-[1.7rem] py-5 ">
                                 {t("art.video-title")}
                             </p>
                         </Reveal>
@@ -109,14 +109,14 @@ const GocNgheThuat = () => {
                     </Grid>
                     <Grid item xs={12} md={7} sx={{ alignItems: "center", display: "flex", flexDirection: "column" }}>
                         <Reveal isAnimation={isAnimation}>
-                            <p className=" font-medium font-oswald text-green01 text-center text-[1.2rem] md:text-[1.7rem] ">
+                            <p className=" font-medium font-oswald text-moonMist text-center text-[1.2rem] md:text-[1.7rem] ">
                                 {t("art.song-title")}
                             </p>
                         </Reveal>
                         <div className="pt-10 flex-col md:flex-col flex justify-center items-center md:justify-start md:items-start px-[2rem]">
                             <div className="flex flex-row">
                                 <div className="md:pr-10">
-                                    <p className=" font-bold font-montserrat text-green01 text-justify text-[0.9rem] md:text-[1.1rem]">
+                                    <p className=" font-montserrat text-moonMist text-justify text-[0.9rem] md:text-[1.1rem]">
                                         {t("art.song-01-title")}
                                     </p>
                                     <audio
@@ -126,7 +126,7 @@ const GocNgheThuat = () => {
                                     />
                                 </div>
                                 <div>
-                                    <p className=" font-montserrat font-bold text-green01 text-justify text-[0.9rem] md:text-[1.1rem]">
+                                    <p className=" font-montserrat text-moonMist text-justify text-[0.9rem] md:text-[1.1rem]">
                                         {t("art.song-02-title")}
                                     </p>
                                     <audio
@@ -140,7 +140,7 @@ const GocNgheThuat = () => {
                         </div>
                             <div className=" flex items-center justify-center">   <img src={BaiHatVeTruong} className=" w-1/2" /></div>
                         {/* <Reveal isAnimation={isAnimation}>
-                                <p className=" font-medium font-oswald text-green01 text-center text-[1.2rem] md:text-[1.7rem] ">
+                                <p className=" font-medium font-oswald text-moonMist text-center text-[1.2rem] md:text-[1.7rem] ">
                                     {t("art.video-title")}
                                 </p>
                             </Reveal>

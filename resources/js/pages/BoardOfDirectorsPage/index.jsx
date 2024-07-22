@@ -27,6 +27,7 @@ function BoardOfDirectorsPage() {
         {
             term: t("board-of-directors.term-I"),
             time: t("board-of-directors.term-I-time"),
+            color:"#06170e",
             member: [
                 {
                     image: VTXuan,
@@ -57,6 +58,7 @@ function BoardOfDirectorsPage() {
         {
             term: t("board-of-directors.term-II"),
             time: t("board-of-directors.term-II-time"),
+            color:"#092215",
             member: [
                 {
                     image: LMTung,
@@ -87,6 +89,7 @@ function BoardOfDirectorsPage() {
         {
             term: t("board-of-directors.term-III"),
             time: t("board-of-directors.term-III-time"),
+            color:"#0c2d1c",
             member: [
                 {
                     image: VVThang,
@@ -123,6 +126,7 @@ function BoardOfDirectorsPage() {
         {
             term: t("board-of-directors.term-IV"),
             time: t("board-of-directors.term-IV-time"),
+            color:"#0f3923",
             member: [
                 {
                     image: VVThang,
@@ -160,6 +164,7 @@ function BoardOfDirectorsPage() {
         {
             term: t("board-of-directors.term-V"),
             time: t("board-of-directors.term-V-time"),
+            color:"#124429",
             member: [
                 {
                     image: VVThang,
@@ -191,7 +196,6 @@ function BoardOfDirectorsPage() {
         flexDirection: "column",
         minHeight: "100vh",
         overflow: "hidden",
-        margin: "5rem 0 2rem 0",
     };
 
     useEffect(() => {
@@ -250,7 +254,7 @@ function BoardOfDirectorsPage() {
     }, []);
 
     return (
-        <div className=" bg-[#1f242d]">
+        <div className=" bg-[#06170e]">
             <CustomHeader />
             <CustomFab />
             <BackButton
@@ -259,8 +263,8 @@ function BoardOfDirectorsPage() {
                 left={"30%"}
             />
             {bghList.map((bgh, index) => (
-                <Box key={index}>
-                    <section style={sectionStyle}>
+                <Box key={index} sx={{ backgroundColor: bgh.color}} >
+                    <section style={sectionStyle} >
                         <div className=" lg:flex justify-center items-center text-center pb-[7rem]">
                             <h1 className="translate-x-[-100%] duration-1000 text-[35px] text-white font-meri px-[2rem]">
                                 {bgh.term}

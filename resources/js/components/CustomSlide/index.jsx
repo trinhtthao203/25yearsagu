@@ -18,11 +18,11 @@ function CustomSlide(props) {
                 <p className=" font-montserrat pb-2 pt-10 sm:p-10 font-medium text-[0.8rem] sm:text-[0.9rem] md:text-[0.9rem] lg:text-[0.9rem] text-justify">
                     {message}
                 </p>
-                {/* <img
+                <img
                     src={image}
                     alt={`Image ${index}`}
                     className="w-2/5 mx-auto rounded-md"
-                /> */}
+                />
                 <p className=" text-[0.9rem] sm:p-2 sm:text-[1rem] md:text-[1rem] lg:text-[0.9rem] font-bold text-center py-2 font-montserrat">
                     {fullname}
                 </p>
